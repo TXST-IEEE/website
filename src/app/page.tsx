@@ -1,103 +1,106 @@
 import Image from "next/image";
 
-export default function Home() {
-  return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+export default function Home(){
+  return(
+    <div>
+      <div className="flex justify-center mt-40">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src="/Logo_V5.png"
+          alt="IEEE logo"
+          width={300}
+          height={125}
+          priority={false}
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+      </div>
+      <div className="text-center pt-10 text-[#ffffff] mb-100">
+        <h1 className="text-3xl uppercase font-bold mb-4">
+          Advancing technology for humanity
+        </h1>
+      </div>
+      <div className="bg-white flex justify-center pt-8 shadow-[0_20px_30px_30px_#000000] pb-8">
+        <div className="max-w-[1200px] flex justify-center">
+          <div className="">
+            <h1 className="text-3xl font-[600]">
+              What we do
+            </h1>
+            <p className="text-2xl mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.
+            </p>
+            <p className="text-2xl">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+          <div className="min-w-[50px]">
+          </div>
+          <div className="">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/meetingCropped.jpg"
+              alt="IEEE meeting"
+              width={2000}
+              height={2000}
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+      <div className="bg-[#000000] flex justify-center pt-8 pb-8">
+        <div className="max-w-[1200px] flex justify-center">
+          <div className="">
+            <h1 className="text-3xl font-[600] text-[#ffffff]">
+              What we do
+            </h1>
+            <p className="text-2xl mb-5 text-[#ffffff]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.
+            </p>
+            <p className="text-2xl text-[#ffffff]">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+          <div className="min-w-[50px]">
+          </div>
+          <div className="">
+            <Image
+              src="/meetingCropped.jpg"
+              alt="IEEE meeting"
+              width={2000}
+              height={2000}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#ffffff] flex justify-center pt-8 pb-8">
+        <div className="max-w-[1200px] flex justify-center">
+          <div className="">
+            <h1 className="text-3xl font-[600] text-[#000000]">
+              What we do
+            </h1>
+            <p className="text-2xl mb-5 text-[#000000]">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+              ut labore et dolore magna aliqua.
+            </p>
+            <p className="text-2xl text-[#000000]">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+          <div className="min-w-[50px]">
+          </div>
+          <div className="">
+            <Image
+              src="/meetingCropped.jpg"
+              alt="IEEE meeting"
+              width={2000}
+              height={2000}
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
