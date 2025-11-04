@@ -14,12 +14,18 @@ export default function Header(){
           priority={false}
         />
       </Link>
-      <ul className="text-2xl flex justify-between items-center">
+      <ul className="text-[20px] flex justify-between items-center">
         <li>
           <Link className="px-4" href="/about">About</Link>
         </li>
         <li>
           <Link className="px-4" href="/branches">Branches</Link>
+        </li>
+        <li>
+          <Link className="px-4" href="/events">Events</Link>
+        </li>
+        <li>
+          <Link className="px-4" href="/officers">Officers</Link>
         </li>
       </ul>
       </div>
