@@ -16,10 +16,10 @@ export default function Header(){
       </Link>
       <ul className="text-2xl flex justify-between items-center">
         <li>
-          <Link className="px-4" href="/">Home</Link>
+          <Link className="px-4" href="/about">About</Link>
         </li>
         <li>
-          <Link className="px-4" href="/about">About</Link>
+          <Link className="px-4" href="/branches">Branches</Link>
         </li>
       </ul>
       </div>
