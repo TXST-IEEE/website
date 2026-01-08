@@ -157,5 +157,3 @@ For technical issues or questions:
 - Contact the web team lead
 
 ---
-
-**Built with ❤️ by IEEE TXST Web Team**
