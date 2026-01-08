@@ -24,9 +24,15 @@ export default function EventCard3D({ event }: EventCard3DProps) {
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
-  // Convert mouse position to rotation values
-  const rotateX = useSpring(useTransform(y, [-0.5, 0.5], [10, -10]));
-  const rotateY = useSpring(useTransform(x, [-0.5, 0.5], [-10, 10]));
+  // Convert mouse position to rotation values (subtle 5 degree max tilt)
+  const rotateX = useSpring(useTransform(y, [-0.5, 0.5], [5, -5]), {
+    stiffness: 150,
+    damping: 15,
+  });
+  const rotateY = useSpring(useTransform(x, [-0.5, 0.5], [-5, 5]), {
+    stiffness: 150,
+    damping: 15,
+  });
 
   // Category colors
   const categoryColors = {
@@ -64,26 +70,27 @@ export default function EventCard3D({ event }: EventCard3DProps) {
   };
 
   return (
-    <motion.div
-      onMouseMove={handleMouseMove}
-      onMouseLeave={handleMouseLeave}
-      style={{
-        rotateX,
-        rotateY,
-        transformStyle: "preserve-3d",
-      }}
-      className="relative bg-white rounded-2xl shadow-xl overflow-hidden cursor-pointer h-full"
-      whileHover={{ scale: 1.05 }}
-      transition={{ type: "spring", stiffness: 300, damping: 20 }}
-    >
-      {/* Card content with 3D depth */}
-      <div
+    <div style={{ perspective: "1000px", height: "100%" }}>
+      <motion.div
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
         style={{
-          transform: "translateZ(50px)",
+          rotateX,
+          rotateY,
           transformStyle: "preserve-3d",
         }}
-        className="h-full flex flex-col"
+        className="relative bg-white rounded-2xl shadow-xl overflow-hidden cursor-pointer h-full"
+        whileHover={{ scale: 1.02 }}
+        transition={{ type: "spring", stiffness: 300, damping: 20 }}
       >
+        {/* Card content with subtle 3D depth */}
+        <div
+          style={{
+            transform: "translateZ(20px)",
+            transformStyle: "preserve-3d",
+          }}
+          className="h-full flex flex-col"
+        >
         {/* Event Image */}
         <div className="relative h-56 w-full overflow-hidden bg-gradient-to-br from-[#00629B] to-[#00A9E0]">
           <Image
@@ -179,8 +186,9 @@ export default function EventCard3D({ event }: EventCard3DProps) {
       <motion.div
         className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-0"
         whileHover={{ opacity: 0.1 }}
-        style={{ transform: "translateZ(75px)" }}
+        style={{ transform: "translateZ(30px)" }}
       />
     </motion.div>
+    </div>
   );
 }
