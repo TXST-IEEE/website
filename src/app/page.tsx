@@ -1,144 +1,171 @@
-import Image from "next/image";
+/**
+ * HOMEPAGE
+ *
+ * Simple, student-focused landing page for IEEE TXST.
+ *
+ * SECTIONS:
+ * 1. Hero - Welcome message
+ * 2. About Us - What IEEE TXST is about
+ * 3. Social Links - Connect with us on social media
+ * 4. Get Involved - How to join and participate
+ * 5. Events Preview - Upcoming events
+ */
 
-export default function Home(){
-  return(
-    <div>
-      <div className="max-w-[1200px] mx-auto flex mt-30">
-        <div>
-          <div>
-            <Image
-              src="/Logo_V5.png"
-              alt="IEEE logo"
-              width={300}
-              height={125}
-              priority={false}
-            />
-          </div>
-          <div className="pt-6 text-[#ffffff] pb-14">
-            <h1 className="text-[26px] uppercase font-bold mb-4">
-              Advancing technology for humanity
-            </h1>
-          </div>
-          <div className="gap-5 flex">
-            <button className="memberButton badassButton">
-              <span className="font-bold text-[22px]">Become a Member</span>
-              <Image className="p-[8px]"
-                src="/icon_member.svg"
-                alt="A little guy"
-                width={60}
-                height={125}
-                priority={false}
+import Hero from "@/components/home/Hero";
+import SocialLinks from "@/components/home/SocialLinks";
+import FadeIn from "@/components/animations/FadeIn";
+import SlideIn from "@/components/animations/SlideIn";
+import Button from "@/components/ui/Button";
+import Section from "@/components/ui/Section";
+import Icon from "@/components/ui/Icon";
+import Image from "next/image";
+import { homeContent } from "@/content/pages/home";
+import { siteConfig } from "@/content/config";
+
+export default function Home() {
+  // What we offer (simple, educational focus)
+  const activities = [
+    {
+      icon: "workshop",
+      title: "Technical Workshops",
+      description: "Learn new skills through hands-on workshops covering various technologies and engineering topics.",
+    },
+    {
+      icon: "community",
+      title: "Community & Networking",
+      description: "Meet fellow students, collaborate on projects, and build lasting connections.",
+    },
+    {
+      icon: "project",
+      title: "Project Opportunities",
+      description: "Work on real engineering projects and apply what you learn in the classroom.",
+    },
+  ];
+
+  return (
+    <main className="min-h-screen">
+      {/* Hero Section */}
+      <Hero />
+
+      {/* About Us Section */}
+      <Section>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Image */}
+          <SlideIn direction="left">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl">
+              <Image
+                src={homeContent.whatWeDo.image}
+                alt="IEEE TXST Community"
+                width={800}
+                height={600}
+                className="w-full h-auto object-cover"
               />
-            </button>
-            <button className="badassButton rounded-[8px] bg-[#ffffff28] border-2 p-2 border-[#fff] text-[#fff]">
-              <span className="font-bold text-[22px]">View Events</span>
-            </button>
-          </div>
+            </div>
+          </SlideIn>
+
+          {/* Text Content */}
+          <SlideIn direction="right">
+            <div>
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                About IEEE TXST
+              </h2>
+              <div className="w-24 h-1 bg-[#00629B] mb-6 rounded-full" />
+              <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                {homeContent.whatWeDo.description}
+              </p>
+              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                {homeContent.whatWeDo.secondaryDescription}
+              </p>
+              <div className="bg-gray-50 p-6 rounded-xl">
+                <p className="text-gray-700 mb-2">
+                  <strong>When:</strong> {siteConfig.meetings.schedule}
+                </p>
+                <p className="text-gray-700">
+                  <strong>Where:</strong> {siteConfig.meetings.location}
+                </p>
+              </div>
+            </div>
+          </SlideIn>
         </div>
-        <div className="min-w-[40px]">
-        </div>
-        <div>
-          <Image className="rounded-2xl"
-            src="/meetingCropped.jpg"
-            alt="Meeting"
-            width={800}
-            height={200}
-          />
-        </div>
-      </div>
-      <div className="flex justify-center mb-20 pt-14 bruh2">
-        <Image className="scrollFadeOut"
-          src="/Arrow_downward.svg"
-          alt="Arrow that points downward"
-          width={60}
-          height={125}
-          priority={false}
-        />
-      </div>
-      <div className="bg-white flex justify-center pt-8 shadow-[0_20px_30px_30px_#000000] pb-8">
-        <div className="max-w-[1200px] flex justify-center">
-          <div className="">
-            <h1 className="text-3xl font-[600]">
-              What we do
-            </h1>
-            <p className="text-2xl mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua.
-            </p>
-            <p className="text-2xl">
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-          </div>
-          <div className="min-w-[50px]">
-          </div>
-          <div className="">
-            <Image
-              src="/meetingCropped.jpg"
-              alt="IEEE meeting"
-              width={2000}
-              height={2000}
-            />
-          </div>
-        </div>
-      </div>
-      <div className="bg-[#000000] flex justify-center pt-8 pb-8">
-        <div className="max-w-[1200px] flex justify-center">
-          <div className="">
-            <h1 className="text-3xl font-[600] text-[#ffffff]">
-              What we do
-            </h1>
-            <p className="text-2xl mb-5 text-[#ffffff]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua.
-            </p>
-            <p className="text-2xl text-[#ffffff]">
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur.
+      </Section>
+
+      {/* Social Links Section */}
+      <SocialLinks />
+
+      {/* What We Offer */}
+      <Section className="bg-gray-50">
+        <FadeIn>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              What We Offer
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              IEEE TXST provides opportunities for learning, collaboration, and growth
             </p>
           </div>
-          <div className="min-w-[50px]">
-          </div>
-          <div className="">
-            <Image
-              src="/meetingCropped.jpg"
-              alt="IEEE meeting"
-              width={2000}
-              height={2000}
-            />
-          </div>
+        </FadeIn>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {activities.map((activity, index) => (
+            <FadeIn key={index} delay={index * 0.2}>
+              <div className="bg-white p-8 rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                <div className="text-[#00629B] mb-4 flex justify-center">
+                  <Icon name={activity.icon} className="w-16 h-16" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3 text-center">
+                  {activity.title}
+                </h3>
+                <p className="text-gray-600 text-center leading-relaxed">
+                  {activity.description}
+                </p>
+              </div>
+            </FadeIn>
+          ))}
         </div>
-      </div>
-      <div className="bg-[#ffffff] flex justify-center pt-8 pb-8">
-        <div className="max-w-[1200px] flex justify-center">
-          <div className="">
-            <h1 className="text-3xl font-[600] text-[#000000]">
-              What we do
-            </h1>
-            <p className="text-2xl mb-5 text-[#000000]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-              ut labore et dolore magna aliqua.
+      </Section>
+
+      {/* Get Involved Section */}
+      <Section dark className="bg-gradient-to-br from-[#0A0F1E] to-[#00629B]">
+        <div className="max-w-4xl mx-auto text-center">
+          <FadeIn>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Get Involved
+            </h2>
+            <p className="text-xl text-gray-300 mb-8">
+              Whether you&apos;re interested in workshops, projects, or just want to meet
+              other students, there&apos;s a place for you at IEEE TXST.
             </p>
-            <p className="text-2xl text-[#000000]">
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
-          </div>
-          <div className="min-w-[50px]">
-          </div>
-          <div className="">
-            <Image
-              src="/meetingCropped.jpg"
-              alt="IEEE meeting"
-              width={2000}
-              height={2000}
-            />
-          </div>
+            <div className="flex flex-wrap justify-center gap-4">
+              <Button variant="secondary" href="/membership">
+                Learn About Membership
+              </Button>
+              <Button variant="ghost" href="/events">
+                View Events
+              </Button>
+            </div>
+          </FadeIn>
         </div>
-      </div>
-    </div>
+      </Section>
+
+      {/* Contact Section */}
+      <Section>
+        <FadeIn>
+          <div className="text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              Questions?
+            </h2>
+            <p className="text-xl text-gray-600 mb-8">
+              Feel free to reach out to us
+            </p>
+            <a
+              href={`mailto:${siteConfig.contact.email}`}
+              className="text-[#00629B] hover:text-[#00A9E0] text-xl font-medium transition-colors"
+            >
+              {siteConfig.contact.email}
+            </a>
+          </div>
+        </FadeIn>
+      </Section>
+    </main>
   );
 }
