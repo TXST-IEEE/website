@@ -13,18 +13,18 @@ export const siteConfig = {
 
   // Contact Information
   contact: {
-    email: "ieee@txst.edu",
-    instagram: "https://instagram.com/ieee_txst",
-    facebook: "https://facebook.com/ieee.txst",
+    email: "texasstateieee@gmail.com",
+    instagram: "https://instagram.com/txst.ieee/",
+    facebook: "https://facebook.com/TXST.IEEE/",
     linkedin: "https://linkedin.com/company/ieee-txst",
-    discord: "https://discord.gg/ieee-txst",
+    discord: "https://discord.gg/UZhDvyDHTc", // Discord invite link that never expires
   },
 
   // Meeting Information
   meetings: {
-    schedule: "Every Thursday at 6:00 PM",
-    location: "Engineering Building, Room 101",
-    virtualLink: "https://zoom.us/j/your-meeting-id",
+    schedule: "Every Thursday at 6:30 PM",
+    location: "Ingram School of Engineering Building, Room 4103",
+    virtualLink: "https://zoom.us/j/your-meeting-id", // No zoom link currently
   },
 
   // Brand Colors (IEEE Official Colors)
