@@ -26,12 +26,12 @@ export default function EventsPage() {
 
   // Categories for filtering
   const categories = [
-    { id: "all", label: "All Events", color: "bg-gray-700" },
-    { id: "workshop", label: "Workshops", color: "bg-purple-500" },
-    { id: "meeting", label: "Meetings", color: "bg-blue-500" },
-    { id: "social", label: "Social", color: "bg-green-500" },
-    { id: "competition", label: "Competitions", color: "bg-red-500" },
-    { id: "speaker", label: "Speakers", color: "bg-orange-500" },
+    { id: "all", label: "All Events", color: "bg-gray-700", hoverColor: "hover:bg-gray-500" },
+    { id: "workshop", label: "Workshops", color: "bg-purple-500", hoverColor: "hover:bg-purple-600" },
+    { id: "meeting", label: "Meetings", color: "bg-blue-500", hoverColor: "hover:bg-blue-600" },
+    { id: "social", label: "Socials", color: "bg-green-500", hoverColor: "hover:bg-green-600" },
+    { id: "speaker", label: "Speakers", color: "bg-orange-500", hoverColor: "hover:bg-orange-600" },
+    { id: "tour", label: "Tours", color: "bg-red-500", hoverColor: "hover:bg-red-600"},
   ];
 
   // Filter events
@@ -71,7 +71,7 @@ export default function EventsPage() {
                 className={`px-6 py-3 rounded-lg font-semibold transition-all ${
                   selectedCategory === category.id
                     ? `${category.color} text-white shadow-lg scale-105`
-                    : "bg-white text-gray-700 hover:shadow-md"
+                    : `bg-white text-gray-700 ${category.hoverColor}`
                 }`}
               >
                 {category.label}
@@ -146,7 +146,7 @@ export default function EventsPage() {
             </div>
           </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 opacity-75">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {pastEvents.map((event, index) => (
               <FadeIn key={event.id} delay={index * 0.1}>
                 <EventCard3D event={event} />
