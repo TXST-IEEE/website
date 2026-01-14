@@ -27,7 +27,7 @@ export default function Hero() {
 
   // Parallax effect: image moves slower than content
   const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
-  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
 
   return (
     <section

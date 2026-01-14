@@ -8,7 +8,7 @@
 export const homeContent = {
   // Hero Section (Top of page)
   hero: {
-    title: "Advancing technology for humanity",
+    title: "Advancing Technology for Humanity",
     subtitle: "One of the largest student organizations at Texas State University",
     description:
       "IEEE TXST is a community of students interested in technology, engineering, and learning together.",
