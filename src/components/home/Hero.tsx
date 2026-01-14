@@ -44,7 +44,7 @@ export default function Hero() {
 
       {/* Content Container */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8 lg:px-12 py-32">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.5fr] gap-12 items-center">
           {/* Left Column: Text Content */}
           <motion.div style={{ y: contentY }}>
             {/* Logo */}
@@ -145,12 +145,12 @@ export default function Hero() {
             transition={{ duration: 1, delay: 0.4 }}
             className="relative"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full max-w-3xl">
               <Image
                 src={homeContent.hero.heroImage}
                 alt="IEEE TXST Community"
-                width={800}
-                height={600}
+                width={1200}
+                height={800}
                 priority
                 className="w-full h-auto object-cover"
               />

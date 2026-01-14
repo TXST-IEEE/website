@@ -28,17 +28,17 @@ export default function Home() {
     {
       icon: "workshop",
       title: "Technical Workshops",
-      description: "Learn new skills through hands-on workshops covering various technologies and engineering topics.",
+      description: "Learn new skills through hands-on Open Project Source (OPS) workshops covering various technologies and engineering topics.",
     },
     {
       icon: "community",
       title: "Community & Networking",
-      description: "Meet fellow students, collaborate on projects, and build lasting connections.",
+      description: "Meet fellow students, network with industry professionals, and build lasting connections.",
     },
     {
       icon: "project",
       title: "Project Opportunities",
-      description: "Work on real engineering projects and apply what you learn in the classroom.",
+      description: "Work on real engineering projects and apply what you learn in the classroom through our newly established IEEE Robotics and Automation Society (RAS).",
     },
   ];
 
@@ -132,8 +132,8 @@ export default function Home() {
               Get Involved
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Whether you&apos;re interested in workshops, projects, or just want to meet
-              other students, there&apos;s a place for you at IEEE TXST.
+              Whether you&apos;re interested in workshops, projects, events, or just want to meet
+              other students, there&apos;s a place for you at IEEE TXST
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button variant="secondary" href="/membership">
@@ -155,7 +155,7 @@ export default function Home() {
               Questions?
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Feel free to reach out to us
+              Feel free to reach out to us!
             </p>
             <a
               href={`mailto:${siteConfig.contact.email}`}

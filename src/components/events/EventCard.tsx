@@ -35,7 +35,7 @@ interface EventCardProps {
   date: string;
   time: string;
   location: string;
-  category: "workshop" | "meeting" | "social" | "competition" | "speaker";
+  category: "workshop" | "meeting" | "social" | "speaker" | "tour";
   image: string;
   registrationLink?: string;
 }
@@ -55,12 +55,14 @@ export default function EventCard({
     workshop: "bg-purple-500",
     meeting: "bg-blue-500",
     social: "bg-green-500",
-    competition: "bg-red-500",
     speaker: "bg-orange-500",
+    tour: "bg-red-500",
   };
 
   // Format date to readable format
-  const formattedDate = new Date(date).toLocaleDateString("en-US", {
+  const [year, month, day] = date.split("-").map(Number);
+  const localDate = new Date(year, month - 1, day); // local midnight
+  const formattedDate = localDate.toLocaleDateString("en-US", {
     month: "short",
     day: "numeric",
     year: "numeric",
@@ -75,13 +77,13 @@ export default function EventCard({
       viewport={{ once: true }}
     >
       {/* Image Container with Zoom Effect */}
-      <div className="relative h-48 overflow-hidden bg-gray-200">
+      <div className="relative aspect-[11.3/12] overflow-hidden bg-gray-200">
         <motion.div whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
           <Image
             src={image}
             alt={title}
             fill
-            className="object-cover"
+            className="object-cover object-top"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
         </motion.div>

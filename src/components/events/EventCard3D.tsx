@@ -39,12 +39,14 @@ export default function EventCard3D({ event }: EventCard3DProps) {
     workshop: "bg-purple-500",
     meeting: "bg-blue-500",
     social: "bg-green-500",
-    competition: "bg-red-500",
     speaker: "bg-orange-500",
+    tour: "bg-red-500",
   };
 
   // Format date to readable format
-  const formattedDate = new Date(event.date).toLocaleDateString("en-US", {
+  const [year, month, day] = event.date.split("-").map(Number);
+  const localDate = new Date(year, month - 1, day); // local midnight
+  const formattedDate = localDate.toLocaleDateString("en-US", {
     month: "short",
     day: "numeric",
     year: "numeric",
@@ -92,7 +94,7 @@ export default function EventCard3D({ event }: EventCard3DProps) {
           className="h-full flex flex-col"
         >
         {/* Event Image */}
-        <div className="relative h-56 w-full overflow-hidden bg-gradient-to-br from-[#00629B] to-[#00A9E0]">
+        <div className="relative aspect-[11.3/12] w-full overflow-hidden bg-gradient-to-br from-[#00629B] to-[#00A9E0]">
           <Image
             src={event.image}
             alt={event.title}

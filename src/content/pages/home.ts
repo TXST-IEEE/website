@@ -9,13 +9,13 @@ export const homeContent = {
   // Hero Section (Top of page)
   hero: {
     title: "Advancing technology for humanity",
-    subtitle: "A student organization at Texas State University",
+    subtitle: "One of the largest student organizations at Texas State University",
     description:
       "IEEE TXST is a community of students interested in technology, engineering, and learning together.",
     primaryButtonText: "Learn About Membership",
     secondaryButtonText: "View Events",
     // Image path: /public/images/gallery/hero-image.jpg
-    heroImage: "/images/gallery/meetingCropped.jpg",
+    heroImage: "/images/gallery/IEEE-GroupPhoto-Fall2024.png",
   },
 
   // What We Do Section
@@ -24,7 +24,7 @@ export const homeContent = {
     description:
       "We're a student-run organization focused on learning, community, and hands-on experience. Through workshops, projects, and events, we help students explore technology and build practical skills.",
     secondaryDescription:
-      "Whether you're interested in software, hardware, or just want to meet other students, IEEE TXST is a place to learn and grow together.",
+      "Whether you're interested in hardware, software, or just want to meet other students, IEEE TXST is a place to learn and grow together.",
     // Image path: /public/images/gallery/activities.jpg
     image: "/images/gallery/meetingCropped.jpg",
   },
