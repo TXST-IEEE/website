@@ -15,9 +15,9 @@ export const siteConfig = {
   contact: {
     email: "texasstateieee@gmail.com",
     instagram: "https://instagram.com/txst.ieee/",
-    facebook: "https://facebook.com/TXST.IEEE/",
     linkedin: "https://linkedin.com/company/ieee-txst",
     discord: "https://discord.gg/UZhDvyDHTc", // Discord invite link that never expires
+    groupme: "https://groupme.com/join_group/57175086/Z4pE3PCA",
   },
 
   // Meeting Information
