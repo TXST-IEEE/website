@@ -141,7 +141,7 @@ export default function MembershipPage() {
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                      Fill Out the Form
+                      Fill Out the Form and Pay your Membership Dues
                     </h3>
                     <p className="text-gray-700 mb-4">
                       Complete a quick membership form so we can keep you updated on events and opportunities.
@@ -193,7 +193,12 @@ export default function MembershipPage() {
                 Is there a membership fee?
               </h3>
               <p className="text-gray-600">
-                No, IEEE TXST membership is free for all Texas State students.
+                While it is free to attend regular general meetings, in order to receive an OPS circuit kit, and participate in events and tours, you must 
+                be a paid IEEE TXST member. A semester membership is $30 while a yearly membership is $50. Buy membership directly through our Square site {" "}
+              <a href={siteConfig.cta.squareSiteUrl}
+                className="text-[#00629B] hover:text-[#00A9E0] font-semibold underline transition-colors">
+                HERE!
+              </a>
               </p>
             </div>
           </FadeIn>
