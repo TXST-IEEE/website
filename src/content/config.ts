@@ -46,6 +46,7 @@ export const siteConfig = {
 
   // Call to Action Links
   cta: {
+    squareSiteUrl: "https://ieeetxst.square.site/s/shop",
     membershipFormUrl: "https://forms.gle/your-membership-form",
     eventSignupUrl: "https://forms.gle/your-event-signup",
   },
