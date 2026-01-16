@@ -42,7 +42,7 @@ export default function Section({
     : "max-w-7xl mx-auto px-6 md:px-8 lg:px-12";
 
   return (
-    <section className={`py-16 md:py-24 ${bgColor} ${className}`}>
+    <section className={`py-12 md:py-18 ${bgColor} ${className}`}>
       <div className={containerStyles}>{children}</div>
     </section>
   );

@@ -14,6 +14,7 @@ import OfficerCard from "@/components/ui/OfficerCard";
 import Section from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
 import FadeIn from "@/components/animations/FadeIn";
+import Image from "next/image";
 import { executiveBoard, officerMembers } from "@/content/data/team";
 
 export default function Officers() {
@@ -33,6 +34,20 @@ export default function Officers() {
         </FadeIn>
       </Section>
 
+      <Section>
+        <FadeIn>
+          <div className="relative w-full h-[320px] md:h-[450px] rounded-2xl overflow-hidden shadow-2xl">
+            <Image
+              src="/images/team/IEEE-OfficerGroup-Photo-Fall2025.jpg"
+              alt="IEEE TXST Officers Fall 2025"
+              fill
+              priority
+              className="object-cover"
+            />
+          </div>
+        </FadeIn>
+      </Section>
+
       {/* Executive Board Section */}
       <Section>
         <FadeIn>
@@ -45,19 +60,24 @@ export default function Officers() {
         </FadeIn>
 
         {/* Executive Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 min-[520px]:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
           {executiveBoard.map((executive, index) => (
-            <FadeIn key={executive.id} delay={index * 0.1}>
-              <OfficerCard
-                name={executive.name}
-                position={executive.position}
-                major={executive.major}
-                image={executive.image}
-                // bio={executive.bio}
-                email={executive.email}
-                linkedin={executive.linkedin}
-              />
-            </FadeIn>
+            <div
+              key={executive.id}
+              className="w-full max-w-[240px] mx-auto sm:max-w-none"
+            >
+              <FadeIn delay={index * 0.1}>
+                <OfficerCard
+                  name={executive.name}
+                  position={executive.position}
+                  major={executive.major}
+                  image={executive.image}
+                  // bio={executive.bio}
+                  email={executive.email}
+                  linkedin={executive.linkedin}
+                />
+              </FadeIn>
+            </div>
           ))}
         </div>
       </Section>
@@ -74,19 +94,24 @@ export default function Officers() {
             </div>
           </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 min-[520px]:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {officerMembers.map((officer, index) => (
-              <FadeIn key={officer.id} delay={index * 0.1}>
-                <OfficerCard
-                  name={officer.name}
-                  position={officer.position}
-                  major={officer.major}
-                  image={officer.image}
-                  // bio={officer.bio}
-                  email={officer.email}
-                  linkedin={officer.linkedin}
-                />
-              </FadeIn>
+              <div
+                key={officer.id}
+                className="w-full max-w-[240px] mx-auto sm:max-w-none"
+              >
+                <FadeIn key={officer.id} delay={index * 0.1}>
+                  <OfficerCard
+                    name={officer.name}
+                    position={officer.position}
+                    major={officer.major}
+                    image={officer.image}
+                    // bio={officer.bio}
+                    email={officer.email}
+                    linkedin={officer.linkedin}
+                  />
+                </FadeIn>
+              </div>
             ))}
           </div>
         </Section>

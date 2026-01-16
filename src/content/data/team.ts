@@ -34,7 +34,7 @@ export const executiveBoard: TeamMember[] = [
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2027",
     image: "/images/team/Franceli-Gonzalez.jpg",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/franceli-gonzalez/",
   },
   {
     id: "executive-002",
@@ -52,7 +52,7 @@ export const executiveBoard: TeamMember[] = [
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2027",
     image: "/images/team/Ashok-Paudel.jpg",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/ashokpaudelapril/",
   },
   {
     id: "executive-004",
@@ -61,7 +61,7 @@ export const executiveBoard: TeamMember[] = [
     major: "Electrical Engineering",
     graduationYear: "2028",
     image: "/images/team/Shreejal-Bhattarai.jpg",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/shreejalbhattarai/",
   },
   {
     id: "executive-005",
@@ -70,7 +70,7 @@ export const executiveBoard: TeamMember[] = [
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2026",
     image: "/images/team/Andrea-Quan.png",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/andreatquan/",
   },
   // TEMPLATE - Copy this to add a new executive board member:
   // {
@@ -96,7 +96,7 @@ export const officerMembers: TeamMember[] = [
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
     image: "/images/team/David-Baltazar.jpg",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/david-baltazar-37b89b328/",
   },
   {
     id: "officer-002",
@@ -105,7 +105,7 @@ export const officerMembers: TeamMember[] = [
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
     image: "/images/team/Rene-Aguirre.png",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/rene-aguirre-50b8b722b/",
   },
   {
     id: "officer-003",
@@ -114,7 +114,7 @@ export const officerMembers: TeamMember[] = [
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2027",
     image: "/images/team/Troy-Hamilton.png",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/troy-l-6b6466252/",
   },
   {
     id: "officer-004",
@@ -123,7 +123,7 @@ export const officerMembers: TeamMember[] = [
     major: "Computer Science (Computer Engineering)",
     graduationYear: "2026",
     image: "/images/team/Trevor-Strother.jpg",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/trevor-strother-537aa3224/",
   },
   {
     id: "officer-005",
@@ -132,7 +132,7 @@ export const officerMembers: TeamMember[] = [
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
     image: "/images/team/Lance-Deal.png",
-    linkedin: "https://linkedin.com/in/username",
+    //linkedin: "https://linkedin.com/in/username",
   },
   {
     id: "officer-006",
@@ -141,7 +141,7 @@ export const officerMembers: TeamMember[] = [
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
     image: "/images/team/Oziel-Martinez.jpg",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/oziel-martinez-3893022a2/",
   },
   {
     id: "officer-007",
@@ -150,7 +150,7 @@ export const officerMembers: TeamMember[] = [
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
     image: "/images/team/Daniel-Jumao-as.jpg",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/danieljumaoas/",
   },
   {
     id: "officer-008",
@@ -159,7 +159,7 @@ export const officerMembers: TeamMember[] = [
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
     image: "/images/team/Diego-Sanchez.jpg",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/diegosanchez69/",
   },
   {
     id: "officer-009",
@@ -168,7 +168,7 @@ export const officerMembers: TeamMember[] = [
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
     image: "/images/team/Utsav-Adhikari.jpg",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/u-adhikari/",
   },
   {
     id: "officer-010",
@@ -177,7 +177,7 @@ export const officerMembers: TeamMember[] = [
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
     image: "/images/team/Connor-Burgess.jpg",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/connor-burgess-ba08792b6/",
   },
   {
     id: "officer-011",
@@ -186,7 +186,7 @@ export const officerMembers: TeamMember[] = [
     major: "Computer Science (Computer Engineering)",
     graduationYear: "2025",
     image: "/images/team/Sam-Arshad.jpg",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/-saamerarshad/",
   },
   {
     id: "officer-012",
@@ -195,7 +195,7 @@ export const officerMembers: TeamMember[] = [
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
     image: "/images/team/Cassandra-Vasquez.jpg",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/cassandra-vasquez/",
   },
   {
     id: "officer-013",
@@ -204,7 +204,7 @@ export const officerMembers: TeamMember[] = [
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
     image: "/images/team/Kade-Matula.jpg",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/kade-matula-397079310/",
   },
   {
     id: "officer-014",
@@ -213,16 +213,34 @@ export const officerMembers: TeamMember[] = [
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
     image: "/images/team/Steven-Setten.jpg",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/stevenvansetten/",
   },
   {
     id: "officer-015",
     name: "Collin Cook",
-    position: "Officer Intern",
+    position: "OPS Team Member & Officer Intern",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
     image: "/images/team/Collin-Cook.jpg",
-    linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/collin-cook-00a81b367/",
+  },
+  {
+    id: "officer-016",
+    name: "Raymundo Guajardo",
+    position: "Officer Intern",
+    major: "Electrical Engineering (Computer Engineering)",
+    graduationYear: "2028",
+    image: "/images/team/Raymundo-Guajardo.jpg",
+    linkedin: "https://www.linkedin.com/in/raymundo-guajardo-8248292b0/",
+  },
+  {
+    id: "officer-017",
+    name: "Clay Zetune",
+    position: "OPS Team Member & Officer Intern",
+    major: "Electrical Engineering (Computer Engineering)",
+    graduationYear: "2028",
+    image: "/images/team/Clay-Zetune.jpg",
+    linkedin: "https://www.linkedin.com/in/clay-zetune/",
   },
   // TEMPLATE - Copy this to add a officer member:
   // {

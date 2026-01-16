@@ -93,11 +93,16 @@ export default function EventsPage() {
             </div>
           </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 min-[520px]:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {upcomingEvents.map((event, index) => (
-              <FadeIn key={event.id} delay={index * 0.1}>
-                <EventCard3D event={event} />
-              </FadeIn>
+              <div
+                key={event.id}
+                className="w-full max-w-[240px] mx-auto sm:max-w-none"
+              >
+                <FadeIn delay={index * 0.1}>
+                  <EventCard3D event={event} />
+                </FadeIn>
+              </div>
             ))}
           </div>
         </Section>
@@ -146,11 +151,16 @@ export default function EventsPage() {
             </div>
           </FadeIn>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 min-[520px]:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {pastEvents.map((event, index) => (
-              <FadeIn key={event.id} delay={index * 0.1}>
-                <EventCard3D event={event} />
-              </FadeIn>
+              <div
+                key={event.id}
+                className="w-full max-w-[240px] mx-auto sm:max-w-none"
+              >
+                <FadeIn delay={index * 0.1}>
+                  <EventCard3D event={event} />
+                </FadeIn>
+              </div>
             ))}
           </div>
         </Section>
