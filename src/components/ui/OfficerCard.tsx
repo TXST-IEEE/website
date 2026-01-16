@@ -82,6 +82,9 @@ export default function OfficerCard({
     y.set(0);
   };
 
+   /**
+   * Card wrapper that makes entire card link to individual officer card linkedin profiles (if given)
+   */
   const CardWrapper = ({ children }: { children: React.ReactNode }) => {
     if (!linkedin) return <>{children}</>;
 
