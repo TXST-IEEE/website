@@ -104,7 +104,7 @@ export const officerMembers: TeamMember[] = [
     position: "Community Outreach & Social Media",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
-    image: "/images/team/Rene-Aguirre.png",
+    image: "/images/team/Rene-Aguirre.jpg",
     linkedin: "https://www.linkedin.com/in/rene-aguirre-50b8b722b/",
   },
   {
