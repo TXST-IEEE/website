@@ -34,13 +34,6 @@ export default function Hero() {
       ref={ref}
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#0A0F1E] via-[#1A2332] to-[#00629B]"
     >
-      {/* Animated Background Pattern */}
-      <div className="absolute inset-0 opacity-20">
-        <div className="absolute inset-0" style={{
-          backgroundImage: "radial-gradient(circle at 2px 2px, white 1px, transparent 0)",
-          backgroundSize: "40px 40px",
-        }} />
-      </div>
 
       {/* Content Container */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8 lg:px-12 py-32">
