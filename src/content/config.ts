@@ -40,7 +40,7 @@ export const siteConfig = {
     { label: "Home", href: "/" },
     { label: "Events", href: "/events" },
     { label: "Officers", href: "/officers" },
-    { label: "Become a Member", href: "/membership" },
+    { label: "Membership", href: "/membership" },
     { label: "About", href: "/about" },
   ],
 

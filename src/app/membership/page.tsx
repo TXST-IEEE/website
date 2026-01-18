@@ -141,10 +141,10 @@ export default function MembershipPage() {
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                      Fill Out the Form and Pay your Membership Dues
+                      Fill Out the Form and Pay your National Membership Dues
                     </h3>
                     <p className="text-gray-700 mb-4">
-                      Complete a quick membership form so we can keep you updated on events and opportunities.
+                      Complete this membership form so we can keep you updated on events and opportunities.
                     </p>
                     <Button variant="primary" href={siteConfig.cta.membershipFormUrl}>
                       Complete Form
@@ -193,12 +193,9 @@ export default function MembershipPage() {
                 Is there a membership fee?
               </h3>
               <p className="text-gray-600">
-                While it is free to attend regular general meetings, in order to receive an OPS circuit kit, and participate in events and tours, you must 
-                be a paid IEEE TXST member. A semester membership is $30 while a yearly membership is $50. Buy membership directly through our Square site {" "}
-              <a href={siteConfig.cta.squareSiteUrl}
-                className="text-[#00629B] hover:text-[#00A9E0] font-semibold underline transition-colors">
-                HERE!
-              </a>
+                While it is free to attend regular general meetings, in order to receive an OPS circuit kit, and participate in events and tours, 
+                you must be a paid IEEE National Member. A student national membership costs $32 and is bought through the official IEEE website. 
+                Please fill out the membership form to join and feel free to ask us any questions you may have!
               </p>
             </div>
           </FadeIn>
