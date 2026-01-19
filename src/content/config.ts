@@ -40,14 +40,14 @@ export const siteConfig = {
     { label: "Home", href: "/" },
     { label: "Events", href: "/events" },
     { label: "Officers", href: "/officers" },
-    { label: "Become a Member", href: "/membership" },
+    { label: "Membership", href: "/membership" },
     { label: "About", href: "/about" },
   ],
 
   // Call to Action Links
   cta: {
     squareSiteUrl: "https://ieeetxst.square.site/s/shop",
-    membershipFormUrl: "https://forms.gle/your-membership-form",
+    membershipFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfv3l4v_DC_quTEogvxuj_hWZzL_f4XYDqZQ1DHX1sJnPlelQ/viewform?usp=header",
     eventSignupUrl: "https://forms.gle/your-event-signup",
   },
 };
