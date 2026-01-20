@@ -55,10 +55,13 @@ export default function EventCard3D({ event }: EventCard3DProps) {
   /**
    * Update rotation based on mouse position
    */
-  const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
+  const handleMouseMove = (e: MouseEvent<HTMLDivElement | HTMLAnchorElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
+
+    // Calculate mouse position relative to card center (-0.5 to 0.5)
     const centerX = (e.clientX - rect.left - rect.width / 2) / (rect.width / 2);
     const centerY = (e.clientY - rect.top - rect.height / 2) / (rect.height / 2);
+
     x.set(centerX);
     y.set(centerY);
   };
@@ -81,7 +84,7 @@ export default function EventCard3D({ event }: EventCard3DProps) {
           rotateY,
           transformStyle: "preserve-3d",
         }}
-        className={`relative bg-white rounded-2xl shadow-xl overflow-hidden h-full ${event.registrationLink ? "cursor-pointer" : ""}`}
+        className="relative bg-white rounded-2xl shadow-xl overflow-hidden h-full"
         whileHover={{ scale: 1.02 }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
       >
@@ -170,23 +173,24 @@ export default function EventCard3D({ event }: EventCard3DProps) {
 
           {/* Register Button (if link provided) */}
           {event.registrationLink && (
-            <div className="mt-4">
-              <a
-                href={event.registrationLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full bg-[#00629B] hover:bg-[#00A9E0] text-white text-center py-3 rounded-lg font-semibold transition-colors"
-              >
-                Register Now
-              </a>
-            </div>
+            <button
+              type="button"
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                window.open(event.registrationLink!, "_blank", "noopener,noreferrer");
+              }}
+              className="mt-4 block w-full bg-[#00629B] hover:bg-[#00A9E0] text-white text-center py-3 rounded-lg font-semibold transition-colors cursor-pointer"
+            >
+              Register Now
+            </button>
           )}
         </div>
       </div>
 
       {/* Shine effect on hover */}
       <motion.div
-        className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-0"
+        className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-0"
         whileHover={{ opacity: 0.1 }}
         style={{ transform: "translateZ(30px)" }}
       />
