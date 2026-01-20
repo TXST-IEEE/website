@@ -63,7 +63,7 @@ export default function OfficerCard({
   /**
    * Update rotation based on mouse position
    */
-  const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
+  const handleMouseMove = (e: MouseEvent<HTMLDivElement | HTMLAnchorElement>) => {
     const rect = e.currentTarget.getBoundingClientRect();
 
     // Calculate mouse position relative to card center (-0.5 to 0.5)
@@ -82,40 +82,33 @@ export default function OfficerCard({
     y.set(0);
   };
 
-   /**
-   * Card wrapper that makes entire card link to individual officer card linkedin profiles (if given)
+  /**
+   * If LinkedIn link exists for individual officer card, then render HTML as an anchor
+   * Otherwise, render as div
    */
-  const CardWrapper = ({ children }: { children: React.ReactNode }) => {
-    if (!linkedin) return <>{children}</>;
-
-    return (
-      <a
-        href={linkedin}
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label={`${name} LinkedIn profile`}
-        className="block"
-      >
-        {children}
-      </a>
-    );
-  };
+  const MotionEl = linkedin ? motion.a : motion.div;
 
   return (
     <div style={{ perspective: "1000px" }}>
-      <CardWrapper>
-        <motion.div
-          onMouseMove={handleMouseMove}
-          onMouseLeave={handleMouseLeave}
-          style={{
-            rotateX,
-            rotateY,
-            transformStyle: "preserve-3d",
-          }}
-          className="relative bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-xl overflow-hidden cursor-pointer"
-          whileHover={{ scale: 1.02 }}
-          transition={{ type: "spring", stiffness: 300, damping: 20 }}
-        >
+      <MotionEl
+      // Spread operator takes all properties from object and passes them as props.
+        {...(linkedin
+          ? {
+              href: linkedin,
+              target: "_blank",
+              rel: "noopener noreferrer",
+              "aria-label": `${name} LinkedIn profile`,
+            }
+          : {})}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+        style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
+        className={`relative block bg-gradient-to-br from-white to-gray-50 rounded-2xl shadow-xl overflow-hidden ${
+          linkedin ? "cursor-pointer" : ""
+        }`}
+        whileHover={{ scale: 1.02 }}
+        transition={{ type: "spring", stiffness: 300, damping: 20 }}
+      >
           {/* Card content with subtle 3D depth */}
           <div
             style={{
@@ -189,14 +182,14 @@ export default function OfficerCard({
           </div>
         </div>
 
-        {/* Shine effect on hover (optional polish) */}
+        {/* Shine effect on hover */}
         <motion.div
           className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-0"
           whileHover={{ opacity: 0.1 }}
           style={{ transform: "translateZ(30px)" }}
         />
-        </motion.div>
-      </CardWrapper>
+      </MotionEl>
+
     </div>
   );
 }
