@@ -255,7 +255,27 @@ export const officerMembers: TeamMember[] = [
   // },
 ];
 
-// GENERAL MEMBERS (Optional - if you want to showcase active members)
-export const generalMembers: TeamMember[] = [
-  // Add general members if needed
+// COMMITTEE OFFICERS
+// Add committee officers here
+export const committeeOfficers: TeamMember[] = [
+  {
+    id: "committee-001",
+    name: "Template",
+    position: "Example",
+    major: "Sample",
+    graduationYear: "2026",
+    image: "/images/team/",
+    linkedin: "",
+  },
+  // TEMPLATE - Copy this to add a committee officer:
+  // {
+  //   id: "committee-001",
+  //   name: "Full Name",
+  //   position: "RAS Events Coordinator",  // or other officer position
+  //   major: "Major",
+  //   graduationYear: "YYYY",
+  //   bio: "Brief bio about their role",   OPTIONAL (removed to consolidate space)
+  //   image: "/images/team/firstname-lastname.jpg",
+  //   email: "email@txst.edu",  // Optional
+  // },
 ];

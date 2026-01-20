@@ -40,8 +40,8 @@ export const siteConfig = {
     { label: "Home", href: "/" },
     { label: "Events", href: "/events" },
     { label: "Officers", href: "/officers" },
+    { label: "Committees", href: "/committees" },
     { label: "Membership", href: "/membership" },
-    { label: "About", href: "/about" },
   ],
 
   // Call to Action Links

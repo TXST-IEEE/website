@@ -129,7 +129,7 @@ export default function Navbar() {
               rel="noopener noreferrer"
             >
               <motion.button
-                className="bg-[#00629B] hover:bg-[#00A9E0] text-white px-6 py-2.5 rounded-lg font-semibold transition-colors"
+                className="bg-[#00629B] hover:bg-[#00A9E0] text-white px-6 py-2.5 rounded-lg font-semibold transition-colors cursor-pointer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

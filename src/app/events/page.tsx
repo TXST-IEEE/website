@@ -68,7 +68,7 @@ export default function EventsPage() {
               <button
                 key={category.id}
                 onClick={() => setSelectedCategory(category.id)}
-                className={`px-6 py-3 rounded-lg font-semibold transition-all ${
+                className={`px-6 py-3 rounded-lg font-semibold transition-all cursor-pointer ${
                   selectedCategory === category.id
                     ? `${category.color} text-white shadow-lg scale-105`
                     : `bg-white text-gray-700 ${category.hoverColor}`
