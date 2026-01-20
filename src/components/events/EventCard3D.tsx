@@ -81,7 +81,7 @@ export default function EventCard3D({ event }: EventCard3DProps) {
           rotateY,
           transformStyle: "preserve-3d",
         }}
-        className="relative bg-white rounded-2xl shadow-xl overflow-hidden cursor-pointer h-full"
+        className={`relative bg-white rounded-2xl shadow-xl overflow-hidden h-full ${event.registrationLink ? "cursor-pointer" : ""}`}
         whileHover={{ scale: 1.02 }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
       >
