@@ -40,7 +40,13 @@ export const siteConfig = {
     { label: "Home", href: "/" },
     { label: "Events", href: "/events" },
     { label: "Officers", href: "/officers" },
-    { label: "Committees", href: "/committees" },
+    { label: "Committees", href: "/committees",
+        children: [
+          {label: "Robotics (RAS)", href: "/societies/ras"},
+          {label: "Computer Society", href: "/societies/computersociety"},
+          {label: "Honors (IEEE-HKN)", href: "/societies/hkn"},
+        ]
+    },
     { label: "Membership", href: "/membership" },
   ],
 

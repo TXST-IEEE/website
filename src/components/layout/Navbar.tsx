@@ -26,6 +26,9 @@ import { usePathname } from "next/navigation";
 import { siteConfig } from "@/content/config";
 import { useEffect, useState } from "react";
 
+type NavChild = { label: string; href: string };
+type NavItem = { label: string; href: string; children?: NavChild[] };
+
 export default function Navbar() {
   const pathname = usePathname();
   const { scrollY } = useScroll();
@@ -72,45 +75,123 @@ export default function Navbar() {
 
           {/* Desktop Navigation Links */}
           <ul className="hidden md:flex items-center gap-4 lg:gap-8">
-            {siteConfig.navigation.map((link, index) => {
+            {(siteConfig.navigation as NavItem[]).map((link, index) => {
+              const hasChildren = Boolean(link.children?.length);
               const isActive = pathname === link.href;
 
+              const isDropDownActive = hasChildren && link.children!.some((c) => c.href === pathname);
+
+              // Treat dropdown as active when any child route is active
+              const showActive = isActive || isDropDownActive;
+
+              // Standard non-dropdown link
+              if(!hasChildren){
+                return (
+                  <motion.li
+                    key={link.href}
+                    initial={{ opacity: 0, y: -20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                  >
+                    <Link
+                      href={link.href}
+                      className="relative text-white text-lg font-medium transition-colors hover:text-[#00A9E0]"
+                    >
+                      {link.label}
+
+                      {/* Active Indicator - Underline */}
+                      {showActive && (
+                        <motion.div
+                          layoutId="activeTab"
+                          className="absolute -bottom-2 left-0 right-0 h-0.5 bg-[#00A9E0]"
+                          transition={{
+                            type: "spring",
+                            stiffness: 380,
+                            damping: 30,
+                          }}
+                        />
+                      )}
+
+                      {/* Hover Underline */}
+                      {!showActive && (
+                        <motion.div
+                          className="absolute -bottom-2 left-0 right-0 h-0.5 bg-white/50"
+                          initial={{ scaleX: 0 }}
+                          whileHover={{ scaleX: 1 }}
+                          transition={{ duration: 0.2 }}
+                        />
+                      )}
+                    </Link>
+                  </motion.li>
+                );
+              }
+
+              // Dropdown link for Committees
               return (
                 <motion.li
                   key={link.href}
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
+                  className="relative"
                 >
-                  <Link
-                    href={link.href}
-                    className="relative text-white text-lg font-medium transition-colors hover:text-[#00A9E0]"
-                  >
-                    {link.label}
+                  <div className="relative group">
+                    <Link
+                      href={link.href}
+                      className="relative inline-flex items-center gap-2 text-white text-lg font-medium transition-colors hover:text-[#00A9E0]"
+                    >
+                      {link.label}
+                      <span className="text-white/80 group-hover:text-[#00A9E0]">
+                        ▾
+                      </span>
 
-                    {/* Active Indicator - Underline */}
-                    {isActive && (
-                      <motion.div
-                        layoutId="activeTab"
-                        className="absolute -bottom-2 left-0 right-0 h-0.5 bg-[#00A9E0]"
-                        transition={{
-                          type: "spring",
-                          stiffness: 380,
-                          damping: 30,
-                        }}
-                      />
-                    )}
+                      {/* Active Indicator - Underline */}
+                      {showActive && (
+                        <motion.div
+                          layoutId="activeTab"
+                          className="absolute -bottom-2 left-0 right-0 h-0.5 bg-[#00A9E0]"
+                          transition={{
+                            type: "spring",
+                            stiffness: 380,
+                            damping: 30,
+                          }}
+                        />
+                      )}
 
-                    {/* Hover Underline */}
-                    {!isActive && (
-                      <motion.div
-                        className="absolute -bottom-2 left-0 right-0 h-0.5 bg-white/50"
-                        initial={{ scaleX: 0 }}
-                        whileHover={{ scaleX: 1 }}
-                        transition={{ duration: 0.2 }}
-                      />
-                    )}
-                  </Link>
+                      {/* Hover Underline */}
+                      {!showActive && (
+                        <motion.div
+                          className="absolute -bottom-2 left-0 right-0 h-0.5 bg-white/50"
+                          initial={{ scaleX: 0 }}
+                          whileHover={{ scaleX: 1 }}
+                          transition={{ duration: 0.2 }}
+                        />
+                      )}
+                    </Link>
+
+                    {/* Dropdown panel */}
+                    <div className="absolute left-0 top-full mt--3 w-64 rounded-xl bg-[#0A0F1E]/95 backdrop-blur-md border border-white/10 shadow-2xl opacity-0 invisible translate-y-1 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition">
+                      <div className="py-2">
+                        {link.children!.map((child) => {
+                          const childActive = pathname === child.href;
+
+                          return (
+                            <Link
+                              key={child.href}
+                              href={child.href}
+                              className={`block px-4 py-2 text-sm font-semibold transition-colors ${
+                                childActive
+                                  ? "text-white bg-white/10"
+                                  : "text-white/90 hover:text-white hover:bg-white/10"
+                              }`}
+                            >
+                              {child.label}
+                            </Link>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  </div>
                 </motion.li>
               );
             })}
@@ -172,22 +253,47 @@ export default function Navbar() {
             >
               <div className="pb-5 pt-2 border-t border-white/10">
                 <div className="flex flex-col gap-2">
-                  {siteConfig.navigation.map((link) => {
+                  {(siteConfig.navigation as NavItem[]).map((link) => {
                     const isActive = pathname === link.href;
+                    const hasChildren = Boolean(link.children?.length);
 
                     return (
-                      <Link
-                        key={link.href}
-                        href={link.href}
-                        onClick={() => setMobileOpen(false)}
-                        className={`rounded-lg px-4 py-3 text-base font-semibold transition-colors ${
-                          isActive
-                            ? "text-white bg-white/10"
-                            : "text-white/90 hover:text-white hover:bg-white/10"
-                        }`}
-                      >
-                        {link.label}
-                      </Link>
+                      <div key={link.href} className="flex flex-col">
+                        <Link
+                          href={link.href}
+                          onClick={() => setMobileOpen(false)}
+                          className={`rounded-lg px-4 py-3 text-base font-semibold transition-colors ${
+                            isActive
+                              ? "text-white bg-white/10"
+                              : "text-white/90 hover:text-white hover:bg-white/10"
+                          }`}
+                        >
+                          {link.label}
+                        </Link>
+
+                        {hasChildren && (
+                          <div className="ml-4 -mt-1 mb-1 flex flex-col gap-1">
+                            {link.children!.map((child) => {
+                              const childActive = pathname === child.href;
+
+                              return (
+                                <Link
+                                  key={child.href}
+                                  href={child.href}
+                                  onClick={() => setMobileOpen(false)}
+                                  className={`rounded-lg px-4 py-2 text-sm font-semibold transition-colors ${
+                                    childActive
+                                      ? "text-white bg-white/10"
+                                      : "text-white/80 hover:text-white hover:bg-white/10"
+                                  }`}
+                                >
+                                  {child.label}
+                                </Link>
+                              );
+                            })}
+                          </div>
+                        )}
+                      </div>
                     );
                   })}
 
