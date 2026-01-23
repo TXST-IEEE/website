@@ -91,40 +91,6 @@ export default function Committees() {
             </div>
           ))}
         </div>
-
-        {/* Committee Officers Section */}
-        <Section>
-          <FadeIn>
-            <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                Committee Officers
-              </h2>
-              <div className="w-24 h-1 bg-[#00629B] mx-auto rounded-full" />
-            </div>
-          </FadeIn>
-
-          {/* Committee Grid */}
-          <div className="grid grid-cols-1 min-[520px]:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-            {committeeOfficers.map((committee, index) => (
-              <div
-                key={committee.id}
-                className="w-full max-w-[240px] mx-auto sm:max-w-none"
-              >
-                <FadeIn delay={index * 0.1}>
-                  <OfficerCard
-                    name={committee.name}
-                    position={committee.position}
-                    major={committee.major}
-                    image={committee.image}
-                    // bio={committee.bio}
-                    email={committee.email}
-                    linkedin={committee.linkedin}
-                  />
-                </FadeIn>
-              </div>
-            ))}
-          </div>
-        </Section>
       </Section>
     </main>
   );
