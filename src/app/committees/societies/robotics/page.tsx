@@ -45,7 +45,7 @@ export default function Robotics() {
           <FadeIn>
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                Officers
+                RAS Officers
               </h2>
               <div className="w-24 h-1 bg-[#00629B] mx-auto rounded-full" />
             </div>
