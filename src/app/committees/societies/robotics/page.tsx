@@ -1,9 +1,79 @@
-export default function Robotics(){
-  return(
-    <div>
-      <h1>
-        To be added later, I guess.
-      </h1>
-    </div>
+import OfficerCard from "@/components/ui/OfficerCard";
+import Section from "@/components/ui/Section";
+import FadeIn from "@/components/animations/FadeIn";
+import { rasOfficers } from "@/content/data/team";
+
+export default function Robotics() {
+
+  return (
+    <main className="min-h-screen pt-20">
+      {/* Hero Section */}
+      <Section dark className="bg-gradient-to-br from-[#0A0F1E] to-[#00629B]">
+        <FadeIn>
+          <div className="text-center py-12">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+              Robotics and Automation Society
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
+              Check out what RAS TXST has to offer
+            </p>
+          </div>
+        </FadeIn>
+      </Section>
+
+      {/* Intro Section */}
+      <Section>
+        <FadeIn>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              RAS TXST
+            </h2>
+            <div className="w-24 h-1 bg-[#00629B] mx-auto rounded-full" />
+          </div>
+
+          <p className="text-gray-600 max-w-3xl mx-auto text-center mb-12">
+            RAS TXST is made up of students from all disciplines of Robotics. From Mechanical Engineers
+            using CAD to create a 3D printed chasis for a robot to Computer Science majors programming code into 
+            an Arduino to get the robot to move, this org is for you. 
+          </p>
+        </FadeIn>
+      </Section>
+
+      {/* Officer Members Section */}
+      {rasOfficers.length > 0 && (
+        <Section className="bg-gray-50">
+          <FadeIn>
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                Officers
+              </h2>
+              <div className="w-24 h-1 bg-[#00629B] mx-auto rounded-full" />
+            </div>
+          </FadeIn>
+
+          <div className="grid grid-cols-1 min-[520px]:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
+            {rasOfficers.map((officer, index) => (
+              <div
+                key={officer.id}
+                className="w-full max-w-[240px] mx-auto sm:max-w-none"
+              >
+                <FadeIn key={officer.id} delay={index * 0.1}>
+                  <OfficerCard
+                    name={officer.name}
+                    position={officer.position}
+                    major={officer.major}
+                    image={officer.image}
+                    // bio={officer.bio}
+                    email={officer.email}
+                    linkedin={officer.linkedin}
+                  />
+                </FadeIn>
+              </div>
+            ))}
+          </div>
+        </Section>
+      )}
+
+    </main>
   );
 }
