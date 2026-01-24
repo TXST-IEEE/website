@@ -42,9 +42,10 @@ export const siteConfig = {
     { label: "Officers", href: "/officers" },
     { label: "Committees", href: "/committees",
         children: [
-          {label: "Robotics (RAS)", href: "/societies/ras"},
-          {label: "Computer Society", href: "/societies/computersociety"},
-          {label: "Honors (IEEE-HKN)", href: "/societies/hkn"},
+          {label: "Overview", href: "/committees"},
+          {label: "Robotics (RAS)", href: "/committees/societies/robotics"},
+          {label: "Eta Kappa Nu (HKN)", href: "/committees/societies/hkn"},
+          {label: "Computer Society", href: "/committees/societies/computersoc"},
         ]
     },
     { label: "Membership", href: "/membership" },

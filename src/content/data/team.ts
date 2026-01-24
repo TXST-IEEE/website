@@ -8,6 +8,9 @@
  * 4. Paste it in the appropriate section
  * 5. Update the information
  * 6. Save this file
+ * 
+ * Note that Officers listed in order go from 
+ * Main IEEE branch -> Robotics (RAS) -> Eta Kappa Nu (HKN) -> Computer Society
  */
 
 export interface TeamMember {
@@ -255,17 +258,67 @@ export const officerMembers: TeamMember[] = [
   // },
 ];
 
-// COMMITTEE OFFICERS
-// Add committee officers here
-export const committeeOfficers: TeamMember[] = [
+// RAS COMMITTEE OFFICERS
+// Add RAS committee officers here
+export const rasOfficers: TeamMember[] = [
   {
-    id: "committee-001",
-    name: "Template",
-    position: "Example",
-    major: "Sample",
-    graduationYear: "2026",
-    image: "/images/team/",
-    linkedin: "",
+    id: "ras-001",
+    name: "Franceli Gonzalez",
+    position: "President",
+    major: "Electrical Engineering (Computer Engineering)",
+    graduationYear: "2027",
+    image: "/images/team/Franceli-Gonzalez.jpg",
+    linkedin: "https://www.linkedin.com/in/franceli-gonzalez/",
+  },
+  // TEMPLATE - Copy this to add a committee officer:
+  // {
+  //   id: "committee-001",
+  //   name: "Full Name",
+  //   position: "RAS Events Coordinator",  // or other officer position
+  //   major: "Major",
+  //   graduationYear: "YYYY",
+  //   bio: "Brief bio about their role",   OPTIONAL (removed to consolidate space)
+  //   image: "/images/team/firstname-lastname.jpg",
+  //   email: "email@txst.edu",  // Optional
+  // },
+];
+
+// HKN COMMITTEE OFFICERS
+// Add HKN committee officers here
+export const hknOfficers: TeamMember[] = [
+  {
+    id: "hkn-001",
+    name: "Franceli Gonzalez",
+    position: "President",
+    major: "Electrical Engineering (Computer Engineering)",
+    graduationYear: "2027",
+    image: "/images/team/Franceli-Gonzalez.jpg",
+    linkedin: "https://www.linkedin.com/in/franceli-gonzalez/",
+  },
+  // TEMPLATE - Copy this to add a committee officer:
+  // {
+  //   id: "committee-001",
+  //   name: "Full Name",
+  //   position: "RAS Events Coordinator",  // or other officer position
+  //   major: "Major",
+  //   graduationYear: "YYYY",
+  //   bio: "Brief bio about their role",   OPTIONAL (removed to consolidate space)
+  //   image: "/images/team/firstname-lastname.jpg",
+  //   email: "email@txst.edu",  // Optional
+  // },
+];
+
+// Computer Society COMMITTEE OFFICERS
+// Add Computer Society committee officers here
+export const computerSocOfficers: TeamMember[] = [
+  {
+    id: "computerSoc-001",
+    name: "Franceli Gonzalez",
+    position: "President",
+    major: "Electrical Engineering (Computer Engineering)",
+    graduationYear: "2027",
+    image: "/images/team/Franceli-Gonzalez.jpg",
+    linkedin: "https://www.linkedin.com/in/franceli-gonzalez/",
   },
   // TEMPLATE - Copy this to add a committee officer:
   // {

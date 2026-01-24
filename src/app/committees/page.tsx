@@ -1,9 +1,6 @@
-import OfficerCard from "@/components/ui/OfficerCard";
 import Section from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
 import FadeIn from "@/components/animations/FadeIn";
-import Image from "next/image";
-import { committeeOfficers } from "@/content/data/team";
 
 export default function Committees() {
   const branches = [
@@ -17,19 +14,19 @@ export default function Committees() {
       name: "IEEE Robotics & Automation Society",
       description:
         "Hands-on robotics with ROS2, autonomous systems, sensors, and real-world competitions.",
-      link: "/societies/robotics",
+      link: "/committees/societies/robotics",
     },
     {
       name: "IEEE Computer Society",
       description:
         "A technical society dedicated to advancing skills in software, data, and artificial intelligence through hands-on learning.",
-      link: "/societies/computer",
+      link: "/committees/societies/computersoc",
     },
     {
       name: "IEEE-HKN (Honor Society)",
       description:
         "An honor society recognizing academic excellence, leadership, and service in engineering.",
-      link: "/hkn",
+      link: "/committees/societies/hkn",
     },
   ];
 
