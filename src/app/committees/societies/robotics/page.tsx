@@ -1,7 +1,9 @@
 import OfficerCard from "@/components/ui/OfficerCard";
 import Section from "@/components/ui/Section";
 import FadeIn from "@/components/animations/FadeIn";
+import ImageCarousel from "@/components/ui/ImageCarousel";
 import { rasOfficers } from "@/content/data/team";
+import { committeeSliderImages } from "@/content/data/sliders";
 
 export default function Robotics() {
 
@@ -21,6 +23,12 @@ export default function Robotics() {
         </FadeIn>
       </Section>
 
+      <FadeIn>
+        <div className="flex flex-col gap-6 shadow-2xl">
+          <ImageCarousel images={committeeSliderImages.robotics} />
+        </div>
+      </FadeIn>
+
       {/* Intro Section */}
       <Section>
         <FadeIn>
@@ -32,9 +40,11 @@ export default function Robotics() {
           </div>
 
           <p className="text-gray-600 max-w-3xl mx-auto text-center mb-12">
-            RAS TXST is made up of students from all disciplines of Robotics. From Mechanical Engineers
-            using CAD to create a 3D printed chasis for a robot to Computer Science majors programming code into 
-            an Arduino to get the robot to move, this org is for you. 
+            IEEE Robotics and Automation Society (RAS) at Texas State University brings together students from all 
+            disciplines of robotics to design, build, and program real robots. From CAD and 3D-printed chassis to 
+            embedded systems and autonomous code, members collaborate across hardware and software. RAS is organized 
+            into Intro, Rapid Prototyping, and Industry committees, giving students a clear path to learn 
+            fundamentals, build advanced projects, and connect robotics to real-world applications.
           </p>
         </FadeIn>
       </Section>
