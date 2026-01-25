@@ -7,25 +7,25 @@ export default function Committees() {
     {
       name: "IEEE Student Branch",
       description:
-        "The core IEEE organization at Texas State, connecting students to industry, events, and leadership.",
+        "The central IEEE organization at Texas State, focused on professional development, industry connections, technical events, and leadership opportunities for engineering and technology students.",
       link: "/",
     },
     {
       name: "IEEE Robotics & Automation Society",
       description:
-        "Hands-on robotics with ROS2, autonomous systems, sensors, and real-world competitions.",
+        "A hands-on robotics community focused on building real systems using ROS2, sensors, autonomous navigation, and rapid prototyping, with opportunities to compete and work on industry-relevant projects.",
       link: "/committees/societies/robotics",
     },
     {
       name: "IEEE Computer Society",
       description:
-        "A technical society dedicated to advancing skills in software, data, and artificial intelligence through hands-on learning.",
+        "A technical society for students interested in software, data, and AI, offering workshops, projects, and learning opportunities to build practical skills for modern tech careers.",
       link: "/committees/societies/computersoc",
     },
     {
       name: "IEEE-HKN (Honor Society)",
       description:
-        "An honor society recognizing academic excellence, leadership, and service in engineering.",
+        "An honor society recognizing academic excellence, leadership, and service, while providing members with mentorship, networking, and professional growth opportunities.",
       link: "/committees/societies/hkn",
     },
   ];
