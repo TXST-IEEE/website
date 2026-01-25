@@ -2,6 +2,7 @@ import OfficerCard from "@/components/ui/OfficerCard";
 import Section from "@/components/ui/Section";
 import FadeIn from "@/components/animations/FadeIn";
 import ImageCarousel from "@/components/ui/ImageCarousel";
+import SocialLinks from "@/components/robotics/SocialLinks";
 import { rasOfficers } from "@/content/data/team";
 import { committeeSliderImages } from "@/content/data/sliders";
 
@@ -48,6 +49,9 @@ export default function Robotics() {
           </p>
         </FadeIn>
       </Section>
+
+      {/* RAS Branch Social Links Section */}
+      <SocialLinks />
 
       {/* Officer Members Section */}
       {rasOfficers.length > 0 && (

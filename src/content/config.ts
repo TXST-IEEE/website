@@ -11,13 +11,22 @@ export const siteConfig = {
   organizationShortName: "IEEE TXST",
   tagline: "Advancing technology for humanity",
 
-  // Contact Information
-  contact: {
+  // Main IEEE Student Branch Contact Information
+  mainIEEEContact: {
     email: "texasstateieee@gmail.com",
     instagram: "https://instagram.com/txst.ieee/",
     linkedin: "https://linkedin.com/company/ieee-txst",
     discord: "https://discord.gg/UZhDvyDHTc", // Discord invite link that never expires
     groupme: "https://groupme.com/join_group/57175086/Z4pE3PCA",
+  },
+
+  // Main IEEE Student Branch Contact Information
+  RASContact: {
+    email: "rastxst@gmail.com",
+    instagram: "https://www.instagram.com/ras.txst/",
+    //linkedin: "https://linkedin.com/company/ieee-txst", // Doesn't exist for RAS TXST yet
+    discord: "https://discord.gg/bj45eNQv6U", // Discord invite link that never expires
+    groupme: "https://groupme.com/join_group/107190883/wfi6XXUr",
   },
 
   // Meeting Information
