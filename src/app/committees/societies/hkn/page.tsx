@@ -41,9 +41,10 @@ export default function HKN() {
           </div>
 
           <p className="text-gray-600 max-w-3xl mx-auto text-center mb-12">
-            HKN TXST is an honor&apos;s society dedicated to selected students within IEEE organization.
-            HKN is made up of the top 10% students in repective class who sign up for IEEE-HKN. Students selected 
-            are those that have shown strong leadership in academia and community work. 
+            IEEE-HKN (Eta Kappa Nu) at Texas State University is the official IEEE honor society recognizing the 
+            top 10% of students in engineering and technology for their academic excellence, leadership, and service. 
+            Membership is by invitation to students who have demonstrated not only strong performance in the 
+            classroom but also meaningful involvement in leadership roles, community service, and professional development.
           </p>
         </FadeIn>
       </Section>
