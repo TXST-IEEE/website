@@ -8,6 +8,9 @@
  * 4. Paste it in the appropriate section
  * 5. Update the information
  * 6. Save this file
+ * 
+ * Note that Officers listed in order go from 
+ * Main IEEE branch -> Robotics (RAS) -> Eta Kappa Nu (HKN) -> Computer Society
  */
 
 export interface TeamMember {
@@ -33,16 +36,16 @@ export const executiveBoard: TeamMember[] = [
     position: "President",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2027",
-    image: "/images/team/Franceli-Gonzalez.jpg",
+    image: "/images/team/mainbranch/Franceli-Gonzalez.jpg",
     linkedin: "https://www.linkedin.com/in/franceli-gonzalez/",
   },
   {
     id: "executive-002",
     name: "Ian Lingo",
     position: "Vice President of Administration",
-    major: "Computer Science (Computer Engineering)",
+    major: "Computer Science",
     graduationYear: "2026",
-    image: "/images/team/Ian-Lingo.jpg",
+    image: "/images/team/mainbranch/Ian-Lingo.jpg",
     linkedin: "https://www.linkedin.com/in/ianlingo/",
   },
   {
@@ -51,7 +54,7 @@ export const executiveBoard: TeamMember[] = [
     position: "Vice President of Events",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2027",
-    image: "/images/team/Ashok-Paudel.jpg",
+    image: "/images/team/mainbranch/Ashok-Paudel.jpg",
     linkedin: "https://www.linkedin.com/in/ashokpaudelapril/",
   },
   {
@@ -60,7 +63,7 @@ export const executiveBoard: TeamMember[] = [
     position: "Secretary",
     major: "Electrical Engineering",
     graduationYear: "2028",
-    image: "/images/team/Shreejal-Bhattarai.jpg",
+    image: "/images/team/mainbranch/Shreejal-Bhattarai.jpg",
     linkedin: "https://www.linkedin.com/in/shreejalbhattarai/",
   },
   {
@@ -69,7 +72,7 @@ export const executiveBoard: TeamMember[] = [
     position: "Treasurer",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2026",
-    image: "/images/team/Andrea-Quan.png",
+    image: "/images/team/mainbranch/Andrea-Quan.png",
     linkedin: "https://www.linkedin.com/in/andreatquan/",
   },
   // TEMPLATE - Copy this to add a new executive board member:
@@ -95,7 +98,7 @@ export const officerMembers: TeamMember[] = [
     position: "Events & Social Media",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
-    image: "/images/team/David-Baltazar.jpg",
+    image: "/images/team/mainbranch/David-Baltazar.jpg",
     linkedin: "https://www.linkedin.com/in/david-baltazar-37b89b328/",
   },
   {
@@ -104,7 +107,7 @@ export const officerMembers: TeamMember[] = [
     position: "Community Outreach & Social Media",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
-    image: "/images/team/Rene-Aguirre.jpg",
+    image: "/images/team/mainbranch/Rene-Aguirre.jpg",
     linkedin: "https://www.linkedin.com/in/rene-aguirre-50b8b722b/",
   },
   {
@@ -113,7 +116,7 @@ export const officerMembers: TeamMember[] = [
     position: "Mentorship Coordinator",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2027",
-    image: "/images/team/Troy-Hamilton.png",
+    image: "/images/team/mainbranch/Troy-Hamilton.png",
     linkedin: "https://www.linkedin.com/in/troy-l-6b6466252/",
   },
   {
@@ -122,7 +125,7 @@ export const officerMembers: TeamMember[] = [
     position: "Mentorship Coordinator",
     major: "Computer Science (Computer Engineering)",
     graduationYear: "2026",
-    image: "/images/team/Trevor-Strother.jpg",
+    image: "/images/team/mainbranch/Trevor-Strother.jpg",
     linkedin: "https://www.linkedin.com/in/trevor-strother-537aa3224/",
   },
   {
@@ -131,7 +134,7 @@ export const officerMembers: TeamMember[] = [
     position: "Recreational Coordinator",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
-    image: "/images/team/Lance-Deal.png",
+    image: "/images/team/mainbranch/Lance-Deal.png",
     //linkedin: "https://linkedin.com/in/username",
   },
   {
@@ -140,7 +143,7 @@ export const officerMembers: TeamMember[] = [
     position: "OPS Director",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
-    image: "/images/team/Oziel-Martinez.jpg",
+    image: "/images/team/mainbranch/Oziel-Martinez.jpg",
     linkedin: "https://www.linkedin.com/in/oziel-martinez-3893022a2/",
   },
   {
@@ -149,7 +152,7 @@ export const officerMembers: TeamMember[] = [
     position: "OPS Director",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
-    image: "/images/team/Daniel-Jumao-as.jpg",
+    image: "/images/team/mainbranch/Daniel-Jumao-as.jpg",
     linkedin: "https://www.linkedin.com/in/danieljumaoas/",
   },
   {
@@ -158,7 +161,7 @@ export const officerMembers: TeamMember[] = [
     position: "OPS Director & Fundraising",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
-    image: "/images/team/Diego-Sanchez.jpg",
+    image: "/images/team/mainbranch/Diego-Sanchez.jpg",
     linkedin: "https://www.linkedin.com/in/diegosanchez69/",
   },
   {
@@ -167,7 +170,7 @@ export const officerMembers: TeamMember[] = [
     position: "OPS Team Member",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
-    image: "/images/team/Utsav-Adhikari.jpg",
+    image: "/images/team/mainbranch/Utsav-Adhikari.jpg",
     linkedin: "https://www.linkedin.com/in/u-adhikari/",
   },
   {
@@ -176,7 +179,7 @@ export const officerMembers: TeamMember[] = [
     position: "Fundraising Assistant",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
-    image: "/images/team/Connor-Burgess.jpg",
+    image: "/images/team/mainbranch/Connor-Burgess.jpg",
     linkedin: "https://www.linkedin.com/in/connor-burgess-ba08792b6/",
   },
   {
@@ -185,7 +188,7 @@ export const officerMembers: TeamMember[] = [
     position: "Officer of the Gap",
     major: "Computer Science (Computer Engineering)",
     graduationYear: "2025",
-    image: "/images/team/Sam-Arshad.jpg",
+    image: "/images/team/mainbranch/Sam-Arshad.jpg",
     linkedin: "https://www.linkedin.com/in/-saamerarshad/",
   },
   {
@@ -194,7 +197,7 @@ export const officerMembers: TeamMember[] = [
     position: "Officer of the Gap",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
-    image: "/images/team/Cassandra-Vasquez.jpg",
+    image: "/images/team/mainbranch/Cassandra-Vasquez.jpg",
     linkedin: "https://www.linkedin.com/in/cassandra-vasquez/",
   },
   {
@@ -203,16 +206,16 @@ export const officerMembers: TeamMember[] = [
     position: "Officer Intern",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
-    image: "/images/team/Kade-Matula.jpg",
+    image: "/images/team/mainbranch/Kade-Matula.jpg",
     linkedin: "https://www.linkedin.com/in/kade-matula-397079310/",
   },
   {
     id: "officer-014",
     name: "Steven Setten",
     position: "Officer Intern",
-    major: "Electrical Engineering (Computer Engineering)",
+    major: "Computer Science",
     graduationYear: "2028",
-    image: "/images/team/Steven-Setten.jpg",
+    image: "/images/team/mainbranch/Steven-Setten.jpg",
     linkedin: "https://www.linkedin.com/in/stevenvansetten/",
   },
   {
@@ -221,7 +224,7 @@ export const officerMembers: TeamMember[] = [
     position: "OPS Team Member & Officer Intern",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
-    image: "/images/team/Collin-Cook.jpg",
+    image: "/images/team/mainbranch/Collin-Cook.jpg",
     linkedin: "https://www.linkedin.com/in/collin-cook-00a81b367/",
   },
   {
@@ -230,7 +233,7 @@ export const officerMembers: TeamMember[] = [
     position: "Officer Intern",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
-    image: "/images/team/Raymundo-Guajardo.jpg",
+    image: "/images/team/mainbranch/Raymundo-Guajardo.jpg",
     linkedin: "https://www.linkedin.com/in/raymundo-guajardo-8248292b0/",
   },
   {
@@ -239,7 +242,7 @@ export const officerMembers: TeamMember[] = [
     position: "OPS Team Member & Officer Intern",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
-    image: "/images/team/Clay-Zetune.jpg",
+    image: "/images/team/mainbranch/Clay-Zetune.jpg",
     linkedin: "https://www.linkedin.com/in/clay-zetune/",
   },
   // TEMPLATE - Copy this to add a officer member:
@@ -250,22 +253,121 @@ export const officerMembers: TeamMember[] = [
   //   major: "Major",
   //   graduationYear: "YYYY",
   //   bio: "Brief bio about their role",   OPTIONAL (removed to consolidate space)
-  //   image: "/images/team/firstname-lastname.jpg",
+  //   image: "/images/team/committee-name/firstname-lastname.jpg",
   //   email: "email@txst.edu",  // Optional
   // },
 ];
 
-// COMMITTEE OFFICERS
-// Add committee officers here
-export const committeeOfficers: TeamMember[] = [
+// RAS COMMITTEE OFFICERS
+// Add RAS committee officers here
+export const rasOfficers: TeamMember[] = [
   {
-    id: "committee-001",
-    name: "Template",
-    position: "Example",
-    major: "Sample",
+    id: "ras-001",
+    name: "Nathan Charles",
+    position: "President",
+    major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2026",
-    image: "/images/team/",
-    linkedin: "",
+    image: "/images/team/ras/Nathan-Charles.jpg",
+    linkedin: "https://www.linkedin.com/in/nathan--charles/",
+  },
+  {
+    id: "ras-002",
+    name: "Darryl Murray",
+    position: "Vice President of Events",
+    major: "Electrical Engineering (Computer Engineering)",
+    graduationYear: "2026",
+    image: "/images/team/ras/Darryl-Murray.jpg",
+    linkedin: "https://www.linkedin.com/in/darrylmurrayiii/",
+  },
+  {
+    id: "ras-003",
+    name: "Aiden Salinas",
+    position: "Vice President of Administration & Intro Robotics Director",
+    major: "Computer Science",
+    graduationYear: "2026",
+    image: "/images/team/ras/.jpg",
+    //linkedin: "https://linkedin.com/in/username",
+  },
+  {
+    id: "ras-004",
+    name: "Ian Lingo",
+    position: "Treasurer & Industry Robotics Director",
+    major: "Computer Science",
+    graduationYear: "2026",
+    image: "/images/team/mainbranch/Ian-Lingo.jpg",
+    linkedin: "https://www.linkedin.com/in/ianlingo/",
+  },
+  {
+    id: "ras-005",
+    name: "Franceli Gonzalez",
+    position: "Secretary",
+    major: "Electrical Engineering (Computer Engineering)",
+    graduationYear: "2027",
+    image: "/images/team/mainbranch/Franceli-Gonzalez.jpg",
+    linkedin: "https://www.linkedin.com/in/franceli-gonzalez/",
+  },
+  {
+    id: "ras-006",
+    name: "Alex Mandujano",
+    position: "Intro Project Lead",
+    major: "Mechanical Engineering & Computer Science",
+    graduationYear: "2027",
+    image: "/images/team/ras/Alex-Mandujano.jpg",
+    linkedin: "https://www.linkedin.com/in/alex-m-386666314/",
+  },
+  {
+    id: "ras-007",
+    name: "Cassandra Vasquez",
+    position: "Industry Project Lead",
+    major: "Electrical Engineering (Computer Engineering)",
+    graduationYear: "2028",
+    image: "/images/team/mainbranch/Cassandra-Vasquez.jpg",
+    linkedin: "https://www.linkedin.com/in/cassandra-vasquez/",
+  },
+  {
+    id: "ras-008",
+    name: "Dorgis Brooks",
+    position: "Rapid Prototyping Robotics Director",
+    major: "Mechanical Engineering",
+    graduationYear: "2027",
+    image: "/images/team/ras/Dorgis-Brooks.jpg",
+    linkedin: "https://www.linkedin.com/in/dorgis-brooks-6b3017203/",
+  },
+  {
+    id: "ras-009",
+    name: "Lance Deal",
+    position: "Rapid Prototyping Project Lead",
+    major: "Electrical Engineering (Computer Engineering)",
+    graduationYear: "2028",
+    image: "/images/team/mainbranch/Lance-Deal.png",
+    //linkedin: "https://linkedin.com/in/username",
+  },
+  {
+    id: "ras-010",
+    name: "Samantha Conejo",
+    position: "Social Media",
+    major: "Electrical Engineering (Computer Engineering)",
+    graduationYear: "2026",
+    image: "/images/team/ras/Samantha-Conejo.jpg",
+    linkedin: "https://www.linkedin.com/in/samantha-conejo-410945212/",
+  },
+  {
+    id: "ras-011",
+    name: "Alvin Esparza",
+    position: "Community Outreach",
+    major: "Electrical Engineering",
+    graduationYear: "2027",
+    image: "/images/team/ras/.jpg",
+    //linkedin: "https://www.linkedin.com/in/samantha-conejo-410945212/",
+  },
+  {
+    id: "ras-012",
+    name: "Osprie Meuth",
+    position: "Intro Project Lead",
+    major: "Mechanical Engineering",
+    graduationYear: "2027",
+    image: "/images/team/ras/Osprie-Meuth.jpg",
+    linkedin: "https://www.linkedin.com/in/osprie-meuth-938892299/",
   },
   // TEMPLATE - Copy this to add a committee officer:
   // {
@@ -275,7 +377,138 @@ export const committeeOfficers: TeamMember[] = [
   //   major: "Major",
   //   graduationYear: "YYYY",
   //   bio: "Brief bio about their role",   OPTIONAL (removed to consolidate space)
-  //   image: "/images/team/firstname-lastname.jpg",
+  //   image: "/images/team/committee-name/firstname-lastname.jpg",
+  //   email: "email@txst.edu",  // Optional
+  // },
+];
+
+// HKN COMMITTEE OFFICERS
+// Add HKN committee officers here
+export const hknOfficers: TeamMember[] = [
+  {
+    id: "hkn-001",
+    name: "Cameron Tobias",
+    position: "President",
+    major: "Electrical Engineering (Micro and Nano)",
+    graduationYear: "2027",
+    image: "/images/team/hkn/Cameron-Tobias.jpg",
+    linkedin: "https://www.linkedin.com/in/cameron-tobias-05b57133a/",
+  },
+  {
+    id: "hkn-002",
+    name: "Kyra Ely",
+    position: "Vice President",
+    major: "Electrical Engineering & Sound Recording Tech",
+    graduationYear: "2027",
+    image: "/images/team/hkn/Kyra-Ely.jpg",
+    linkedin: "https://www.linkedin.com/in/kyraely/",
+  },
+  {
+    id: "hkn-003",
+    name: "Ian Lingo",
+    position: "Treasurer",
+    major: "Computer Science",
+    graduationYear: "2026",
+    image: "/images/team/mainbranch/Ian-Lingo.jpg",
+    linkedin: "https://www.linkedin.com/in/ianlingo/",
+  },
+  {
+    id: "hkn-004",
+    name: "Ashok Paudel",
+    position: "Recording Secretary",
+    major: "Electrical Engineering (Computer Engineering)",
+    graduationYear: "2027",
+    image: "/images/team/mainbranch/Ashok-Paudel.jpg",
+    linkedin: "https://www.linkedin.com/in/ashokpaudelapril/",
+  },
+  {
+    id: "hkn-005",
+    name: "Jessica Saddington",
+    position: "Corresponding Secretary",
+    major: "Electrical Engineering",
+    graduationYear: "2027",
+    image: "/images/team/hkn/Jessica-Saddington.jpg",
+    linkedin: "https://www.linkedin.com/in/jessica-saddington/",
+  },
+  // TEMPLATE - Copy this to add a committee officer:
+  // {
+  //   id: "committee-001",
+  //   name: "Full Name",
+  //   position: "RAS Events Coordinator",  // or other officer position
+  //   major: "Major",
+  //   graduationYear: "YYYY",
+  //   bio: "Brief bio about their role",   OPTIONAL (removed to consolidate space)
+  //   image: "/images/team/committee-name/firstname-lastname.jpg",
+  //   email: "email@txst.edu",  // Optional
+  // },
+];
+
+// Computer Society COMMITTEE OFFICERS
+// Add Computer Society committee officers here
+export const computerSocOfficers: TeamMember[] = [
+  {
+    id: "computerSoc-001",
+    name: "Oziel Martinez",
+    position: "President & PCB Co-Director",
+    major: "Electrical Engineering (Computer Engineering)",
+    graduationYear: "2028",
+    image: "/images/team/mainbranch/Oziel-Martinez.jpg",
+    linkedin: "https://www.linkedin.com/in/oziel-martinez-3893022a2/",
+  },
+  {
+    id: "computerSoc-002",
+    name: "Trevor Strother",
+    position: "Vice President of Administration & PC Teardown Director",
+    major: "Computer Science (Computer Engineering)",
+    graduationYear: "2026",
+    image: "/images/team/mainbranch/Trevor-Strother.jpg",
+    linkedin: "https://www.linkedin.com/in/trevor-strother-537aa3224/",
+  },
+  {
+    id: "computerSoc-003",
+    name: "Daniel Jumao-as",
+    position: "Vice President of Events & PCB Co-Director",
+    major: "Electrical Engineering (Computer Engineering)",
+    graduationYear: "2028",
+    image: "/images/team/mainbranch/Daniel-Jumao-as.jpg",
+    linkedin: "https://www.linkedin.com/in/danieljumaoas/",
+  },
+  {
+    id: "computerSoc-004",
+    name: "Franceli Gonzalez",
+    position: "Secretary & Industrial Automation Director",
+    major: "Electrical Engineering (Computer Engineering)",
+    graduationYear: "2027",
+    image: "/images/team/mainbranch/Franceli-Gonzalez.jpg",
+    linkedin: "https://www.linkedin.com/in/franceli-gonzalez/",
+  },
+  {
+    id: "computerSoc-005",
+    name: "Diego Sanchez",
+    position: "Microprocessors Director",
+    major: "Electrical Engineering (Computer Engineering)",
+    graduationYear: "2028",
+    image: "/images/team/mainbranch/Diego-Sanchez.jpg",
+    linkedin: "https://www.linkedin.com/in/diegosanchez69/",
+  },
+  {
+    id: "computerSoc-006",
+    name: "Steven Setten",
+    position: "Cybersecurity Director",
+    major: "Computer Science",
+    graduationYear: "2028",
+    image: "/images/team/mainbranch/Steven-Setten.jpg",
+    linkedin: "https://www.linkedin.com/in/stevenvansetten/",
+  },
+  // TEMPLATE - Copy this to add a committee officer:
+  // {
+  //   id: "committee-001",
+  //   name: "Full Name",
+  //   position: "RAS Events Coordinator",  // or other officer position
+  //   major: "Major",
+  //   graduationYear: "YYYY",
+  //   bio: "Brief bio about their role",   OPTIONAL (removed to consolidate space)
+  //   image: "/images/team/committee-name/firstname-lastname.jpg",
   //   email: "email@txst.edu",  // Optional
   // },
 ];

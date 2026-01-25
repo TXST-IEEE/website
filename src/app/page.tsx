@@ -89,7 +89,7 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Social Links Section */}
+      {/* Main IEEE Branch Social Links Section */}
       <SocialLinks />
 
       {/* What We Offer */}
@@ -158,10 +158,10 @@ export default function Home() {
               Feel free to reach out to us!
             </p>
             <a
-              href={`mailto:${siteConfig.contact.email}`}
+              href={`mailto:${siteConfig.mainIEEEContact.email}`}
               className="text-[#00629B] hover:text-[#00A9E0] text-xl font-medium transition-colors"
             >
-              {siteConfig.contact.email}
+              {siteConfig.mainIEEEContact.email}
             </a>
           </div>
         </FadeIn>

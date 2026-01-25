@@ -11,13 +11,40 @@ export const siteConfig = {
   organizationShortName: "IEEE TXST",
   tagline: "Advancing technology for humanity",
 
-  // Contact Information
-  contact: {
+  // Main IEEE Student Branch Contact Information
+  mainIEEEContact: {
     email: "texasstateieee@gmail.com",
     instagram: "https://instagram.com/txst.ieee/",
     linkedin: "https://linkedin.com/company/ieee-txst",
     discord: "https://discord.gg/UZhDvyDHTc", // Discord invite link that never expires
     groupme: "https://groupme.com/join_group/57175086/Z4pE3PCA",
+  },
+
+  // RAS Student Branch Contact Information
+  RASContact: {
+    email: "rastxst@gmail.com",
+    instagram: "https://www.instagram.com/ras.txst/",
+    //linkedin: "https://linkedin.com/company/ieee-txst", // Doesn't exist for RAS TXST yet
+    discord: "https://discord.gg/bj45eNQv6U", // Discord invite link that never expires
+    groupme: "https://groupme.com/join_group/107190883/wfi6XXUr",
+  },
+
+  // HKN Student Branch Contact Information
+  HKNContact: {
+    //email: "rastxst@gmail.com",
+    //instagram: "https://www.instagram.com/ras.txst/", // Doesn't exist for HKN TXST yet
+    linkedin: "https://www.linkedin.com/company/txst-ieeehkn/posts/?feedView=all", 
+    //discord: "https://discord.gg/bj45eNQv6U", // Discord invite link that never expires
+    //groupme: "https://groupme.com/join_group/107190883/wfi6XXUr", // Doesn't exist for HKN TXST
+  },
+
+  // Computer Society Student Branch Contact Information
+  computerSocContact: {
+    //email: "rastxst@gmail.com",
+    instagram: "https://www.instagram.com/computersociety.txst/",
+    // linkedin: "https://www.linkedin.com/company/txst-ieeehkn/posts/?feedView=all", // Doesn't exist for Computer Society TXST
+    //discord: "https://discord.gg/bj45eNQv6U", // Discord invite link that never expires
+    //groupme: "https://groupme.com/join_group/107190883/wfi6XXUr", // Doesn't exist for Computer Society TXST
   },
 
   // Meeting Information
@@ -40,7 +67,14 @@ export const siteConfig = {
     { label: "Home", href: "/" },
     { label: "Events", href: "/events" },
     { label: "Officers", href: "/officers" },
-    { label: "Committees", href: "/committees" },
+    { label: "Committees", href: "/committees",
+        children: [
+          {label: "Overview", href: "/committees"},
+          {label: "Robotics (RAS)", href: "/committees/societies/robotics"},
+          {label: "Eta Kappa Nu (HKN)", href: "/committees/societies/hkn"},
+          {label: "Computer Society", href: "/committees/societies/computersoc"},
+        ]
+    },
     { label: "Membership", href: "/membership" },
   ],
 
