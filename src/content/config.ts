@@ -38,6 +38,15 @@ export const siteConfig = {
     //groupme: "https://groupme.com/join_group/107190883/wfi6XXUr", // Doesn't exist for HKN TXST
   },
 
+  // Computer Society Student Branch Contact Information
+  computerSocContact: {
+    //email: "rastxst@gmail.com",
+    instagram: "https://www.instagram.com/computersociety.txst/",
+    // linkedin: "https://www.linkedin.com/company/txst-ieeehkn/posts/?feedView=all", // Doesn't exist for Computer Society TXST
+    //discord: "https://discord.gg/bj45eNQv6U", // Discord invite link that never expires
+    //groupme: "https://groupme.com/join_group/107190883/wfi6XXUr", // Doesn't exist for Computer Society TXST
+  },
+
   // Meeting Information
   meetings: {
     schedule: "Every Thursday at 6:30 PM",

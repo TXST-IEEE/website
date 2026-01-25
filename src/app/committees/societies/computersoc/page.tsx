@@ -1,6 +1,9 @@
 import OfficerCard from "@/components/ui/OfficerCard";
 import Section from "@/components/ui/Section";
 import FadeIn from "@/components/animations/FadeIn";
+import ImageCarousel from "@/components/ui/ImageCarousel";
+import { committeeSliderImages } from "@/content/data/sliders";
+import SocialLinks from "@/components/computersoc/SocialLinks";
 import { computerSocOfficers } from "@/content/data/team";
 
 export default function ComputerSoc() {
@@ -21,6 +24,16 @@ export default function ComputerSoc() {
         </FadeIn>
       </Section>
 
+      {/* No Commputer Society images yet
+
+      <FadeIn>
+        <div className="flex flex-col gap-6 shadow-2xl">
+          <ImageCarousel images={committeeSliderImages.computerSoc} />
+        </div>
+      </FadeIn>
+
+      */}
+
       {/* Intro Section */}
       <Section>
         <FadeIn>
@@ -38,6 +51,9 @@ export default function ComputerSoc() {
           </p>
         </FadeIn>
       </Section>
+
+      {/* Computer Society Branch Social Links Section */}
+      <SocialLinks />
 
       {/* Officer Members Section */}
       {computerSocOfficers.length > 0 && (
