@@ -29,6 +29,10 @@ export const committeeSliderImages: Record<string, CarouselImage[]> = {
         {src: "/images/gallery/ras/RAS-MrWelker-Robot-Photo.jpeg", alt: "RAS Mr Welker Holding Robot Photo"},
     ],
     hkn: [
-        {src: "/images/gallery/ras/RAS-Room-Photo.jpg", alt: "RAS Room Photo"},
+        {src: "/images/gallery/hkn/HKN-AppliedMaterials-Group-Photo.jpg", alt: "HKN Applied Materials Group Photo"},
+        {src: "/images/gallery/hkn/HKN-AppliedMaterials-Group-Photo2.jpg", alt: "HKN Applied Materials Group Photo2"},
+        {src: "/images/gallery/hkn/HKN-VDURA-Group-Photo.jpg", alt: "HKN VDURA Group Photo"},
+        {src: "/images/gallery/hkn/HKN-YP-Group-Photo.jpg", alt: "HKN Young Professionals Group Photo"},
+        {src: "/images/gallery/hkn/HKN-Inauguration-Group-Photo.jpg", alt: "HKN Inauguration Group Photo"},
     ],
 };

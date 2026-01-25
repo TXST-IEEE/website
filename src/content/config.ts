@@ -20,13 +20,22 @@ export const siteConfig = {
     groupme: "https://groupme.com/join_group/57175086/Z4pE3PCA",
   },
 
-  // Main IEEE Student Branch Contact Information
+  // RAS Student Branch Contact Information
   RASContact: {
     email: "rastxst@gmail.com",
     instagram: "https://www.instagram.com/ras.txst/",
     //linkedin: "https://linkedin.com/company/ieee-txst", // Doesn't exist for RAS TXST yet
     discord: "https://discord.gg/bj45eNQv6U", // Discord invite link that never expires
     groupme: "https://groupme.com/join_group/107190883/wfi6XXUr",
+  },
+
+  // HKN Student Branch Contact Information
+  HKNContact: {
+    //email: "rastxst@gmail.com",
+    //instagram: "https://www.instagram.com/ras.txst/", // Doesn't exist for HKN TXST yet
+    linkedin: "https://www.linkedin.com/company/txst-ieeehkn/posts/?feedView=all", 
+    //discord: "https://discord.gg/bj45eNQv6U", // Discord invite link that never expires
+    //groupme: "https://groupme.com/join_group/107190883/wfi6XXUr", // Doesn't exist for HKN TXST
   },
 
   // Meeting Information

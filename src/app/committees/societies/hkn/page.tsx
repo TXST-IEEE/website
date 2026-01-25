@@ -1,6 +1,9 @@
 import OfficerCard from "@/components/ui/OfficerCard";
 import Section from "@/components/ui/Section";
 import FadeIn from "@/components/animations/FadeIn";
+import ImageCarousel from "@/components/ui/ImageCarousel";
+import { committeeSliderImages } from "@/content/data/sliders";
+import SocialLinks from "@/components/hkn/SocialLinks";
 import { hknOfficers } from "@/content/data/team";
 
 export default function HKN() {
@@ -21,6 +24,12 @@ export default function HKN() {
         </FadeIn>
       </Section>
 
+      <FadeIn>
+        <div className="flex flex-col gap-6 shadow-2xl">
+          <ImageCarousel images={committeeSliderImages.hkn} />
+        </div>
+      </FadeIn>
+
       {/* Intro Section */}
       <Section>
         <FadeIn>
@@ -38,6 +47,9 @@ export default function HKN() {
           </p>
         </FadeIn>
       </Section>
+
+      {/* HKN Branch Social Links Section */}
+      <SocialLinks />
 
       {/* Officer Members Section */}
       {hknOfficers.length > 0 && (
