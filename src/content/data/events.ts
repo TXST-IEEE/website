@@ -52,7 +52,7 @@ export const events: Event[] = [
     location: "Meet at Ingram, Drive to Dell HQ",
     category: "tour",
     image: "/images/events/Dell-Technologies-Logo.jpg",
-    registrationLink: "https://forms.gle/your-form-link", 
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdZ_CJmQr9IbvxOCYZE-_KM-xXRYFiyimsrPg0BBaI7Gj5FEQ/viewform?usp=publish-editor", 
     isPast: false,
   },
   {
@@ -65,7 +65,7 @@ export const events: Event[] = [
     location: "Ingram Engineering Building, Room 4104",
     category: "workshop",
     image: "/images/events/First-OPSMeet-Poster-Fall2025.png",
-    registrationLink: "https://forms.gle/your-form-link",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdZ_CJmQr9IbvxOCYZE-_KM-xXRYFiyimsrPg0BBaI7Gj5FEQ/viewform?usp=publish-editor",
     isPast: false,
   },
   {
@@ -78,7 +78,7 @@ export const events: Event[] = [
     location: "Ingram Engineering Building, Room 4103",
     category: "meeting",
     image: "/images/branding/RAS-Logo.jpg",
-    registrationLink: "https://forms.gle/your-form-link",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdZ_CJmQr9IbvxOCYZE-_KM-xXRYFiyimsrPg0BBaI7Gj5FEQ/viewform?usp=publish-editor",
     isPast: false,
   },
   {
@@ -91,7 +91,7 @@ export const events: Event[] = [
     location: "Ingram Engineering Building, Room 4104",
     category: "meeting",
     image: "/images/branding/IEEE-TXST-Logo-OG.jpg",
-    registrationLink: "https://forms.gle/your-form-link",
+    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdZ_CJmQr9IbvxOCYZE-_KM-xXRYFiyimsrPg0BBaI7Gj5FEQ/viewform?usp=publish-editor",
     isPast: false,
   },
   {
