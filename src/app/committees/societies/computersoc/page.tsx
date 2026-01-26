@@ -1,8 +1,8 @@
 import OfficerCard from "@/components/ui/OfficerCard";
 import Section from "@/components/ui/Section";
 import FadeIn from "@/components/animations/FadeIn";
-import ImageCarousel from "@/components/ui/ImageCarousel";
-import { committeeSliderImages } from "@/content/data/sliders";
+// import ImageCarousel from "@/components/ui/ImageCarousel";
+// import { committeeSliderImages } from "@/content/data/sliders";
 import SocialLinks from "@/components/computersoc/SocialLinks";
 import { computerSocOfficers } from "@/content/data/team";
 

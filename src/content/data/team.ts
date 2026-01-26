@@ -140,7 +140,7 @@ export const officerMembers: TeamMember[] = [
   {
     id: "officer-006",
     name: "Oziel Martinez",
-    position: "OPS Director",
+    position: "Workshop Officer",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
     image: "/images/team/mainbranch/Oziel-Martinez.jpg",
@@ -149,7 +149,7 @@ export const officerMembers: TeamMember[] = [
   {
     id: "officer-007",
     name: "Daniel Jumao-as",
-    position: "OPS Director",
+    position: "Workshop Officer",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
     image: "/images/team/mainbranch/Daniel-Jumao-as.jpg",
@@ -158,7 +158,7 @@ export const officerMembers: TeamMember[] = [
   {
     id: "officer-008",
     name: "Diego Sanchez",
-    position: "OPS Director & Fundraising",
+    position: "OPS Co-Director",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
     image: "/images/team/mainbranch/Diego-Sanchez.jpg",
@@ -176,7 +176,7 @@ export const officerMembers: TeamMember[] = [
   {
     id: "officer-010",
     name: "Connor Burgess",
-    position: "Fundraising Assistant",
+    position: "Fundraising Co-Director",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
     image: "/images/team/mainbranch/Connor-Burgess.jpg",
@@ -184,21 +184,21 @@ export const officerMembers: TeamMember[] = [
   },
   {
     id: "officer-011",
+    name: "Cassandra Vasquez",
+    position: "Fundraising Co-Director",
+    major: "Electrical Engineering (Computer Engineering)",
+    graduationYear: "2028",
+    image: "/images/team/mainbranch/Cassandra-Vasquez.jpg",
+    linkedin: "https://www.linkedin.com/in/cassandra-vasquez/",
+  },
+  {
+    id: "officer-012",
     name: "Sam Arshad",
     position: "Officer of the Gap",
     major: "Computer Science (Computer Engineering)",
     graduationYear: "2025",
     image: "/images/team/mainbranch/Sam-Arshad.jpg",
     linkedin: "https://www.linkedin.com/in/-saamerarshad/",
-  },
-  {
-    id: "officer-012",
-    name: "Cassandra Vasquez",
-    position: "Officer of the Gap",
-    major: "Electrical Engineering (Computer Engineering)",
-    graduationYear: "2028",
-    image: "/images/team/mainbranch/Cassandra-Vasquez.jpg",
-    linkedin: "https://www.linkedin.com/in/cassandra-vasquez/",
   },
   {
     id: "officer-013",
@@ -221,7 +221,7 @@ export const officerMembers: TeamMember[] = [
   {
     id: "officer-015",
     name: "Collin Cook",
-    position: "OPS Team Member & Officer Intern",
+    position: "OPS Co-Director",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
     image: "/images/team/mainbranch/Collin-Cook.jpg",
@@ -239,7 +239,7 @@ export const officerMembers: TeamMember[] = [
   {
     id: "officer-017",
     name: "Clay Zetune",
-    position: "OPS Team Member & Officer Intern",
+    position: "OPS Team Member",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
     image: "/images/team/mainbranch/Clay-Zetune.jpg",
@@ -285,7 +285,7 @@ export const rasOfficers: TeamMember[] = [
     position: "Vice President of Administration & Intro Robotics Director",
     major: "Computer Science",
     graduationYear: "2026",
-    image: "/images/team/ras/.jpg",
+    image: "/images/team/ras/Aiden-Salinas.jpg",
     //linkedin: "https://linkedin.com/in/username",
   },
   {
@@ -357,7 +357,7 @@ export const rasOfficers: TeamMember[] = [
     position: "Community Outreach",
     major: "Electrical Engineering",
     graduationYear: "2027",
-    image: "/images/team/ras/.jpg",
+    image: "/images/branding/TXST-Bobcat-Logo.png",
     //linkedin: "https://www.linkedin.com/in/samantha-conejo-410945212/",
   },
   {

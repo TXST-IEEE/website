@@ -24,14 +24,14 @@ export default function ImageCarousel({
     if (!images || images.length === 0) return null;
 
     // duplicate for "infinite" loop
-    const loopImages = [...images, ...images];
+    const loopImages = [...images, ...images, ...images];
     
     return (
         <div className={`w-full relative overflow-hidden ${className}`}>
             <motion.div 
                 className='flex gap-1'
                 animate={{
-                    x: ['0%', '-250%'],
+                    x: ['0%', '-200%'],
                     transition:{
                         ease: "linear",
                         duration: 23,

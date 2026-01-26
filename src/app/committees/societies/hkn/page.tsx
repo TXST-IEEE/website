@@ -2,6 +2,7 @@ import OfficerCard from "@/components/ui/OfficerCard";
 import Section from "@/components/ui/Section";
 import FadeIn from "@/components/animations/FadeIn";
 import ImageCarousel from "@/components/ui/ImageCarousel";
+import Button from "@/components/ui/Button";
 import { committeeSliderImages } from "@/content/data/sliders";
 import SocialLinks from "@/components/hkn/SocialLinks";
 import { hknOfficers } from "@/content/data/team";
@@ -41,13 +42,41 @@ export default function HKN() {
           </div>
 
           <p className="text-gray-600 max-w-3xl mx-auto text-center mb-12">
-            IEEE-HKN (Eta Kappa Nu) at Texas State University is the official IEEE honor society recognizing the 
+            Mu Upsilon IEEE-HKN (Eta Kappa Nu) at Texas State University is the official IEEE honor society recognizing the 
             top 10% of students in engineering and technology for their academic excellence, leadership, and service. 
             Membership is by invitation to students who have demonstrated not only strong performance in the 
             classroom but also meaningful involvement in leadership roles, community service, and professional development.
           </p>
         </FadeIn>
       </Section>
+
+      <Section>
+        <FadeIn>
+          <div className="relative bg-gradient-to-br from-[#00629B] to-[#00A9E0] rounded-2xl shadow-xl overflow-hidden">
+            <div className="p-10 text-center text-white max-w-3xl mx-auto">
+
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Official IEEE-HKN Chapter Page
+              </h2>
+
+              <p className="text-white/90 mb-8 text-lg">
+                Learn more about our Mu Upsilon chapter, national recognition,
+                and how IEEE-HKN supports academic excellence and leadership.
+              </p>
+
+              <Button
+                href="https://hkn.ieee.org/hkn-chapters/all-chapters/mu-upsilon-chapter"
+                variant="secondary"
+                className="px-10 py-3 text-lg"
+              >
+                Visit Official Chapter Page
+              </Button>
+
+            </div>
+          </div>
+        </FadeIn>
+      </Section>
+       
 
       {/* HKN Branch Social Links Section */}
       <SocialLinks />

@@ -1,32 +1,41 @@
 import Section from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
 import FadeIn from "@/components/animations/FadeIn";
+import Image from "next/image";
 
 export default function Committees() {
   const branches = [
     {
-      name: "IEEE Student Branch",
+      name: "IEEE Main Branch",
       description:
         "The central IEEE organization at Texas State, focused on professional development, industry connections, technical events, and leadership opportunities for engineering and technology students.",
       link: "/",
+      image: "/images/branding/IEEE-Logo.png",
+      officialUrl: "https://www.ieee.org/",
     },
     {
       name: "IEEE Robotics & Automation Society",
       description:
-        "A hands-on robotics community focused on building real systems using ROS2, sensors, autonomous navigation, and rapid prototyping, with opportunities to compete and work on industry-relevant projects.",
+        "A robotics community focused on building real systems using ROS2, sensors, autonomous navigation, and rapid prototyping, with opportunities to compete and work on industry-relevant projects.",
       link: "/committees/societies/robotics",
+      image: "/images/branding/RAS-Logo.jpg",
+      officialUrl: "https://www.ieee-ras.org/",
     },
     {
       name: "IEEE Computer Society",
       description:
         "A technical society for students interested in software, data, and AI, offering workshops, projects, and learning opportunities to build practical skills for modern tech careers.",
       link: "/committees/societies/computersoc",
+      image: "/images/branding/ComputerSociety-Logo.jpg",
+      officialUrl: "https://www.computer.org/",
     },
     {
-      name: "IEEE-HKN (Honor Society)",
+      name: "IEEE Eta Kappa Nu",
       description:
         "An honor society recognizing academic excellence, leadership, and service, while providing members with mentorship, networking, and professional growth opportunities.",
       link: "/committees/societies/hkn",
+      image: "/images/branding/HKN-Logo.png",
+      officialUrl: "https://hkn.ieee.org/",
     },
   ];
 
@@ -72,16 +81,41 @@ export default function Committees() {
               className="w-full max-w-[240px] mx-auto sm:max-w-none"
             >
               <FadeIn delay={index * 0.1}>
-                <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden h-full">
-                  <div className="p-6 flex flex-col h-full">
+                <div className="relative bg-white rounded-2xl shadow-xl overflow-hidden h-full flex flex-col">
+                  {/* Image */}
+                  <div className="relative w-full h-[180px] overflow-hidden bg-gradient-to-br from-[#00629B] to-[#00A9E0]">
+                    <Image
+                      src={b.image}
+                      alt={b.name}
+                      fill
+                      className="object-contain p-4"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  </div>
+
+                  {/* Content */}
+                  <div className="p-6 flex flex-col flex-1">
                     <h3 className="text-2xl font-bold text-gray-900 mb-2">
                       {b.name}
                     </h3>
                     <p className="text-gray-600 mb-6 flex-1">{b.description}</p>
 
-                    <Button href={b.link} variant="primary" className="w-full">
-                      Learn More
-                    </Button>
+                    <div className="mt-auto flex flex-col gap-3">
+                      {b.officialUrl && (
+                        <a
+                          href={b.officialUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-md font-semibold text-[#00629B] hover:text-[#00A9E0] transition-colors"
+                        >
+                          Official {b.name} website here
+                        </a>
+                      )}
+
+                      <Button href={b.link} variant="primary" className="w-full">
+                        Learn More
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </FadeIn>
