@@ -50,7 +50,7 @@ export const siteConfig = {
   // Meeting Information
   meetings: {
     schedule: "Every Thursday at 6:30 PM",
-    location: "Ingram School of Engineering Building, Room 4103",
+    location: "Ingram School of Engineering Building, Room 4104",
     virtualLink: "https://zoom.us/j/your-meeting-id", // No zoom link currently
   },
 
