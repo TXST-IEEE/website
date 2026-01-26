@@ -185,7 +185,7 @@ export const officerMembers: TeamMember[] = [
   {
     id: "officer-011",
     name: "Cassandra Vasquez",
-    position: "Fundraising Co-Director",
+    position: "Officer of the Gap",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
     image: "/images/team/mainbranch/Cassandra-Vasquez.jpg",
@@ -193,15 +193,6 @@ export const officerMembers: TeamMember[] = [
   },
   {
     id: "officer-012",
-    name: "Sam Arshad",
-    position: "Officer of the Gap",
-    major: "Computer Science (Computer Engineering)",
-    graduationYear: "2025",
-    image: "/images/team/mainbranch/Sam-Arshad.jpg",
-    linkedin: "https://www.linkedin.com/in/-saamerarshad/",
-  },
-  {
-    id: "officer-013",
     name: "Kade Matula",
     position: "Officer Intern",
     major: "Electrical Engineering (Computer Engineering)",
@@ -210,7 +201,7 @@ export const officerMembers: TeamMember[] = [
     linkedin: "https://www.linkedin.com/in/kade-matula-397079310/",
   },
   {
-    id: "officer-014",
+    id: "officer-013",
     name: "Steven Setten",
     position: "Officer Intern",
     major: "Computer Science",
@@ -219,7 +210,7 @@ export const officerMembers: TeamMember[] = [
     linkedin: "https://www.linkedin.com/in/stevenvansetten/",
   },
   {
-    id: "officer-015",
+    id: "officer-014",
     name: "Collin Cook",
     position: "OPS Co-Director",
     major: "Electrical Engineering (Computer Engineering)",
@@ -228,7 +219,7 @@ export const officerMembers: TeamMember[] = [
     linkedin: "https://www.linkedin.com/in/collin-cook-00a81b367/",
   },
   {
-    id: "officer-016",
+    id: "officer-015",
     name: "Raymundo Guajardo",
     position: "Officer Intern",
     major: "Electrical Engineering (Computer Engineering)",
@@ -237,9 +228,9 @@ export const officerMembers: TeamMember[] = [
     linkedin: "https://www.linkedin.com/in/raymundo-guajardo-8248292b0/",
   },
   {
-    id: "officer-017",
+    id: "officer-016",
     name: "Clay Zetune",
-    position: "OPS Team Member",
+    position: "OPS Tech Lead",
     major: "Electrical Engineering (Computer Engineering)",
     graduationYear: "2028",
     image: "/images/team/mainbranch/Clay-Zetune.jpg",
