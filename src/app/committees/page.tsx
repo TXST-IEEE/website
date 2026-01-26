@@ -30,7 +30,7 @@ export default function Committees() {
       officialUrl: "https://www.computer.org/",
     },
     {
-      name: "IEEE-HKN (Honor Society)",
+      name: "IEEE Eta Kappa Nu",
       description:
         "An honor society recognizing academic excellence, leadership, and service, while providing members with mentorship, networking, and professional growth opportunities.",
       link: "/committees/societies/hkn",
