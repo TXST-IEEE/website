@@ -285,7 +285,7 @@ export const rasOfficers: TeamMember[] = [
     position: "Vice President of Administration & Intro Robotics Director",
     major: "Computer Science",
     graduationYear: "2026",
-    image: "/images/branding/TXST-Bobcat-Logo.png",
+    image: "/images/team/ras/Aiden-Salinas.jpg",
     //linkedin: "https://linkedin.com/in/username",
   },
   {
