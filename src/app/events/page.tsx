@@ -20,6 +20,7 @@ import EventCard3D from "@/components/events/EventCard3D";
 import Section from "@/components/ui/Section";
 import FadeIn from "@/components/animations/FadeIn";
 import { events } from "@/content/data/events";
+import GoogleCalendarEmbed from "@/components/ui/GoogleCalendarEmbed";
 
 export default function EventsPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
@@ -107,6 +108,14 @@ export default function EventsPage() {
           </div>
         </Section>
       )}
+
+      {/* Embed IEEE TXST Gmail Google Calendar */}
+      <Section>
+        <FadeIn>
+          <GoogleCalendarEmbed>
+          </GoogleCalendarEmbed>
+        </FadeIn>
+      </Section>
 
       {/* No Upcoming Events Message */}
       {upcomingEvents.length === 0 && (
