@@ -15,7 +15,7 @@ export const homeContent = {
     primaryButtonText: "Learn About Membership",
     secondaryButtonText: "View Events",
     // Image path: /public/images/gallery/hero-image.jpg
-    heroImage: "/images/gallery/IEEE-GroupPhoto-Fall2024.png",
+    heroImage: "/images/gallery/IEEE-FirstMeet-GroupPhoto-Spring2025.jpeg",
   },
 
   // What We Do Section

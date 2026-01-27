@@ -43,7 +43,7 @@ export default function ImageSlideshow({
                         src={image.src}
                         alt={image.alt}
                         fill
-                        className='object-contain'
+                        className='object-cover'
                         />
                     </div>
                 </SwiperSlide>
