@@ -21,7 +21,7 @@ import Icon from "@/components/ui/Icon";
 import ImageSlideshow from "@/components/ui/ImageSlideshow";
 import { homeContent } from "@/content/pages/home";
 import { siteConfig } from "@/content/config";
-import { committeeSliderImages } from "@/content/data/sliders";
+import { homeSliderImages } from "@/content/data/sliders";
 
 export default function Home() {
   // What we offer (simple, educational focus)
@@ -54,7 +54,7 @@ export default function Home() {
           {/* Image */}
           <SlideIn direction="left">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
-              <ImageSlideshow images={committeeSliderImages.robotics} />
+              <ImageSlideshow images={homeSliderImages.homePage} />
             </div>
           </SlideIn>
 

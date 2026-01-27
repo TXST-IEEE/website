@@ -90,7 +90,7 @@ export const events: Event[] = [
     time: "6:30 PM",
     location: "Ingram Engineering Building, Room 4104",
     category: "meeting",
-    image: "/images/branding/IEEE-TXST-Logo-OG.jpg",
+    image: "/images/events/IEEE-FirstMeet-Poster-Spring2026.jpeg",
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdZ_CJmQr9IbvxOCYZE-_KM-xXRYFiyimsrPg0BBaI7Gj5FEQ/viewform?usp=publish-editor",
     isPast: false,
   },

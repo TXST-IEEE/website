@@ -10,11 +10,21 @@
  *       and the committeeSliderImages for the committee pages. 
  */
 
+import type { SlideshowImage } from "@/components/ui/ImageSlideshow";
 import type { CarouselImage } from "@/components/ui/ImageCarousel";
 
-export const homeSliderImages = [
-    "",
-]
+export const homeSliderImages: Record<string, SlideshowImage[]> = {
+    homePage: [
+        {src: "/images/gallery/MikeM-IEEESpeaker-Photo-Fall2025.jpg", alt: "RAS First Meeting Group Photo"},
+        {src: "/images/gallery/IEEE-OPS-Room-Photo3.jpg", alt: "RAS First Meeting Group Photo"},
+        {src: "/images/events/Tesla-IEEETour-Photo-Fall2025.jpg", alt: "RAS First Meeting Group Photo"},
+        {src: "/images/gallery/IEEE-Volunteer-Photo.jpg", alt: "IEEE Volunteer Event Photo"},
+        {src: "/images/events/Dell-IEEETour-Photo-Spring2025.jpg", alt: "RAS First Meeting Group Photo"},
+        {src: "/images/gallery/ras/RAS-Group-Photo.jpeg", alt: "RAS Group Photo"},
+        {src: "/images/gallery/hkn/HKN-AppliedMaterials-Group-Photo.jpg", alt: "RAS First Meeting Group Photo"},
+        {src: "/images/gallery/IEEE-Volunteer-Group-Photo.jpg", alt: "IEEE Volunteer Event Group Photo"},
+    ],
+};
 
 export const committeeSliderImages: Record<string, CarouselImage[]> = {
     computerSoc: [
