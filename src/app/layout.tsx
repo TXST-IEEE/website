@@ -15,8 +15,40 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "IEEE TXST",
-  description: "Version 2 of the IEEE TXST Website",
+  title: {
+    default: "IEEE TXST",
+    template: "%s | IEEE Texas State University",
+  },
+  description:
+    "IEEE Texas State University is a student-led engineering organization focused on hardware, software, robotics, and professional development.",
+  keywords: [
+    "IEEE TXST",
+    "IEEE Texas State",
+    "Texas State IEEE",
+    "engineering student organization",
+    "robotics",
+    "computer science",
+    "electrical engineering",
+    "technology",
+  ],
+  authors: [{ name: "IEEE TXST" }],
+  openGraph: {
+    title: "IEEE Texas State University",
+    description:
+      "Official website for IEEE at Texas State University. Events, officers, committees, robotics, and industry connections.",
+    url: "https://ieeetxst.org",
+    siteName: "IEEE TXST",
+    images: [
+      {
+        url: "https://ieeetxst.org/images/branding/IEEE-TXST-Logo.jpg", 
+        width: 1200,
+        height: 630,
+        alt: "IEEE TXST",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
