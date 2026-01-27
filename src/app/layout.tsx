@@ -35,12 +35,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "IEEE Texas State University",
     description:
-      "Official website for IEEE at Texas State University. Events, officers, committees, robotics, and industry connections.",
+      "Official website for IEEE at Texas State University. Learn more about Events, Officers, Committees, Networking, and Industry connections.",
     url: "https://ieeetxst.org",
     siteName: "IEEE TXST",
     images: [
       {
-        url: "https://ieeetxst.org/images/branding/IEEE-TXST-Logo.jpg", 
+        url: "https://ieeetxst.org/images/branding/IEEE-TXST-Rectangle-Logo.png", 
         width: 1200,
         height: 630,
         alt: "IEEE TXST",
