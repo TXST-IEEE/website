@@ -18,9 +18,10 @@ import SlideIn from "@/components/animations/SlideIn";
 import Button from "@/components/ui/Button";
 import Section from "@/components/ui/Section";
 import Icon from "@/components/ui/Icon";
-import Image from "next/image";
+import ImageSlideshow from "@/components/ui/ImageSlideshow";
 import { homeContent } from "@/content/pages/home";
 import { siteConfig } from "@/content/config";
+import { committeeSliderImages } from "@/content/data/sliders";
 
 export default function Home() {
   // What we offer (simple, educational focus)
@@ -53,13 +54,7 @@ export default function Home() {
           {/* Image */}
           <SlideIn direction="left">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
-              <Image
-                src={homeContent.whatWeDo.image}
-                alt="IEEE TXST Community"
-                width={800}
-                height={600}
-                className="w-full h-auto object-cover"
-              />
+              <ImageSlideshow images={committeeSliderImages.robotics} />
             </div>
           </SlideIn>
 
