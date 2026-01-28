@@ -112,6 +112,9 @@ export default function EventsPage() {
       {/* Embed IEEE TXST Gmail Google Calendar */}
       <Section>
         <FadeIn>
+          <h2 className="text-center text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Google Calendar
+          </h2>
           <GoogleCalendarEmbed>
           </GoogleCalendarEmbed>
         </FadeIn>
