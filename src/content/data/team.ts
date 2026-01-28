@@ -277,7 +277,7 @@ export const rasOfficers: TeamMember[] = [
     major: "Computer Science",
     graduationYear: "2026",
     image: "/images/team/ras/aiden-salinas.jpg",
-    //linkedin: "https://linkedin.com/in/username",
+    linkedin: "https://www.linkedin.com/in/aiden-salinas-8b3265326/",
   },
   {
     id: "ras-004",
@@ -350,15 +350,6 @@ export const rasOfficers: TeamMember[] = [
     graduationYear: "2027",
     image: "/images/branding/txst-bobcat-logo.png",
     //linkedin: "https://www.linkedin.com/in/samantha-conejo-410945212/",
-  },
-  {
-    id: "ras-012",
-    name: "Osprie Meuth",
-    position: "Intro Project Lead",
-    major: "Mechanical Engineering",
-    graduationYear: "2027",
-    image: "/images/team/ras/osprie-meuth.jpg",
-    linkedin: "https://www.linkedin.com/in/osprie-meuth-938892299/",
   },
   // TEMPLATE - Copy this to add a committee officer:
   // {
