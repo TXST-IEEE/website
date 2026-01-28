@@ -15,7 +15,7 @@ export const homeContent = {
     primaryButtonText: "Learn About Membership",
     secondaryButtonText: "View Events",
     // Image path: /public/images/gallery/hero-image.jpg
-    heroImage: "/images/gallery/IEEE-FirstMeet-GroupPhoto-Spring2025.jpeg",
+    heroImage: "/images/gallery/ieee-firstmeet-groupphoto-spring2025.jpeg",
   },
 
   // What We Do Section
@@ -25,7 +25,7 @@ export const homeContent = {
       "We're a student-run organization focused on learning, community, and hands-on experience. Through workshops, projects, and events, we help students explore technology and build practical skills.",
     secondaryDescription:
       "Whether you're interested in hardware, software, or just want to meet other students, IEEE TXST is a place to learn and grow together.",
-    // Image path: /public/images/gallery/activities.jpg
-    image: "/images/gallery/meetingCropped.jpg",
+    
+      // Note: Images shown left of "whatWeDo" text section is located in ui/ImageSlideshow component
   },
 };

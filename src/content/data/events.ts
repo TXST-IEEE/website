@@ -51,7 +51,7 @@ export const events: Event[] = [
     time: "7:30 AM",
     location: "Meet at Ingram, Drive to Dell HQ",
     category: "tour",
-    image: "/images/events/Dell-Technologies-Logo.jpg",
+    image: "/images/events/dell-technologies-logo.jpg",
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdZ_CJmQr9IbvxOCYZE-_KM-xXRYFiyimsrPg0BBaI7Gj5FEQ/viewform?usp=publish-editor", 
     isPast: false,
   },
@@ -64,7 +64,7 @@ export const events: Event[] = [
     time: "6:30 PM",
     location: "Ingram Engineering Building, Room 4104",
     category: "workshop",
-    image: "/images/events/First-OPSMeet-Poster-Fall2025.png",
+    image: "/images/events/first-opsmeet-poster-fall2025.png",
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdZ_CJmQr9IbvxOCYZE-_KM-xXRYFiyimsrPg0BBaI7Gj5FEQ/viewform?usp=publish-editor",
     isPast: false,
   },
@@ -77,7 +77,7 @@ export const events: Event[] = [
     time: "6:30 PM",
     location: "Ingram Engineering Building, Room 4103",
     category: "meeting",
-    image: "/images/branding/RAS-Logo.jpg",
+    image: "/images/branding/ras-logo.jpg",
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdZ_CJmQr9IbvxOCYZE-_KM-xXRYFiyimsrPg0BBaI7Gj5FEQ/viewform?usp=publish-editor",
     isPast: false,
   },
@@ -90,7 +90,7 @@ export const events: Event[] = [
     time: "6:30 PM",
     location: "Ingram Engineering Building, Room 4104",
     category: "meeting",
-    image: "/images/events/IEEE-FirstMeet-Poster-Spring2026.jpeg",
+    image: "/images/events/ieee-firstmeet-poster-spring2026.jpeg",
     registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdZ_CJmQr9IbvxOCYZE-_KM-xXRYFiyimsrPg0BBaI7Gj5FEQ/viewform?usp=publish-editor",
     isPast: false,
   },
@@ -103,7 +103,7 @@ export const events: Event[] = [
     time: "3:20 PM",
     location: "Ingram Engineering Building, Room 3104",
     category: "social",
-    image: "/images/events/FinalsStudy-IEEESocial-Poster-Fall2025.png",
+    image: "/images/events/finalsstudy-ieeesocial-poster-fall2025.png",
     isPast: true,
   },
   {
@@ -115,7 +115,7 @@ export const events: Event[] = [
     time: "6:30 PM",
     location: "Ingram Engineering Building, Room 2104",
     category: "workshop",
-    image: "/images/events/TroyH-WorkshopMeet-Poster-Fall2025.png",
+    image: "/images/events/troyh-workshopmeet-poster-fall2025.png",
     isPast: true,
   },
   {
@@ -127,7 +127,7 @@ export const events: Event[] = [
     time: "6:30 PM",
     location: "Ingram Engineering Building, Room 4103",
     category: "speaker",
-    image: "/images/events/DianeW-IEEESpeaker-Poster-Fall2025.png",
+    image: "/images/events/dianew-ieeespeaker-poster-fall2025.png",
     isPast: true,
   },
   {
@@ -139,7 +139,7 @@ export const events: Event[] = [
     time: "6:30 PM",
     location: "Ingram Engineering Building, Room 4101",
     category: "social",
-    image: "/images/events/Friendsgiving-IEEESocial-Poster-Fall2025.png",
+    image: "/images/events/friendsgiving-ieeesocial-poster-fall2025.png",
     isPast: true,
   },
   {
@@ -151,7 +151,7 @@ export const events: Event[] = [
     time: "6:30 PM",
     location: "Ingram Engineering Building, Room 4103",
     category: "workshop",
-    image: "/images/events/Last-OPSMeet-Poster-Fall2025.png",
+    image: "/images/events/last-opsmeet-poster-fall2025.png",
     isPast: true,
   },
   {
@@ -163,7 +163,7 @@ export const events: Event[] = [
     time: "7:30 AM",
     location: "Meet at Ingram, Drive to Tesla Gigafactory",
     category: "tour",
-    image: "/images/events/Tesla-IEEETour-Photo-Fall2025.jpg",
+    image: "/images/events/tesla-ieeetour-photo-fall2025.jpg",
     isPast: true,
   },
   {
@@ -175,7 +175,7 @@ export const events: Event[] = [
     time: "6:30 PM",
     location: "Ingram Engineering Building, Room 3101",
     category: "social",
-    image: "/images/events/PumpkinPaint-IEEESocial-Poster-Fall2025.png",
+    image: "/images/events/pumpkinpaint-ieeesocial-poster-fall2025.png",
     isPast: true,
   },
   {
@@ -187,7 +187,7 @@ export const events: Event[] = [
     time: "6:30 PM",
     location: "Ingram Engineering Building, Room 4103",
     category: "workshop",
-    image: "/images/events/Fourth-OPSMeet-Poster-Fall2025.png",
+    image: "/images/events/fourth-opsmeet-poster-fall2025.png",
     isPast: true,
   },
   {
@@ -199,7 +199,7 @@ export const events: Event[] = [
     time: "6:30 PM",
     location: "Ingram Engineering Building, Room 3103",
     category: "workshop",
-    image: "/images/events/TrevorS-WorkshopMeet-Poster-Fall2025.png",
+    image: "/images/events/trevors-workshopmeet-poster-fall2025.png",
     isPast: true,
   },
   {
@@ -211,7 +211,7 @@ export const events: Event[] = [
     time: "6:30 PM",
     location: "Ingram Engineering Building, Room 4103",
     category: "speaker",
-    image: "/images/events/CesarVV-IEEESpeaker-Poster-Fall2025.png",
+    image: "/images/events/cesarvv-ieeespeaker-poster-fall2025.png",
     isPast: true,
   },
   {
@@ -223,7 +223,7 @@ export const events: Event[] = [
     time: "6:30 PM",
     location: "Ingram Engineering Building, Room 4103",
     category: "workshop",
-    image: "/images/events/Third-OPSMeet-Poster-Fall2025.png",
+    image: "/images/events/third-opsmeet-poster-fall2025.png",
     isPast: true,
   },
   {
@@ -235,7 +235,7 @@ export const events: Event[] = [
     time: "6:30 PM",
     location: "Ingram Engineering Building, Room 4103",
     category: "speaker",
-    image: "/images/events/NethaneelE-IEEESpeaker-Poster-Fall2025.png",
+    image: "/images/events/nethaneele-ieeeSpeaker-poster-fall2025.png",
     isPast: true,
   },
   {
@@ -247,7 +247,7 @@ export const events: Event[] = [
     time: "6:30 PM",
     location: "Ingram Engineering Building, Room 4103",
     category: "workshop",
-    image: "/images/events/Second-OPSMeet-Poster-Fall2025.png",
+    image: "/images/events/second-opsmeet-poster-fall2025.png",
     isPast: true,
   },
   {
@@ -259,7 +259,7 @@ export const events: Event[] = [
     time: "6:30 PM",
     location: "LBJ Building, Room 322",
     category: "speaker",
-    image: "/images/events/Dell-IEEESpeaker-Poster-Fall2025.png",
+    image: "/images/events/dell-ieeespeaker-poster-fall2025.png",
     isPast: true,
   },
   {
@@ -271,7 +271,7 @@ export const events: Event[] = [
     time: "6:30 PM",
     location: "Ingram Engineering Building, Room 4103",
     category: "speaker",
-    image: "/images/events/MikeM-IEEESpeaker-Poster-Fall2025.png",
+    image: "/images/events/mikem-ieeespeaker-poster-fall2025.png",
     isPast: true,
   },
   {
@@ -283,7 +283,7 @@ export const events: Event[] = [
     time: "6:30 PM",
     location: "Ingram Engineering Building, Room 4103",
     category: "workshop",
-    image: "/images/events/First-OPSMeet-Poster-Fall2025.png",
+    image: "/images/events/first-opsmeet-poster-fall2025.png",
     isPast: true,
   },
   {
@@ -295,7 +295,7 @@ export const events: Event[] = [
     time: "6:30 PM",
     location: "Ingram Engineering Building, Room 4103",
     category: "meeting",
-    image: "/images/events/First-IEEEMeet-Poster-Fall2025.png",
+    image: "/images/events/first-ieeemeet-poster-fall2025.png",
     isPast: true,
   },
   {
@@ -307,7 +307,7 @@ export const events: Event[] = [
     time: "7:30 AM",
     location: "Meet at Ingram, Drive to Google Office",
     category: "tour",
-    image: "/images/events/Google-IEEETour-Photo-Spring2025.png",
+    image: "/images/events/google-ieeetour-photo-spring2025.png",
     isPast: true,
   },
   {
@@ -319,7 +319,7 @@ export const events: Event[] = [
     time: "7:30 AM",
     location: "Meet at Ingram, Drive to Dell Office",
     category: "tour",
-    image: "/images/events/Dell-IEEETour-Photo-Spring2025.jpg",
+    image: "/images/events/dell-ieeetour-photo-spring2025.jpg",
     isPast: true,
   },
   {
@@ -331,7 +331,7 @@ export const events: Event[] = [
     time: "7:30 AM",
     location: "Meet at Ingram, Drive to Cloudflare Office",
     category: "tour",
-    image: "/images/events/Cloudflare-IEEETour-Photo-Fall2024.png",
+    image: "/images/events/cloudflare-ieeetour-photo-fall2024.png",
     isPast: true,
   },
   {
@@ -343,7 +343,7 @@ export const events: Event[] = [
     time: "7:30 AM",
     location: "Meet at Ingram, Drive to Samsung Office",
     category: "tour",
-    image: "/images/events/Samsung-IEEETour-Photo-Fall2024.png",
+    image: "/images/events/samsung-ieeetour-photo-fall2024.png",
     isPast: true,
   },
 ];

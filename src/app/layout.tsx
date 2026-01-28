@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "IEEE TXST",
     images: [
       {
-        url: "https://ieeetxst.org/images/branding/IEEE-TXST-Rectangle-Logo.png", 
+        url: "https://ieeetxst.org/images/branding/ieee-txst-rectangle-logo.png", 
         width: 1200,
         height: 630,
         alt: "IEEE TXST",
