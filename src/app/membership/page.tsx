@@ -18,32 +18,32 @@ export default function MembershipPage() {
     {
       icon: "workshop",
       title: "Workshops & Learning",
-      description: "Attend technical workshops on various engineering topics and technologies.",
+      description: "Learn new skills through hands-on Open Project Source (OPS) workshops covering a wide range of engineering tools, technologies, and topics.",
     },
     {
       icon: "community",
       title: "Community",
-      description: "Meet fellow students, make friends, and build your network.",
+      description: "Meet like-minded students, build friendships, and become part of a supportive engineering community that grows together.",
     },
     {
       icon: "project",
       title: "Projects",
-      description: "Work on hands-on projects and gain practical experience.",
+      description: "Work on real-world engineering projects and apply classroom knowledge through our IEEE Robotics and Automation Society (RAS) and other technical teams.",
     },
     {
       icon: "network",
       title: "Industry Connections",
-      description: "Connect with professionals and learn about career opportunities.",
+      description: "Connect with professionals ranging from recruiters to engineers and managers. Attend industry talks and networking events to explore career opportunities.",
     },
     {
       icon: "learn",
       title: "IEEE Resources",
-      description: "Access IEEE's technical papers, journals, and educational materials.",
+      description: "Gain access to IEEE Xplore digital library, IEEE Spectrum magazine, discounts on conferences, continuing education courses, and a global network with over 420,000 members.",
     },
     {
       icon: "calendar",
       title: "Social Events",
-      description: "Participate in social events, game nights, and community activities.",
+      description: "Join social events like bowling and potlucks, game (Super Smash Bros) and movie nights, and community service activities such as Bobcat Build and San Marcos River Clean Up.",
     },
   ];
 
