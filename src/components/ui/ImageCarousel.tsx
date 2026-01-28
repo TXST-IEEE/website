@@ -38,16 +38,14 @@ export default function ImageCarousel({
                 }}
             >
             {loopImages.map((img,index)=>{
-                return <div key={index} className='relative flex-shrink-0 w-[450px] h-[400px] gap-6 rounded-xl' >
-                    <div className='flex items-center justify-center text-6xl'>
+                return <div key={index} className='relative flex-shrink-0 w-[450px] h-[400px] gap-6'>
                         <Image 
                             src={img.src} 
                             alt={img.alt}
                             fill
-                            sizes="(max-width: 768px) 100vw, 1200px"
+                            sizes="(max-width: 768px) 100vw, 450px"
                             className="object-cover"
                         />
-                    </div>
                 </div>
             })}
             </motion.div>
