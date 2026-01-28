@@ -18,10 +18,12 @@ export const homeSliderImages: Record<string, SlideshowImage[]> = {
         {src: "/images/gallery/mikem-ieeespeaker-photo-fall2025.jpg", alt: "Mike M Meeting Room Photo"},
         {src: "/images/gallery/ieee-ops-room-photo3.jpg", alt: "OPS Meeting Photo"},
         {src: "/images/events/tesla-ieeetour-photo-fall2025.jpg", alt: "Tesla Gigafactory Tour Group Photo"},
-        {src: "/images/gallery/ieee-volunteer-photo.jpg", alt: "IEEE Volunteer Event Photo"},
+        {src: "/images/gallery/ieee-destinationimagination-group-photo.jpg", alt: "IEEE Volunteer Event Photo"},
         {src: "/images/events/dell-ieeetour-photo-spring2025.jpg", alt: "Dell Tour Group Photo"},
         {src: "/images/gallery/ras/ras-group-photo.jpeg", alt: "RAS Group Photo"},
         {src: "/images/gallery/hkn/hkn-appliedmaterials-group-photo.jpg", alt: "Applied Materials Group Photo"},
+        {src: "/images/gallery/ieee-volunteer-photo.jpg", alt: "IEEE Volunteer Event Photo"},
+        {src: "/images/gallery/ieee-destinationimagination-photo.jpg", alt: "IEEE Volunteer Event Group Photo"},
         {src: "/images/gallery/ieee-volunteer-group-photo.jpg", alt: "IEEE Volunteer Event Group Photo"},
     ],
 };
@@ -37,6 +39,7 @@ export const committeeSliderImages: Record<string, CarouselImage[]> = {
         {src: "/images/gallery/ras/ras-dianewelker-robot-photo.jpeg", alt: "RAS Diane Welker Robot Photo"},
         {src: "/images/gallery/ras/ras-room-photo.jpg", alt: "RAS Room Photo"},
         {src: "/images/gallery/ras/ras-mrwelker-robot-photo.jpeg", alt: "RAS Mr Welker Robot Photo"},
+        {src: "/images/gallery/ras/ras-presentations-photo.png", alt: "RAS Presentations Photo"},
     ],
     hkn: [
         {src: "/images/gallery/hkn/hkn-appliedmaterials-group-photo.jpg", alt: "HKN Applied Materials Group Photo"},
@@ -44,5 +47,7 @@ export const committeeSliderImages: Record<string, CarouselImage[]> = {
         {src: "/images/gallery/hkn/hkn-vdura-group-photo.jpg", alt: "HKN VDURA Group Photo"},
         {src: "/images/gallery/hkn/hkn-yp-group-photo.jpg", alt: "HKN Young Professionals Group Photo"},
         {src: "/images/gallery/hkn/hkn-inauguration-group-photo.jpg", alt: "HKN Inauguration Group Photo"},
-    ],
+        {src: "/images/gallery/hkn/orlandoa-hknspeaker-photo.jpg", alt: "HKN Dr Orlando Auciello Room Photo"},
+        {src: "/images/gallery/hkn/renem-hknspeaker-photo.jpg", alt: "HKN Rene Molina Presentation Photo"},    ]
+    ,
 };
