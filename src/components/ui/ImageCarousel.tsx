@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import {motion} from "framer-motion";
@@ -46,6 +44,7 @@ export default function ImageCarousel({
                             src={img.src} 
                             alt={img.alt}
                             fill
+                            sizes="(max-width: 768px) 100vw, 1200px"
                             className="object-cover"
                         />
                     </div>
