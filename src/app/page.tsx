@@ -29,17 +29,17 @@ export default function Home() {
     {
       icon: "workshop",
       title: "Technical Workshops",
-      description: "Learn new skills through hands-on Open Project Source (OPS) workshops covering various technologies and engineering topics.",
+      description: "Build practical skills through hands-on workshops covering real engineering tools and technologies.",
     },
     {
       icon: "community",
       title: "Community & Networking",
-      description: "Meet fellow students, network with industry professionals, and build lasting connections.",
+      description: "Meet driven students, connect with industry professionals, and grow your network beyond the classroom.",
     },
     {
       icon: "project",
       title: "Project Opportunities",
-      description: "Work on real engineering projects and apply what you learn in the classroom through our newly established IEEE Robotics and Automation Society (RAS).",
+      description: "Apply your knowledge on real engineering projects through IEEE RAS and other technical initiatives.",
     },
   ];
 

@@ -55,7 +55,7 @@ export default function Hero() {
               className="mb-8"
             >
               <Image
-                src="/images/branding/Logo_V5.png"
+                src="/images/branding/logo_v5.png"
                 alt="IEEE Logo"
                 width={250}
                 height={100}

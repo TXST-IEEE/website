@@ -38,7 +38,7 @@ export default function Officers() {
         <FadeIn>
           <div className="relative w-full h-[320px] md:h-[450px] rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="/images/team/mainbranch/IEEE-OfficerGroup-Photo-Fall2025.jpg"
+              src="/images/team/mainbranch/ieee-officergroup-photo-fall2025.jpg"
               alt="IEEE TXST Officers Fall 2025"
               fill
               priority

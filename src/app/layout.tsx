@@ -1,5 +1,5 @@
-import type {Metadata} from "next";
-import {Geist, Geist_Mono} from "next/font/google";
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import "./globals.css";
@@ -32,6 +32,14 @@ export const metadata: Metadata = {
     "technology",
   ],
   authors: [{ name: "IEEE TXST" }],
+
+  icons: {
+    icon: "/apple-touch-icon.png",
+    apple: "/apple-touch-icon.png",
+  },
+
+  manifest: "/site.webmanifest",
+
   openGraph: {
     title: "IEEE Texas State University",
     description:
@@ -40,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "IEEE TXST",
     images: [
       {
-        url: "https://ieeetxst.org/images/branding/IEEE-TXST-Rectangle-Logo.png", 
+        url: "https://ieeetxst.org/images/branding/ieee-txst-rectangle-logo.png", 
         width: 1200,
         height: 630,
         alt: "IEEE TXST",

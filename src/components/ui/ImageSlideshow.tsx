@@ -43,6 +43,8 @@ export default function ImageSlideshow({
                         src={image.src}
                         alt={image.alt}
                         fill
+                        priority={index === 0}
+                        sizes="(max-width: 768px) 100vw, 1200px"
                         className='object-cover'
                         />
                     </div>

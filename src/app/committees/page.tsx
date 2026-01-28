@@ -10,7 +10,7 @@ export default function Committees() {
       description:
         "The central IEEE organization at Texas State, focused on professional development, industry connections, technical events, and leadership opportunities for engineering and technology students.",
       link: "/",
-      image: "/images/branding/IEEE-Logo.png",
+      image: "/images/branding/ieee-logo.png",
       officialUrl: "https://www.ieee.org/",
     },
     {
@@ -18,7 +18,7 @@ export default function Committees() {
       description:
         "A robotics community focused on building real systems using ROS2, sensors, autonomous navigation, and rapid prototyping, with opportunities to compete and work on industry-relevant projects.",
       link: "/committees/societies/robotics",
-      image: "/images/branding/RAS-Logo.jpg",
+      image: "/images/branding/ras-logo.jpg",
       officialUrl: "https://www.ieee-ras.org/",
     },
     {
@@ -26,7 +26,7 @@ export default function Committees() {
       description:
         "A technical society for students interested in software, data, and AI, offering workshops, projects, and learning opportunities to build practical skills for modern tech careers.",
       link: "/committees/societies/computersoc",
-      image: "/images/branding/ComputerSociety-Logo.jpg",
+      image: "/images/branding/computersociety-logo.jpg",
       officialUrl: "https://www.computer.org/",
     },
     {
@@ -34,7 +34,7 @@ export default function Committees() {
       description:
         "An honor society recognizing academic excellence, leadership, and service, while providing members with mentorship, networking, and professional growth opportunities.",
       link: "/committees/societies/hkn",
-      image: "/images/branding/HKN-Logo.png",
+      image: "/images/branding/hkn-logo.png",
       officialUrl: "https://hkn.ieee.org/",
     },
   ];
