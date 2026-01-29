@@ -33,8 +33,8 @@ export default function ImageSlideshow({
                 pagination={{ type: 'fraction' }}
                 modules={[Navigation, Pagination]}
                 // onSwiper={swiper => console.log(swiper)}
-                className='relative w-full h-[420px] md:h-[580px] [--swiper-pagination-fraction-color:#2563eb]
-                [--swiper-navigation-sides-offset:4rem]'
+                className='relative w-full h-[420px] md:h-[580px] [--swiper-pagination-fraction-color:#ffffff]
+                [--swiper-navigation-sides-offset:1rem] [--swiper-navigation-color:#ffffff]'
             >
             {images.map((image, index) => (
                 <SwiperSlide key={index}>

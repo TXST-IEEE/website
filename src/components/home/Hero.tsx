@@ -26,8 +26,9 @@ export default function Hero() {
   });
 
   // Parallax effect: image moves slower than content
-  const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
-  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
+  //Update: this keeps breaking UI elements in low res browsers
+  const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "0%"]);
+  const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "0%"]);
 
   return (
     <section
@@ -43,7 +44,7 @@ export default function Hero() {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8 lg:px-12 py-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8 lg:px-12 py-5">
         <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.5fr] gap-12 items-center">
           {/* Left Column: Text Content */}
           <motion.div style={{ y: contentY }}>
@@ -69,7 +70,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight"
+              className="text-4xl md:text-6xl font-bold text-white mb-6 leading-[1]"
             >
               {homeContent.hero.title}
             </motion.h1>
