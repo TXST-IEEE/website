@@ -25,7 +25,7 @@ export default function Hero() {
     offset: ["start start", "end start"],
   });
 
-  // Parallax effect: image moves slower than content
+  //Parallax effect: image moves slower than content
   //Update: this keeps breaking UI elements in low res browsers
   const imageY = useTransform(scrollYProgress, [0, 1], ["0%", "0%"]);
   const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "0%"]);
