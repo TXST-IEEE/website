@@ -102,8 +102,9 @@ export default function Navbar() {
                       {/* Active Indicator - Underline */}
                       {showActive && (
                         <motion.div
+                          style={{originY:0}}
                           layoutId="activeTab"
-                          className="absolute -bottom-2 left-0 right-0 h-0.5 bg-[#00A9E0]"
+                          className="h-0.5 bg-[#00A9E0]"
                           transition={{
                             type: "spring",
                             stiffness: 380,
@@ -115,10 +116,9 @@ export default function Navbar() {
                       {/* Hover Underline */}
                       {!showActive && (
                         <motion.div
-                          className="absolute -bottom-2 left-0 right-0 h-0.5 bg-white/50"
-                          initial={{ scaleX: 0 }}
-                          whileHover={{ scaleX: 1 }}
-                          transition={{ duration: 0.2 }}
+                          className="h-0.5 bg-white/50"
+                          initial={{opacity: 0}}
+                          animate={{opacity: 0}}
                         />
                       )}
                     </Link>
@@ -162,9 +162,8 @@ export default function Navbar() {
                       {!showActive && (
                         <motion.div
                           className="absolute -bottom-2 left-0 right-0 h-0.5 bg-white/50"
-                          initial={{ scaleX: 0 }}
-                          whileHover={{ scaleX: 1 }}
-                          transition={{ duration: 0.2 }}
+                          initial={{opacity: 0}}
+                          whileHover={{opacity: 0}}
                         />
                       )}
                     </Link>
