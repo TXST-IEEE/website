@@ -91,8 +91,7 @@ export const events: Event[] = [
     location: "Ingram Engineering Building, Room 4104",
     category: "meeting",
     image: "/images/events/ieee-firstmeet-poster-spring2026.jpeg",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdZ_CJmQr9IbvxOCYZE-_KM-xXRYFiyimsrPg0BBaI7Gj5FEQ/viewform?usp=publish-editor",
-    isPast: false,
+    isPast: true,
   },
   {
     id: "event-020",
@@ -235,7 +234,7 @@ export const events: Event[] = [
     time: "6:30 PM",
     location: "Ingram Engineering Building, Room 4103",
     category: "speaker",
-    image: "/images/events/nethaneele-ieeeSpeaker-poster-fall2025.png",
+    image: "/images/events/nethaneele-ieeespeaker-poster-fall2025.png",
     isPast: true,
   },
   {
