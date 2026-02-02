@@ -2,9 +2,9 @@
 
 The official website for IEEE at Texas State University.
 
-**Live site:** https://ieeetxst.org
-**Deployment:** Vercel (auto-deploy from GitHub)  
-**Domain:** Cloudflare-managed custom domain
+- **Live site:** https://ieeetxst.org
+- **Deployment:** Vercel (auto-deploy from GitHub)
+- **Domain:** Cloudflare-managed custom domain
 
 ## 🚀 Quick Start
 
