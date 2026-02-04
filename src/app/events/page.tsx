@@ -64,6 +64,12 @@ export default function EventsPage() {
       {/* Filter Section */}
       <Section className="bg-gray-50">
         <FadeIn>
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Upcoming Events
+            </h2>
+            <div className="w-24 h-1 bg-[#00629B] mx-auto rounded-full" />
+          </div>
           <div className="flex flex-wrap justify-center gap-3">
             {categories.map((category) => (
               <button
@@ -84,16 +90,7 @@ export default function EventsPage() {
 
       {/* Upcoming Events Section */}
       {upcomingEvents.length > 0 && (
-        <Section>
-          <FadeIn>
-            <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                Upcoming Events
-              </h2>
-              <div className="w-24 h-1 bg-[#00629B] mx-auto rounded-full" />
-            </div>
-          </FadeIn>
-
+        <Section className="-translate-y-14">
           <div className="grid grid-cols-1 min-[520px]:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {upcomingEvents.map((event, index) => (
               <div

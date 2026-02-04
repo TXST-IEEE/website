@@ -2,11 +2,16 @@
 
 The official website for IEEE at Texas State University.
 
+- **Live site:** https://ieeetxst.org
+- **Deployment:** Vercel (auto-deploy from GitHub)
+- **Domain:** Cloudflare-managed custom domain
+
 ## 🚀 Quick Start
 
 ### Prerequisites
 - Node.js 18+ installed
 - npm or yarn package manager
+- Git
 
 ### Installation
 
@@ -28,6 +33,15 @@ npm run dev
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
+## ✅ Before You Commit
+
+Before opening a pull request or pushing changes, always run:
+
+```bash
+npm run lint
+npm run build
+```
+
 ## 📝 Available Scripts
 
 - `npm run dev` - Start development server
@@ -40,8 +54,13 @@ npm run dev
 - **Framework:** Next.js 15 (App Router)
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS 4
-- **Animations:** Framer Motion
-- **Deployment:** Vercel (recommended)
+- **Animations:** Framer Motion, Swiper
+- **Images:** Next.js Image Optimization
+- **SEO:** Metadata API, sitemap, robots.txt
+- **Analytics:** Vercel Analytics + Speed Insights
+- **Deployment:** Vercel
+- **CI/CD:** GitHub -> Vercel auto-deploy
+- **Source Control:** GitHUb with protected `main` branch
 
 ## 📁 Project Structure
 
@@ -72,28 +91,31 @@ website/
 
 For non-technical users who need to update content, see **[PRESIDENT_GUIDE.md](./PRESIDENT_GUIDE.md)**
 
-### Quick Updates:
+### Common Updates:
 - **Contact Info:** Edit `/src/content/config.ts`
 - **Events:** Edit `/src/content/data/events.ts`
 - **Officers:** Edit `/src/content/data/team.ts`
 - **Homepage Text:** Edit `/src/content/pages/home.ts`
+- **Image Sliders:** Edit `/src/content/data/sliders.ts`
 
 ## 🎨 Features
 
-- ✨ Modern, animated UI with smooth transitions
-- 🎯 3D tilt effects on officer and event cards
-- 📱 Fully responsive design
-- ⚡ Optimized performance with Next.js
-- 📝 Easy content management for non-technical users
-- 🎨 IEEE brand colors and design system
+- Modern, animated UI with smooth transitions
+- 3D tilt effects on officer and event cards
+- Fully responsive design (mobile -> desktop)
+- Optimized performance with Next.js
+- Image optimization with `next/image`
+- SEO-ready (OpenGraph, sitemap, robots.txt)
+- Easy content management for non-technical users
+- IEEE brand colors and design system
 
 ## 🌐 Pages
 
 - **Home** (`/`) - Landing page with about section and social links
-- **Events** (`/events`) - Browse events with category filters
-- **Officers** (`/officers`) - Meet the team with 3D animated cards
-- **Membership** (`/membership`) - How to join information
-- **About** (`/about`) - About IEEE TXST
+- **Events** (`/events`) - Browse upcoming events with category filters and calendar
+- **Officers** (`/officers`) - Leadership team
+- **Committees** (`/committees`) - Societies & Branches
+- **Membership** (`/membership`) - How to join IEEE information
 
 ## 🔧 Configuration
 
@@ -104,7 +126,7 @@ Edit `/src/content/config.ts` to update:
 - Contact information (email, social media)
 - Meeting schedule and location
 - Navigation links
-- Call-to-action URLs
+- Call-to-action (CTA) links
 
 ### Adding Images
 
@@ -128,8 +150,9 @@ Local images in `/public` work automatically.
 ### Vercel (Recommended)
 
 1. Push your code to GitHub
-2. Import project to Vercel
-3. Vercel will auto-detect Next.js and deploy
+2. Vercel will auto-detect Next.js and deploy
+3. Domain is managed from Cloudflare DNS
+4. SSL handled automatically
 
 ### Manual Deployment
 
@@ -137,6 +160,17 @@ Local images in `/public` work automatically.
 npm run build
 npm run start
 ```
+
+## 🧭 Domain & DNS (Cloudflare)
+
+- Domain purchased via Cloudflare
+- DNS points to Vercel
+- SSL + HTTPS auto-enabled
+
+### Search Engine Indexing
+Search engined (Google, Bing, etc.) discover and index the site via:
+- `app/sitemap.ts`
+- `app/robots.ts`
 
 ## 🤝 Contributing
 
