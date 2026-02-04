@@ -78,8 +78,8 @@ export const events: Event[] = [
     location: "Ingram Engineering Building, Room 3104",
     category: "meeting",
     image: "/images/events/first-rasmeet-poster-spring2026.png",
-    registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdZ_CJmQr9IbvxOCYZE-_KM-xXRYFiyimsrPg0BBaI7Gj5FEQ/viewform?usp=publish-editor",
-    isPast: false,
+    //registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdZ_CJmQr9IbvxOCYZE-_KM-xXRYFiyimsrPg0BBaI7Gj5FEQ/viewform?usp=publish-editor",
+    isPast: true,
   },
   {
     id: "event-021",
