@@ -23,7 +23,7 @@ export const homeSliderImages: Record<string, SlideshowImage[]> = {
         {src: "/images/gallery/ras/ras-group-photo.jpeg", alt: "RAS Group Photo"},
         {src: "/images/gallery/hkn/hkn-appliedmaterials-group-photo.jpg", alt: "Applied Materials Group Photo"},
         {src: "/images/gallery/ieee-volunteer-photo.jpg", alt: "IEEE Volunteer Event Photo"},
-        {src: "/images/gallery/ieee-destinationimagination-photo.jpg", alt: "IEEE Volunteer Event Group Photo"},
+        {src: "/images/gallery/ieee-destinationimagination-photo.png", alt: "IEEE Volunteer Event Group Photo"},
         {src: "/images/gallery/ieee-volunteer-group-photo.jpg", alt: "IEEE Volunteer Event Group Photo"},
     ],
 };
