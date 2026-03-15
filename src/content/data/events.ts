@@ -52,7 +52,7 @@ export const events: Event[] = [
     location: "Ingram Engineering Building, Room 4104",
     category: "workshop",
     image: "/images/events/third-opsmeet-poster-spring2026.jpeg",
-    isPast: false,
+    isPast: true,
   },
   {
     id: "event-030",
