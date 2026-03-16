@@ -43,6 +43,18 @@ export const events: Event[] = [
   //   isPast: false,     // Don't forget to update past events to "true" boolean value!                     
   // },
   {
+    id: "event-032",
+    title: "Chris Brown Speaker",
+    description:
+      "On Thursday at 6pm we're having a NXP engineer, Chris Brown! Learn about careers in embedded systems and the semiconductor industry!",
+    date: "2026-03-12",
+    time: "6:30 PM",
+    location: "Ingram Engineering Building, Room 4104",
+    category: "speaker",
+    image: "/images/events/chrisb-ieeespeaker-poster-spring2026.jpeg",
+    isPast: true,
+  },
+  {
     id: "event-031",
     title: "Third OPS Workshop",
     description:
