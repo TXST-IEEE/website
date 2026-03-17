@@ -43,7 +43,7 @@ export const events: Event[] = [
   //   isPast: false,     // Don't forget to update past events to "true" boolean value!                     
   // },
   {
-    id: "event-032",
+    id: "event-033",
     title: "Chris Brown Speaker",
     description:
       "On Thursday at 6pm we're having a NXP engineer, Chris Brown! Learn about careers in embedded systems and the semiconductor industry!",
@@ -55,7 +55,7 @@ export const events: Event[] = [
     isPast: true,
   },
   {
-    id: "event-031",
+    id: "event-032",
     title: "Third OPS Workshop",
     description:
       "Who's ready for Thursday? We're hosting an Ops workshop and offering complimentary headshots to all interested!",
@@ -67,7 +67,7 @@ export const events: Event[] = [
     isPast: true,
   },
   {
-    id: "event-030",
+    id: "event-031",
     title: "World Engineering Day Social",
     description:
       "Bring a dish. Bring a friend. Celebrate engineering! Bring a dish to share and come enjoy an evening of community, culture, and connection.",
@@ -79,7 +79,7 @@ export const events: Event[] = [
     isPast: true,
   },
   {
-    id: "event-029",
+    id: "event-030",
     title: "Shukla Shanthakumarara Speaker",
     description:
       "On Thursday at 6pm we're having a NVIDIA guest speaker! Hope to see you all there!",
@@ -88,6 +88,19 @@ export const events: Event[] = [
     location: "Ingram Engineering Building, Room 4104",
     category: "speaker",
     image: "/images/events/shuklas-ieeespeaker-poster-spring2026.jpeg",
+    isPast: true,
+  },
+  {
+    id: "event-029",
+    title: "First RAS Intro to Robotics Meeting",
+    description:
+      "Join us for our first RAS Intro to Robotics meeting where we introduce our 4 project teams and all the exciting builds this coming year!",
+    date: "2026-02-23",
+    time: "6:30 PM",
+    location: "Ingram Engineering Building, Room 3104",
+    category: "meeting",
+    image: "/images/events/firstintro-rasmeet-poster-spring2026.png",
+    // registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdZ_CJmQr9IbvxOCYZE-_KM-xXRYFiyimsrPg0BBaI7Gj5FEQ/viewform?usp=publish-editor",
     isPast: true,
   },
   {
