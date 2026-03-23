@@ -64,7 +64,7 @@ export default function Robotics() {
                 Introduction to Robotics
               </h2>              
               <p className="text-gray-600 max-w-3xl mx-auto text-center mb-3">
-                Groups of students work together to build different projects of their choice. Students have 4 different projects (Crawler Robot,
+                Groups of students work together to build different projects of their choice. Students have 5 different projects (Robot Kits, Crawler (Spider) Robots,
                 Face Tracking, Color Sorter, or Sumo Robots) to choose from, and form 2 groups of 4-5 members per project. This is a 
                 semi-guided group, with technical leads versed in the projects standing by to help groups when needed.
               </p>
@@ -94,7 +94,7 @@ export default function Robotics() {
                 Rapid Prototyping
               </h2>              
               <p className="text-gray-600 max-w-3xl mx-auto text-center mb-3">
-                Small group of motivated members working on building projects in a &quot;rapid&quot; prototyping style. Quick prototyping,
+                Group of motivated students working on building projects in a &quot;rapid&quot; prototyping style. Quick prototyping,
                 followed by testing and evaluation, allows for a fast-paced development of complex robotics projects (Autonomous drone and Couch robot).
               </p>
             </div>
