@@ -45,7 +45,7 @@ export const executiveBoard: TeamMember[] = [
     position: "Vice President of Administration",
     major: "Computer Science",
     graduationYear: "2026",
-    image: "/images/team/mainbranch/ian-lingo.jpg",
+    image: "/images/team/mainbranch/ian-lingo.png",
     linkedin: "https://www.linkedin.com/in/ianlingo/",
   },
   {
@@ -285,7 +285,7 @@ export const rasOfficers: TeamMember[] = [
     position: "Treasurer & Industry Robotics Director",
     major: "Computer Science",
     graduationYear: "2026",
-    image: "/images/team/mainbranch/ian-lingo.jpg",
+    image: "/images/team/mainbranch/ian-lingo.png",
     linkedin: "https://www.linkedin.com/in/ianlingo/",
   },
   {
@@ -391,7 +391,7 @@ export const hknOfficers: TeamMember[] = [
     position: "Treasurer",
     major: "Computer Science",
     graduationYear: "2026",
-    image: "/images/team/mainbranch/ian-lingo.jpg",
+    image: "/images/team/mainbranch/ian-lingo.png",
     linkedin: "https://www.linkedin.com/in/ianlingo/",
   },
   {
