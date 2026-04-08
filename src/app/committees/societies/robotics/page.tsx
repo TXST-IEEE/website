@@ -33,17 +33,22 @@ export default function Robotics() {
       {/* Intro Section */}
       <Section>
         <FadeIn>
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-3">
               RAS TXST
             </h2>
             <div className="w-24 h-1 bg-[#00629B] mx-auto rounded-full" />
           </div>
 
-          <p className="text-gray-600 max-w-3xl mx-auto text-center mb-3">
+          <p className="text-gray-900 max-w-3xl mx-auto text-center mb-3">
             IEEE Robotics and Automation Society (RAS) at Texas State University brings together students from all 
-            disciplines of robotics to design, build, and program real robots. From CAD and 3D-printed chassis to 
-            embedded systems and autonomous code, members collaborate across hardware and software. RAS is organized 
+            disciplines of robotics to design, build, and program real robots. Since the chapter&apos;s founding at TXST in Fall 2025,
+            it has grown to over 80+ active and paying members!
+          </p> 
+            
+          <p className="text-gray-900 max-w-3xl mx-auto text-center">
+            From CAD and 3D-printed chassis to embedded systems and autonomous code, members
+            collaborate across hardware and software. RAS is organized 
             into Intro, Rapid Prototyping, and Industry committees, giving students a clear path to learn 
             fundamentals, build advanced projects, and connect robotics to real-world applications.
           </p>
@@ -63,7 +68,7 @@ export default function Robotics() {
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
                 Introduction to Robotics
               </h2>              
-              <p className="text-gray-600 max-w-3xl mx-auto text-center mb-3">
+              <p className="text-gray-900 max-w-3xl mx-auto text-center mb-3">
                 Groups of students work together to build different projects of their choice. Students have 5 different projects (Robot Kits, Crawler (Spider) Robots,
                 Face Tracking, Color Sorter, or Sumo Robots) to choose from, and form 2 groups of 4-5 members per project. This is a 
                 semi-guided group, with technical leads versed in the projects standing by to help groups when needed.
@@ -78,7 +83,7 @@ export default function Robotics() {
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
                 Industry Robotics
               </h2>              
-              <p className="text-gray-600 max-w-3xl mx-auto text-center mb-3">
+              <p className="text-gray-900 max-w-3xl mx-auto text-center mb-3">
                 Group of students working on complex robotics projects (Fully Autonomous Service robot) focusing on application in 
                 industry. Works with the Industrial Makerspace for College of Science and Engineering (CoSE) on campus which provides lab space,
                 tools, and development help. 
@@ -93,7 +98,7 @@ export default function Robotics() {
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
                 Rapid Prototyping
               </h2>              
-              <p className="text-gray-600 max-w-3xl mx-auto text-center mb-3">
+              <p className="text-gray-900 max-w-3xl mx-auto text-center mb-3">
                 Group of motivated students working on building projects in a &quot;rapid&quot; prototyping style. Quick prototyping,
                 followed by testing and evaluation, allows for a fast-paced development of complex robotics projects (Autonomous drone and Couch robot).
               </p>
