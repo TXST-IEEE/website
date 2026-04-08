@@ -128,10 +128,8 @@ export default function Robotics() {
               </h2>
               <div className="w-40 h-1 bg-[#00629B] mb-6 rounded-full mx-auto" />
                 <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                  Whether you are just getting started or want to work on advanced robotics,
-                  RAS offers a clear path to grow through technical workshops, team-based
-                  projects, and competitive engineering experiences that strengthen both
-                  your resume and your confidence.
+                  Build real technical experience outside the classroom by developing robotics systems from concept to completion.
+                  Members gain hands-on experience in debugging, teamwork, and system integration while working on projects that reflect real engineering environments.
                 </p>
 
                 <p className="text-lg text-gray-700 leading-relaxed mb-4">
