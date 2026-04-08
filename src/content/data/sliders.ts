@@ -11,9 +11,9 @@
  */
 
 import type { SlideshowImage } from "@/components/ui/ImageSlideshow";
-import type { CarouselImage } from "@/components/ui/ImageCarousel";
+import type { CarouselImage } from "@/components/ui/ImageCarouselReverse";
 
-export const homeSliderImages: Record<string, SlideshowImage[]> = {
+export const sliderImages: Record<string, SlideshowImage[]> = {
     homePage: [
         {src: "/images/gallery/mikem-ieeespeaker-photo-fall2025.jpg", alt: "Mike M Meeting Room Photo"},
         {src: "/images/gallery/ieee-ops-room-photo3.jpg", alt: "OPS Meeting Photo"},
@@ -26,9 +26,20 @@ export const homeSliderImages: Record<string, SlideshowImage[]> = {
         {src: "/images/gallery/ieee-destinationimagination-photo.png", alt: "Destination Imagination Photo"},
         {src: "/images/gallery/ieee-volunteer-group-photo.jpg", alt: "IEEE Volunteer Event Group Photo"},
     ],
+    roboticsPage: [
+        {src: "/images/gallery/ras/ras-r5robotics-2ndplace-group-photo.png", alt: "R5 Spring 2026 Group Photo"},
+        {src: "/images/gallery/ras/ras-r5conference-2ndplace-trophy-photo.png", alt: "R5 Spring 2026 2nd Place Trophy Photo"},
+        {src: "/images/gallery/ras/ras-r5conference-groupdinner-photo.png", alt: "R5 Spring 2026 Group Dinner Photo"},
+        {src: "/images/gallery/ras/ras-r5robotics-pico-photo.png", alt: "R5 Spring 2026 Pico Robot Photo"},
+        {src: "/images/gallery/ras/ras-r5robotics-2ndplace-group-photo2.png", alt: "R5 Spring 2026 Group Photo 2"},
+        {src: "/images/gallery/ras/ras-r5robotics-queso-group-photo.png", alt: "R5 Spring 2025 Queso Robot Photo"},
+        {src: "/images/gallery/ras/ras-queso-photo.png", alt: "R5 Spring 2025 Queso Robot Photo"},
+        {src: "/images/gallery/ras/ras-sumobot-photo.png", alt: "RAS Spring 2025 Sumobot Robot Photo"},
+        {src: "/images/gallery/ras/ras-r5robotics-2ndplace-group-photo3.png", alt: "R5 Spring 2026 Group Photo 3"},
+    ],
 };
 
-export const committeeSliderImages: Record<string, CarouselImage[]> = {
+export const carouselImages: Record<string, CarouselImage[]> = {
     computerSoc: [
         {src: "/images/gallery/ras/ras-room-photo.jpg", alt: "RAS Room Photo"},
     ],

@@ -13,7 +13,7 @@ type ImageCarouselProps = {
     className?: string;
 };
 
-export default function ImageCarousel({
+export default function ImageCarouselReverse({
     images,
     className = "",
 }: ImageCarouselProps) {
@@ -29,7 +29,7 @@ export default function ImageCarousel({
             <motion.div 
                 className='flex gap-1'
                 animate={{
-                    x: ['-200%', '0%'],
+                    x: ['0%', '-200%'],
                     transition:{
                         ease: "linear",
                         duration: 23,

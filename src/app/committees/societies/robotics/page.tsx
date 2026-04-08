@@ -1,10 +1,12 @@
 import OfficerCard from "@/components/ui/OfficerCard";
 import Section from "@/components/ui/Section";
 import FadeIn from "@/components/animations/FadeIn";
-import ImageCarousel from "@/components/ui/ImageCarousel";
+import ImageCarouselReverse from "@/components/ui/ImageCarouselReverse";
+import SlideIn from "@/components/animations/SlideIn";
+import ImageSlideshow from "@/components/ui/ImageSlideshow";
 import SocialLinks from "@/components/robotics/SocialLinks";
 import { rasOfficers } from "@/content/data/team";
-import { committeeSliderImages } from "@/content/data/sliders";
+import { carouselImages, sliderImages } from "@/content/data/sliders";
 
 export default function Robotics() {
 
@@ -26,24 +28,29 @@ export default function Robotics() {
 
       <FadeIn>
         <div className="flex flex-col gap-6 shadow-2xl">
-          <ImageCarousel images={committeeSliderImages.robotics} />
+          <ImageCarouselReverse images={carouselImages.robotics} />
         </div>
       </FadeIn>
 
       {/* Intro Section */}
       <Section>
         <FadeIn>
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-3">
               RAS TXST
             </h2>
             <div className="w-24 h-1 bg-[#00629B] mx-auto rounded-full" />
           </div>
 
-          <p className="text-gray-600 max-w-3xl mx-auto text-center mb-3">
+          <p className="text-gray-900 max-w-3xl mx-auto text-center mb-3">
             IEEE Robotics and Automation Society (RAS) at Texas State University brings together students from all 
-            disciplines of robotics to design, build, and program real robots. From CAD and 3D-printed chassis to 
-            embedded systems and autonomous code, members collaborate across hardware and software. RAS is organized 
+            disciplines of robotics to design, build, and program real robots. Since the chapter&apos;s founding at TXST in Fall 2025,
+            it has grown to over 80+ active and paying members!
+          </p> 
+            
+          <p className="text-gray-900 max-w-3xl mx-auto text-center">
+            From CAD and 3D-printed chassis to embedded systems and autonomous code, members
+            collaborate across hardware and software. RAS is organized 
             into Intro, Rapid Prototyping, and Industry committees, giving students a clear path to learn 
             fundamentals, build advanced projects, and connect robotics to real-world applications.
           </p>
@@ -63,7 +70,7 @@ export default function Robotics() {
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
                 Introduction to Robotics
               </h2>              
-              <p className="text-gray-600 max-w-3xl mx-auto text-center mb-3">
+              <p className="text-gray-900 max-w-3xl mx-auto text-center mb-3">
                 Groups of students work together to build different projects of their choice. Students have 5 different projects (Robot Kits, Crawler (Spider) Robots,
                 Face Tracking, Color Sorter, or Sumo Robots) to choose from, and form 2 groups of 4-5 members per project. This is a 
                 semi-guided group, with technical leads versed in the projects standing by to help groups when needed.
@@ -78,7 +85,7 @@ export default function Robotics() {
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
                 Industry Robotics
               </h2>              
-              <p className="text-gray-600 max-w-3xl mx-auto text-center mb-3">
+              <p className="text-gray-900 max-w-3xl mx-auto text-center mb-3">
                 Group of students working on complex robotics projects (Fully Autonomous Service robot) focusing on application in 
                 industry. Works with the Industrial Makerspace for College of Science and Engineering (CoSE) on campus which provides lab space,
                 tools, and development help. 
@@ -93,7 +100,7 @@ export default function Robotics() {
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
                 Rapid Prototyping
               </h2>              
-              <p className="text-gray-600 max-w-3xl mx-auto text-center mb-3">
+              <p className="text-gray-900 max-w-3xl mx-auto text-center mb-3">
                 Group of motivated students working on building projects in a &quot;rapid&quot; prototyping style. Quick prototyping,
                 followed by testing and evaluation, allows for a fast-paced development of complex robotics projects (Autonomous drone and Couch robot).
               </p>
@@ -101,6 +108,76 @@ export default function Robotics() {
 
           </div>
         </FadeIn>
+      </Section>
+
+      {/* Why you should join Section */}
+      <Section>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+          {/* Image */}
+          <SlideIn direction="left">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl">
+              <ImageSlideshow images={sliderImages.roboticsPage} />
+            </div>
+          </SlideIn>
+
+          {/* Text Content */}
+          <SlideIn direction="right">
+            <div className="max-w-2xl">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                Why you should join
+              </h2>
+              <div className="w-40 h-1 bg-[#00629B] mb-6 rounded-full mx-auto" />
+                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                  Build real technical experience outside the classroom by developing robotics systems from concept to completion.
+                  Members gain hands-on experience in debugging, teamwork, and system integration while working on projects that reflect real engineering environments.
+                </p>
+
+                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                  Interested in designing and competing with a full-scale robot?
+                  Join our IEEE Region 5 robotics competition team and collaborate
+                  with students to build, test, and compete against universities
+                  across the region.
+                </p>
+
+              {/* Competition Highlight */}
+              <div className="bg-[#F8FAFC] border border-gray-200 p-5 rounded-xl mb-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  IEEE Region 5 Robotics Competition
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  <strong>Spring 2025:</strong> Top 8 Finalist out of 20 universities
+                  <br />
+                  <strong>Spring 2026:</strong> 2nd Place out of 24 universities
+                </p>
+              </div>
+
+              <p className="font-semibold text-lg text-gray-900 leading-relaxed mb-4">
+                Meeting Times & Locations:
+              </p>
+
+              {/* Meeting Info */}
+              <div className="grid sm:grid-cols-3 gap-4">
+                <div className="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                  <h4 className="font-bold text-gray-900 mb-1">Intro</h4>
+                  <p className="text-sm text-gray-700">Mondays at 6:30PM</p>
+                  <p className="text-sm text-gray-600">Ingram Room 4104</p>
+                </div>
+
+                <div className="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                  <h4 className="font-bold text-gray-900 mb-1">Industry</h4>
+                  <p className="text-sm text-gray-700">Wednesdays at 6:30PM</p>
+                  <p className="text-sm text-gray-600">Ingram Makerspace</p>
+                </div>
+
+                <div className="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                  <h4 className="font-bold text-gray-900 mb-1">Rapid</h4>
+                  <p className="text-sm text-gray-700">Fridays at 6:30PM</p>
+                  <p className="text-sm text-gray-600">Ingram Makerspace</p>
+                </div>
+              </div>
+            </div>
+          </SlideIn>
+        </div>
       </Section>
 
       {/* RAS Branch Social Links Section */}
