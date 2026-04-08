@@ -116,7 +116,7 @@ export default function Robotics() {
           {/* Image */}
           <SlideIn direction="left">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
-              <ImageSlideshow images={sliderImages.homePage} />
+              <ImageSlideshow images={sliderImages.roboticsPage} />
             </div>
           </SlideIn>
 

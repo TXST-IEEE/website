@@ -27,13 +27,15 @@ export const sliderImages: Record<string, SlideshowImage[]> = {
         {src: "/images/gallery/ieee-volunteer-group-photo.jpg", alt: "IEEE Volunteer Event Group Photo"},
     ],
     roboticsPage: [
-        {src: "/images/gallery/ras/ras-firstmeeting-group-photo.jpeg", alt: "RAS First Meeting Group Photo"},
-        {src: "/images/gallery/ras/ras-group-photo.jpeg", alt: "RAS Group Photo"},
-        {src: "/images/gallery/ras/ras-firstmeeting-photo.jpeg", alt: "RAS First Meeting Photo"},
-        {src: "/images/gallery/ras/ras-dianewelker-robot-photo.jpeg", alt: "RAS Diane Welker Robot Photo"},
-        {src: "/images/gallery/ras/ras-room-photo.jpg", alt: "RAS Room Photo"},
-        {src: "/images/gallery/ras/ras-mrwelker-robot-photo.jpeg", alt: "RAS Mr Welker Robot Photo"},
-        {src: "/images/gallery/ras/ras-presentations-photo.png", alt: "RAS Presentations Photo"},
+        {src: "/images/gallery/ras/ras-r5robotics-2ndplace-group-photo.png", alt: "R5 Spring 2026 Group Photo"},
+        {src: "/images/gallery/ras/ras-r5conference-2ndplace-trophy-photo.png", alt: "R5 Spring 2026 2nd Place Trophy Photo"},
+        {src: "/images/gallery/ras/ras-r5conference-groupdinner-photo.png", alt: "R5 Spring 2026 Group Dinner Photo"},
+        {src: "/images/gallery/ras/ras-r5robotics-2ndplace-group-photo2.png", alt: "R5 Spring 2026 Group Photo 2"},
+        {src: "/images/gallery/ras/ras-r5robotics-pico-photo.png", alt: "R5 Spring 2026 Pico Robot Photo"},
+        {src: "/images/gallery/ras/ras-r5robotics-queso-group-photo.png", alt: "R5 Spring 2025 Queso Robot Photo"},
+        {src: "/images/gallery/ras/ras-queso-photo.png", alt: "R5 Spring 2025 Queso Robot Photo"},
+        {src: "/images/gallery/ras/ras-sumobot-photo.png", alt: "RAS Spring 2025 Sumobot Robot Photo"},
+        {src: "/images/gallery/ras/ras-r5robotics-2ndplace-group-photo3.png", alt: "R5 Spring 2026 Group Photo 3"},
     ],
 };
 
