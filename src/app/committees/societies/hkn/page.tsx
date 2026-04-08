@@ -1,7 +1,7 @@
 import OfficerCard from "@/components/ui/OfficerCard";
 import Section from "@/components/ui/Section";
 import FadeIn from "@/components/animations/FadeIn";
-import ImageCarousel from "@/components/ui/ImageCarousel";
+import ImageCarouselReverse from "@/components/ui/ImageCarouselReverse";
 import Button from "@/components/ui/Button";
 import { committeeSliderImages } from "@/content/data/sliders";
 import SocialLinks from "@/components/hkn/SocialLinks";
@@ -27,7 +27,7 @@ export default function HKN() {
 
       <FadeIn>
         <div className="flex flex-col gap-6 shadow-2xl">
-          <ImageCarousel images={committeeSliderImages.hkn} />
+          <ImageCarouselReverse images={committeeSliderImages.hkn} />
         </div>
       </FadeIn>
 

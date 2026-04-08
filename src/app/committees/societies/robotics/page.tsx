@@ -1,7 +1,7 @@
 import OfficerCard from "@/components/ui/OfficerCard";
 import Section from "@/components/ui/Section";
 import FadeIn from "@/components/animations/FadeIn";
-import ImageCarousel from "@/components/ui/ImageCarousel";
+import ImageCarouselReverse from "@/components/ui/ImageCarouselReverse";
 import SocialLinks from "@/components/robotics/SocialLinks";
 import { rasOfficers } from "@/content/data/team";
 import { committeeSliderImages } from "@/content/data/sliders";
@@ -26,7 +26,7 @@ export default function Robotics() {
 
       <FadeIn>
         <div className="flex flex-col gap-6 shadow-2xl">
-          <ImageCarousel images={committeeSliderImages.robotics} />
+          <ImageCarouselReverse images={committeeSliderImages.robotics} />
         </div>
       </FadeIn>
 

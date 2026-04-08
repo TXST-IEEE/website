@@ -11,7 +11,7 @@
  */
 
 import type { SlideshowImage } from "@/components/ui/ImageSlideshow";
-import type { CarouselImage } from "@/components/ui/ImageCarousel";
+import type { CarouselImage } from "@/components/ui/ImageCarouselReverse";
 
 export const homeSliderImages: Record<string, SlideshowImage[]> = {
     homePage: [
