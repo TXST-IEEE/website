@@ -29,7 +29,7 @@ export default function ImageCarousel({
             <motion.div 
                 className='flex gap-1'
                 animate={{
-                    x: ['0%', '-200%'],
+                    x: ['-200%', '0%'],
                     transition:{
                         ease: "linear",
                         duration: 23,
