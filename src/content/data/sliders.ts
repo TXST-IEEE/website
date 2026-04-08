@@ -13,7 +13,7 @@
 import type { SlideshowImage } from "@/components/ui/ImageSlideshow";
 import type { CarouselImage } from "@/components/ui/ImageCarouselReverse";
 
-export const homeSliderImages: Record<string, SlideshowImage[]> = {
+export const sliderImages: Record<string, SlideshowImage[]> = {
     homePage: [
         {src: "/images/gallery/mikem-ieeespeaker-photo-fall2025.jpg", alt: "Mike M Meeting Room Photo"},
         {src: "/images/gallery/ieee-ops-room-photo3.jpg", alt: "OPS Meeting Photo"},
@@ -26,9 +26,18 @@ export const homeSliderImages: Record<string, SlideshowImage[]> = {
         {src: "/images/gallery/ieee-destinationimagination-photo.png", alt: "Destination Imagination Photo"},
         {src: "/images/gallery/ieee-volunteer-group-photo.jpg", alt: "IEEE Volunteer Event Group Photo"},
     ],
+    roboticsPage: [
+        {src: "/images/gallery/ras/ras-firstmeeting-group-photo.jpeg", alt: "RAS First Meeting Group Photo"},
+        {src: "/images/gallery/ras/ras-group-photo.jpeg", alt: "RAS Group Photo"},
+        {src: "/images/gallery/ras/ras-firstmeeting-photo.jpeg", alt: "RAS First Meeting Photo"},
+        {src: "/images/gallery/ras/ras-dianewelker-robot-photo.jpeg", alt: "RAS Diane Welker Robot Photo"},
+        {src: "/images/gallery/ras/ras-room-photo.jpg", alt: "RAS Room Photo"},
+        {src: "/images/gallery/ras/ras-mrwelker-robot-photo.jpeg", alt: "RAS Mr Welker Robot Photo"},
+        {src: "/images/gallery/ras/ras-presentations-photo.png", alt: "RAS Presentations Photo"},
+    ],
 };
 
-export const committeeSliderImages: Record<string, CarouselImage[]> = {
+export const carouselImages: Record<string, CarouselImage[]> = {
     computerSoc: [
         {src: "/images/gallery/ras/ras-room-photo.jpg", alt: "RAS Room Photo"},
     ],

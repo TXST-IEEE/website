@@ -5,10 +5,8 @@ import ImageCarouselReverse from "@/components/ui/ImageCarouselReverse";
 import SlideIn from "@/components/animations/SlideIn";
 import ImageSlideshow from "@/components/ui/ImageSlideshow";
 import SocialLinks from "@/components/robotics/SocialLinks";
-import { siteConfig } from "@/content/config";
-import { homeContent } from "@/content/pages/home";
 import { rasOfficers } from "@/content/data/team";
-import { committeeSliderImages, homeSliderImages } from "@/content/data/sliders";
+import { carouselImages, sliderImages } from "@/content/data/sliders";
 
 export default function Robotics() {
 
@@ -30,7 +28,7 @@ export default function Robotics() {
 
       <FadeIn>
         <div className="flex flex-col gap-6 shadow-2xl">
-          <ImageCarouselReverse images={committeeSliderImages.robotics} />
+          <ImageCarouselReverse images={carouselImages.robotics} />
         </div>
       </FadeIn>
 
@@ -118,7 +116,7 @@ export default function Robotics() {
           {/* Image */}
           <SlideIn direction="left">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
-              <ImageSlideshow images={homeSliderImages.homePage} />
+              <ImageSlideshow images={sliderImages.homePage} />
             </div>
           </SlideIn>
 
