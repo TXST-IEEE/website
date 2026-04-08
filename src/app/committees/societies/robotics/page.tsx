@@ -2,9 +2,13 @@ import OfficerCard from "@/components/ui/OfficerCard";
 import Section from "@/components/ui/Section";
 import FadeIn from "@/components/animations/FadeIn";
 import ImageCarouselReverse from "@/components/ui/ImageCarouselReverse";
+import SlideIn from "@/components/animations/SlideIn";
+import ImageSlideshow from "@/components/ui/ImageSlideshow";
 import SocialLinks from "@/components/robotics/SocialLinks";
+import { siteConfig } from "@/content/config";
+import { homeContent } from "@/content/pages/home";
 import { rasOfficers } from "@/content/data/team";
-import { committeeSliderImages } from "@/content/data/sliders";
+import { committeeSliderImages, homeSliderImages } from "@/content/data/sliders";
 
 export default function Robotics() {
 
@@ -106,6 +110,78 @@ export default function Robotics() {
 
           </div>
         </FadeIn>
+      </Section>
+
+      {/* Why you should join Section */}
+      <Section>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center">
+          {/* Image */}
+          <SlideIn direction="left">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl">
+              <ImageSlideshow images={homeSliderImages.homePage} />
+            </div>
+          </SlideIn>
+
+          {/* Text Content */}
+          <SlideIn direction="right">
+            <div className="max-w-2xl">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                Why you should join
+              </h2>
+              <div className="w-40 h-1 bg-[#00629B] mb-6 rounded-full mx-auto" />
+                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                  Whether you are just getting started or want to work on advanced robotics,
+                  RAS offers a clear path to grow through technical workshops, team-based
+                  projects, and competitive engineering experiences that strengthen both
+                  your resume and your confidence.
+                </p>
+
+                <p className="text-lg text-gray-700 leading-relaxed mb-4">
+                  Interested in designing and competing with a full-scale robot?
+                  Join our IEEE Region 5 robotics competition team and collaborate
+                  with students to build, test, and compete against universities
+                  across the region.
+                </p>
+
+              {/* Competition Highlight */}
+              <div className="bg-[#F8FAFC] border border-gray-200 p-5 rounded-xl mb-6">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  IEEE Region 5 Robotics Competition
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  <strong>Spring 2025:</strong> Top 8 Finalist out of 20 universities
+                  <br />
+                  <strong>Spring 2026:</strong> 2nd Place out of 24 universities
+                </p>
+              </div>
+
+              <p className="font-semibold text-lg text-gray-900 leading-relaxed mb-4">
+                Meeting Times & Locations:
+              </p>
+
+              {/* Meeting Info */}
+              <div className="grid sm:grid-cols-3 gap-4">
+                <div className="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                  <h4 className="font-bold text-gray-900 mb-1">Intro</h4>
+                  <p className="text-sm text-gray-700">Mondays at 6:30PM</p>
+                  <p className="text-sm text-gray-600">Ingram Room 4104</p>
+                </div>
+
+                <div className="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                  <h4 className="font-bold text-gray-900 mb-1">Industry</h4>
+                  <p className="text-sm text-gray-700">Wednesdays at 6:30PM</p>
+                  <p className="text-sm text-gray-600">Ingram Makerspace</p>
+                </div>
+
+                <div className="bg-gray-50 p-4 rounded-xl border border-gray-200">
+                  <h4 className="font-bold text-gray-900 mb-1">Rapid</h4>
+                  <p className="text-sm text-gray-700">Fridays at 6:30PM</p>
+                  <p className="text-sm text-gray-600">Ingram Makerspace</p>
+                </div>
+              </div>
+            </div>
+          </SlideIn>
+        </div>
       </Section>
 
       {/* RAS Branch Social Links Section */}
