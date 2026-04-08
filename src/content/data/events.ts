@@ -43,6 +43,42 @@ export const events: Event[] = [
   //   isPast: false,     // Don't forget to update past events to "true" boolean value!                     
   // },
   {
+    id: "event-038",
+    title: "Mock Interviews Workshop",
+    description:
+      "Come join us for Mock Interviews! Get prepared for corporate interviews and learn new skills!",
+    date: "2026-04-09",
+    time: "6:30 PM",
+    location: "Ingram Engineering Building, Room 4104",
+    category: "workshop",
+    image: "/images/events/mockinterview-workshopmeet-poster-spring2026.png",
+    isPast: false,
+  },
+  {
+    id: "event-037",
+    title: "Fourth OPS Workshop",
+    description:
+      "Who's ready for Thursday? We're hosting an OPS workshop collaboration with Intro to Robotics RAS!",
+    date: "2026-04-02",
+    time: "6:30 PM",
+    location: "Ingram Engineering Building, Room 4104",
+    category: "workshop",
+    image: "/images/events/fourth-opsmeet-poster-spring2026.png",
+    isPast: true,
+  },
+  {
+    id: "event-036",
+    title: "Leyla Yilan Speaker",
+    description:
+      "On Thursday at 6:30pm we're having AMD Senior Hardware Engineer, Leyla Yilan! Learn about chip design verification and its process from RTL to silicon!",
+    date: "2026-03-26",
+    time: "6:30 PM",
+    location: "Ingram Engineering Building, Room 4104",
+    category: "speaker",
+    image: "/images/events/leylay-ieeespeaker-poster-spring2026.png",
+    isPast: true,
+  },
+  {
     id: "event-035",
     title: "Chris Brown Speaker",
     description:
@@ -58,7 +94,7 @@ export const events: Event[] = [
     id: "event-034",
     title: "Third OPS Workshop",
     description:
-      "Who's ready for Thursday? We're hosting an Ops workshop and offering complimentary headshots to all interested!",
+      "Who's ready for Thursday? We're hosting an OPS workshop and offering complimentary headshots to all interested!",
     date: "2026-03-05",
     time: "6:30 PM",
     location: "Ingram Engineering Building, Room 4104",
