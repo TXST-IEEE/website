@@ -64,7 +64,7 @@ export const events: Event[] = [
     location: "Ingram Engineering Building, Room 4104",
     category: "workshop",
     image: "/images/events/ltspice-workshopmeet-poster-spring2026.png",
-    isPast: false,
+    isPast: true,
   },
   {
     id: "event-038",
