@@ -44,13 +44,14 @@ export const carouselImages: Record<string, CarouselImage[]> = {
         {src: "/images/gallery/ras/ras-room-photo.jpg", alt: "RAS Room Photo"},
     ],
     robotics: [
-        {src: "/images/gallery/ras/ras-firstmeeting-group-photo.jpeg", alt: "RAS First Meeting Group Photo"},
         {src: "/images/gallery/ras/ras-group-photo.jpeg", alt: "RAS Group Photo"},
-        {src: "/images/gallery/ras/ras-firstmeeting-photo.jpeg", alt: "RAS First Meeting Photo"},
+        {src: "/images/gallery/ras/ras-intromeet-photo2.JPG", alt: "RAS Intro Meeting Photo 2"},
+        {src: "/images/gallery/ras/ras-intromeet-photo.JPG", alt: "RAS Intro Meeting Photo"},
         {src: "/images/gallery/ras/ras-dianewelker-robot-photo.jpeg", alt: "RAS Diane Welker Robot Photo"},
-        {src: "/images/gallery/ras/ras-room-photo.jpg", alt: "RAS Room Photo"},
         {src: "/images/gallery/ras/ras-mrwelker-robot-photo.jpeg", alt: "RAS Mr Welker Robot Photo"},
         {src: "/images/gallery/ras/ras-presentations-photo.png", alt: "RAS Presentations Photo"},
+        {src: "/images/gallery/ras/ras-firstmeeting-photo.jpeg", alt: "RAS First Meeting Photo"},
+        {src: "/images/gallery/ras/ras-firstmeeting-group-photo.jpeg", alt: "RAS First Meeting Group Photo"},
     ],
     hkn: [
         {src: "/images/gallery/hkn/hkn-appliedmaterials-group-photo.jpg", alt: "HKN Applied Materials Group Photo"},
