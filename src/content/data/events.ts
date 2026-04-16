@@ -43,6 +43,30 @@ export const events: Event[] = [
   //   isPast: false,     // Don't forget to update past events to "true" boolean value!                     
   // },
   {
+    id: "event-040",
+    title: "Google Speaker Series",
+    description:
+      "Join us Tuesday for an exclusive panel featuring Google engineers sharing their journeys, insights, and career advice!",
+    date: "2026-04-21",
+    time: "7:00 PM",
+    location: "Ingram Engineering Building, Room 3104",
+    category: "speaker",
+    image: "/images/events/googletxst-speakerpanel-poster-spring2026.png",
+    isPast: false,
+  },
+  {
+    id: "event-039",
+    title: "LT Spice Workshop",
+    description:
+      "IEEE is hosting a LTspice workshop. Learn how to simulate and test circuits before building!",
+    date: "2026-04-14",
+    time: "7:30 PM",
+    location: "Ingram Engineering Building, Room 4104",
+    category: "workshop",
+    image: "/images/events/ltspice-workshopmeet-poster-spring2026.png",
+    isPast: false,
+  },
+  {
     id: "event-038",
     title: "Mock Interviews Workshop",
     description:
@@ -52,7 +76,7 @@ export const events: Event[] = [
     location: "Ingram Engineering Building, Room 4104",
     category: "workshop",
     image: "/images/events/mockinterview-workshopmeet-poster-spring2026.png",
-    isPast: false,
+    isPast: true,
   },
   {
     id: "event-037",

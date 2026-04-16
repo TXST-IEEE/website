@@ -38,7 +38,7 @@ export default function ImageCarouselReverse({
                 }}
             >
             {loopImages.map((img,index)=>{
-                return <div key={index} className='relative flex-shrink-0 w-[450px] h-[400px] gap-6'>
+                return <div key={index} className='relative flex-shrink-0 w-[500px] h-[400px] gap-6'>
                         <Image 
                             src={img.src} 
                             alt={img.alt}
