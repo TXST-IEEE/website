@@ -11,35 +11,97 @@ This website is built with **Next.js 15** (React framework) and uses a **content
 ```
 website/
 ├── public/                          # Static assets (images, files)
+│   ├── favicon.ico                  # Browser tab icon
+│   ├── favicon-16x16.png
+│   ├── favicon-32x32.png
+│   ├── apple-touch-icon.png
+│   ├── android-chrome-192x192.png
+│   ├── android-chrome-512x512.png
+│   ├── site.webmanifest             # PWA manifest
 │   └── images/                      # All website images
+│       ├── README.md                # Image usage guide
 │       ├── branding/                # Logos and icons
-│       ├── events/                  # Event photos
-│       ├── team/                    # Team member headshots
-│       └── gallery/                 # General photos
+│       │   ├── ieee-logo.png
+│       │   ├── ieee-txst-logo.jpg
+│       │   ├── ieee-txst-rectangle-logo.png
+│       │   ├── computersociety-logo.jpg
+│       │   ├── hkn-logo.png
+│       │   ├── ras-logo.jpg
+│       │   └── ...                  # Other brand assets and SVGs
+│       ├── events/                  # Event posters and photos
+│       ├── gallery/                 # General photos
+│       │   ├── hkn/                 # HKN chapter photos
+│       │   ├── ras/                 # Robotics & Automation Society photos
+│       │   └── ...                  # General IEEE photos
+│       └── team/                    # Officer headshots
+│           ├── PLACE_OFFICER_PHOTOS_HERE.md
+│           ├── mainbranch/          # Main IEEE branch officers
+│           ├── hkn/                 # HKN chapter officers
+│           └── ras/                 # RAS chapter officers
 │
 ├── src/                             # Source code
 │   ├── app/                         # Pages (Next.js App Router)
-│   │   ├── layout.tsx               # Main layout (header, footer)
+│   │   ├── layout.tsx               # Root layout (header, footer, metadata)
 │   │   ├── page.tsx                 # Homepage
-│   │   ├── events/                  # Events page
-│   │   ├── membership/              # Membership page (to be created)
-│   │   └── about/                   # About page
+│   │   ├── globals.css              # Global styles
+│   │   ├── robots.ts                # Robots.txt generation
+│   │   ├── sitemap.ts               # Sitemap generation
+│   │   ├── events/
+│   │   │   └── page.tsx             # Events page
+│   │   ├── membership/
+│   │   │   └── page.tsx             # Membership page
+│   │   ├── officers/
+│   │   │   └── page.tsx             # Officers page
+│   │   └── committees/
+│   │       ├── page.tsx             # Committees overview page
+│   │       └── societies/
+│   │           ├── computersoc/
+│   │           │   └── page.tsx     # Computer Society page
+│   │           ├── hkn/
+│   │           │   └── page.tsx     # Eta Kappa Nu (HKN) page
+│   │           └── robotics/
+│   │               └── page.tsx     # Robotics & Automation Society page
 │   │
 │   ├── components/                  # Reusable UI components
-│   │   ├── ui/                      # Basic UI elements (buttons, cards)
-│   │   ├── layout/                  # Layout components (navbar, footer)
+│   │   ├── ui/                      # Generic UI elements
+│   │   │   ├── Button.tsx
+│   │   │   ├── Card.tsx
+│   │   │   ├── GoogleCalendarEmbed.tsx
+│   │   │   ├── Icon.tsx
+│   │   │   ├── ImageCarousel.tsx
+│   │   │   ├── ImageCarouselReverse.tsx
+│   │   │   ├── ImageSlideshow.tsx
+│   │   │   ├── OfficerCard.tsx
+│   │   │   ├── Section.tsx
+│   │   │   └── StatsCounter.tsx
+│   │   ├── layout/                  # Layout components
+│   │   │   ├── Navbar.tsx
+│   │   │   └── Footer.tsx
 │   │   ├── home/                    # Homepage-specific components
+│   │   │   ├── Hero.tsx
+│   │   │   └── SocialLinks.tsx
 │   │   ├── events/                  # Event-specific components
+│   │   │   ├── EventCard.tsx
+│   │   │   └── EventCard3D.tsx
+│   │   ├── computersoc/             # Computer Society components
+│   │   │   └── SocialLinks.tsx
+│   │   ├── hkn/                     # HKN chapter components
+│   │   │   └── SocialLinks.tsx
+│   │   ├── robotics/                # Robotics Society components
+│   │   │   └── SocialLinks.tsx
 │   │   └── animations/              # Animation components
+│   │       ├── FadeIn.tsx
+│   │       └── SlideIn.tsx
 │   │
 │   └── content/                     # ⭐ EDITABLE CONTENT (non-technical friendly)
 │       ├── config.ts                # Site-wide settings
+│       ├── README.md                # Content editing guide
 │       ├── pages/                   # Page content
 │       │   └── home.ts              # Homepage text and content
-│       ├── data/                    # Structured data
-│       │   ├── events.ts            # Events list
-│       │   └── team.ts              # Team members
-│       └── README.md                # Content editing guide
+│       └── data/                    # Structured data
+│           ├── events.ts            # Events list
+│           ├── sliders.ts           # Image carousel data
+│           └── team.ts              # Team members
 │
 ├── package.json                     # Project dependencies
 ├── tailwind.config.ts               # Styling configuration
@@ -56,16 +118,18 @@ website/
 
 ### 2. Component-Based Architecture
 Components are reusable building blocks:
-- **UI Components** (`/components/ui/`) - Buttons, cards, inputs
-- **Layout Components** (`/components/layout/`) - Navbar, footer, page wrappers
-- **Page Components** (`/components/home/`, etc.) - Sections specific to pages
-- **Animation Components** (`/components/animations/`) - Reusable animations
+- **UI Components** (`/components/ui/`) - Buttons, cards, carousels, officer cards, etc.
+- **Layout Components** (`/components/layout/`) - Navbar, footer
+- **Page Components** (`/components/home/`, `/components/events/`, etc.) - Sections specific to pages
+- **Society Components** (`/components/computersoc/`, `/components/hkn/`, `/components/robotics/`) - Society-specific components
+- **Animation Components** (`/components/animations/`) - FadeIn, SlideIn
 
 ### 3. Content Management System
 Non-technical users can update the website by editing files in `/src/content/`:
 - `config.ts` - Contact info, colors, navigation
 - `pages/home.ts` - Homepage content
 - `data/events.ts` - Add/edit events
+- `data/sliders.ts` - Add/edit image carousel slides
 - `data/team.ts` - Add/edit team members
 
 ## 👥 For Non-Technical Users
@@ -79,7 +143,15 @@ Non-technical users can update the website by editing files in `/src/content/`:
 **Want to add images?**
 1. Go to `/public/images/`
 2. Read the README.md there
-3. Upload to the right folder (events, team, gallery, branding)
+3. Upload to the right folder:
+   - `events/` - Event posters and photos
+   - `team/mainbranch/` - Main IEEE officer headshots
+   - `team/hkn/` - HKN officer headshots
+   - `team/ras/` - RAS officer headshots
+   - `gallery/` - General IEEE photos
+   - `gallery/hkn/` - HKN chapter photos
+   - `gallery/ras/` - Robotics Society photos
+   - `branding/` - Logos and brand assets
 
 ## 👨‍💻 For Developers
 
@@ -87,7 +159,7 @@ Non-technical users can update the website by editing files in `/src/content/`:
 - **Framework:** Next.js 15 (App Router)
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS 4
-- **Animations:** Framer Motion (to be added)
+- **Animations:** Framer Motion
 
 ### Development Commands
 ```bash
@@ -111,8 +183,12 @@ npm run lint     # Check code quality
 3. Import where needed
 
 **New Event:**
-1. Non-technical users: Edit `/src/content/data/events.ts`
+1. Edit `/src/content/data/events.ts`
 2. Add event image to `/public/images/events/`
+
+**New Officer:**
+1. Edit `/src/content/data/team.ts`
+2. Add headshot to the appropriate `/public/images/team/` subfolder
 
 ## 🎨 Design System
 
@@ -134,18 +210,11 @@ npm run lint     # Check code quality
 ## 🚀 Future Enhancements
 
 ### Planned Features
-- [ ] Framer Motion animations
 - [ ] Event filtering and search
 - [ ] Member authentication
 - [ ] Admin dashboard
 - [ ] Newsletter signup
 - [ ] Project showcase section
-
-### Animation Strategy
-- Scroll-triggered fade-ins
-- Smooth page transitions
-- Interactive hover effects
-- Parallax hero sections
 
 ## 📝 Best Practices
 
@@ -175,5 +244,5 @@ npm run lint     # Check code quality
 
 ---
 
-**Last Updated:** January 2026
+**Last Updated:** April 2026
 **Maintained by:** IEEE TXST Web Team

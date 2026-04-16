@@ -9,6 +9,7 @@ The official website for IEEE at Texas State University.
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Node.js 18+ installed
 - npm or yarn package manager
 - Git
@@ -16,17 +17,20 @@ The official website for IEEE at Texas State University.
 ### Installation
 
 1. Clone the repository
+
 ```bash
 git clone <repository-url>
 cd website
 ```
 
 2. Install dependencies
+
 ```bash
 npm install
 ```
 
 3. Run the development server
+
 ```bash
 npm run dev
 ```
@@ -60,30 +64,33 @@ npm run build
 - **Analytics:** Vercel Analytics + Speed Insights
 - **Deployment:** Vercel
 - **CI/CD:** GitHub -> Vercel auto-deploy
-- **Source Control:** GitHUb with protected `main` branch
+- **Source Control:** GitHub with protected `main` branch
 
 ## 📁 Project Structure
 
 ```
 website/
 ├── src/
-│   ├── app/              # Pages (Next.js App Router)
-│   ├── components/       # Reusable components
-│   │   ├── ui/          # UI components (buttons, cards, etc.)
-│   │   ├── layout/      # Layout components (navbar, footer)
+│   ├── app/             # Pages (Next.js App Router)
+│   ├── components/      # Reusable components
 │   │   ├── animations/  # Animation wrappers
-│   │   ├── home/        # Homepage components
+│   │   ├── computersoc/ # Computer Society page social links
 │   │   └── events/      # Event components
+│   │   ├── hkn/         # HKN page social links
+│   │   ├── home/        # Homepage components
+│   │   ├── layout/      # Layout components (navbar, footer)
+│   │   ├── robotics/    # Robotics page social links
+│   │   ├── ui/          # UI components (buttons, cards, etc.)
 │   └── content/         # Editable content (non-technical friendly)
-│       ├── config.ts    # Site-wide settings
-│       ├── pages/       # Page content
 │       └── data/        # Events and team data
+│       ├── pages/       # Page content
+│       ├── config.ts    # Site-wide settings
 ├── public/
 │   └── images/          # All images organized by type
 │       ├── branding/    # Logos and icons
 │       ├── events/      # Event photos
-│       ├── team/        # Officer photos
 │       └── gallery/     # General photos
+│       ├── team/        # Officer photos
 └── PRESIDENT_GUIDE.md   # Guide for non-technical content updates
 ```
 
@@ -92,6 +99,7 @@ website/
 For non-technical users who need to update content, see **[PRESIDENT_GUIDE.md](./PRESIDENT_GUIDE.md)**
 
 ### Common Updates:
+
 - **Contact Info:** Edit `/src/content/config.ts`
 - **Events:** Edit `/src/content/data/events.ts`
 - **Officers:** Edit `/src/content/data/team.ts`
@@ -122,6 +130,7 @@ For non-technical users who need to update content, see **[PRESIDENT_GUIDE.md](.
 ### Updating Site Settings
 
 Edit `/src/content/config.ts` to update:
+
 - Organization name and tagline
 - Contact information (email, social media)
 - Meeting schedule and location
@@ -168,7 +177,9 @@ npm run start
 - SSL + HTTPS auto-enabled
 
 ### Search Engine Indexing
+
 Search engined (Google, Bing, etc.) discover and index the site via:
+
 - `app/sitemap.ts`
 - `app/robots.ts`
 
@@ -186,6 +197,7 @@ Copyright © 2026 IEEE Texas State University
 ## 📞 Support
 
 For technical issues or questions:
+
 - Check [PRESIDENT_GUIDE.md](./PRESIDENT_GUIDE.md) for content updates
 - Check [FILE_STRUCTURE.md](./FILE_STRUCTURE.md) for architecture details
 - Contact the web team lead

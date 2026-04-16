@@ -1,7 +1,13 @@
+import { Metadata} from "next";
 import Section from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
 import FadeIn from "@/components/animations/FadeIn";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Committees",
+  description: "Check out IEEE TXST committees and societies focused on robotics, software, and professional development."
+}
 
 export default function Committees() {
   const branches = [

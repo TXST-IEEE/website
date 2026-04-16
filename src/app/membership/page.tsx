@@ -5,12 +5,18 @@
  * No marketing speak - just what students need to know.
  */
 
+import { Metadata } from "next";
 import FadeIn from "@/components/animations/FadeIn";
 import SlideIn from "@/components/animations/SlideIn";
 import Button from "@/components/ui/Button";
 import Section from "@/components/ui/Section";
 import Icon from "@/components/ui/Icon";
 import { siteConfig } from "@/content/config";
+
+export const metadata: Metadata = {
+  title: "Membership",
+  description: "Join IEEE Texas State University and gain access to all events and opportunities we have to offer."
+}
 
 export default function MembershipPage() {
   // What you&apos;ll get as a member
