@@ -10,12 +10,18 @@
  * 3. Add officer photo to /public/images/team/
  */
 
+import { Metadata } from "next";
 import OfficerCard from "@/components/ui/OfficerCard";
 import Section from "@/components/ui/Section";
 import Button from "@/components/ui/Button";
 import FadeIn from "@/components/animations/FadeIn";
 import Image from "next/image";
 import { executiveBoard, officerMembers } from "@/content/data/team";
+
+export const metadata: Metadata = {
+  title: "Officers",
+  description: "Meet the leadership behind IEEE TXST."
+}
 
 export default function Officers() {
   return (

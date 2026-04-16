@@ -16,11 +16,17 @@
 "use client";
 
 import { useState } from "react";
+import { Metadata } from "next";
 import EventCard3D from "@/components/events/EventCard3D";
 import Section from "@/components/ui/Section";
 import FadeIn from "@/components/animations/FadeIn";
 import { events } from "@/content/data/events";
 import GoogleCalendarEmbed from "@/components/ui/GoogleCalendarEmbed";
+
+export const metadata: Metadata = {
+  title: "Events",
+  description: "Explore upcoming and past IEEE TXST events, workshops, socials, and networking opportunities."
+}
 
 export default function EventsPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
